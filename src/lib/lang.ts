@@ -70,6 +70,7 @@ export const translations = {
   "[ ON]": "[SI]",
   "[OFF]": "[NO]",
 
+  ERROR: "ERROR",
   "Can't import backup, it is not compatible with your version of the game":
     "No se puede importar la copia de respaldo; no es compatible con tu versión del juego",
 };
