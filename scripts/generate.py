@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import os
+import sys
 
 
 def sort0(pair: tuple[int, str]) -> int:
@@ -30,11 +31,28 @@ def sort3(pair: tuple[int, str]) -> int:
     return words_count
 
 
+def sort_tsv(path: str) -> None:
+    lines = {}
+    with open(path) as fd:
+        for line in fd.readlines():
+            id = int(line.split("\t")[0])
+            lines.setdefault(id, []).append(line)
+
+    with open(path, "w") as f:
+        for _, lns in sorted(lines.items()):
+            for line in lns:
+                f.write(line)
+
+
 def main() -> None:
     source = [each for each in os.listdir() if each.endswith(".tsv")][0]
     dest = "src/lib/sentences.ts"
     start = 0
     count = 100000
+
+    if len(sys.argv) == 2 and sys.argv[1] == "sort":
+        sort_tsv(source)
+        return
 
     sentences = {}
     meanings = {}
