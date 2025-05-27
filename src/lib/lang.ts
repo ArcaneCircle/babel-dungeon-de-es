@@ -1,7 +1,5 @@
 export const LANG1_CODE = "de",
-  LANG2_CODE = "es",
-  LANG1_FLAG = "🇩🇪",
-  LANG2_FLAG = "🇪🇸";
+  LANG2_CODE = "es";
 
 export const translations = {
   Continue: "Continuar",
@@ -69,6 +67,8 @@ export const translations = {
   Credits: "Créditos",
   "[ ON]": "[SI]",
   "[OFF]": "[NO]",
+  "[EASY]": "[  FÁCIL]",
+  "[HARD]": "[DIFÍCIL]",
 
   ERROR: "ERROR",
   "Can't import backup, it is not compatible with your version of the game":
