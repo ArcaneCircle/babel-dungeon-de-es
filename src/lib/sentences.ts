@@ -36,7 +36,7 @@ Wie süß!	¡Qué dulce!
 Ich bin’s.	Soy yo.
 Nein, danke.	No, gracias.
 Ich weiß.	Lo sé.|Yo lo sé.
-Ich komme.	Voy.
+Ich komme.	Ya voy.
 Herein bitte.	Pase adentro, por favor.|Entre, por favor.|Por favor entre.
 Komm herein.	Entre.|Pase.
 Warum?	¿Por qué?
