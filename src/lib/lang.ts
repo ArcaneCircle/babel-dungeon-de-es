@@ -1,7 +1,7 @@
 export const LANG1_CODE = "de",
   LANG2_CODE = "es";
 
-export const translations = {
+const translations = {
   Continue: "Continuar",
 
   MAX: "MAX",
@@ -32,8 +32,8 @@ export const translations = {
   'Music: "Cave" by celestialghost8': 'Música: "Cave" de celestialghost8',
   "Sound effects by celestialghost8, Fupi and Dizzy Crow":
     "Efectos de sonido: celestialghost8, Fupi and Dizzy Crow",
-  "More details at: github.com/ArcaneCircle/babel-dungeon":
-    "Más detalles en: github.com/ArcaneCircle/babel-dungeon",
+  "More details at: github.com/ArcaneCircle/babel-dungeon-{{l1}}-{{l2}}":
+    "Más detalles en: github.com/ArcaneCircle/babel-dungeon-{{l1}}-{{l2}}",
 
   "Welcome to Babel Dungeon!": "¡Bienvenid@ a Babel Dungeon!",
   "Looking for a shortcut to learning another language you entered the Babel Dungeon, but to your surprise, instead of answers, all you found was weird creatures creeping in the darkness.":
@@ -45,6 +45,7 @@ export const translations = {
 
   "You Leveled Up!": "¡Has subido de nivel!",
   "Now at level": "Ahora en el nivel",
+  "+{{x}} max. energy": "+{{x}} energía max.",
 
   "LOW ENERGY!": "¡ENERGÍA BAJA!",
   "Your energy is too low. You need at least {{e}} points to play.":
@@ -74,3 +75,8 @@ export const translations = {
   "Can't import backup, it is not compatible with your version of the game":
     "No se puede importar la copia de respaldo; no es compatible con tu versión del juego",
 };
+
+type TranslationKey = keyof typeof translations;
+export function _(key: TranslationKey): string {
+  return translations[key] || key;
+}
