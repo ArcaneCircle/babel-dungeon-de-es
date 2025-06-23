@@ -16,9 +16,7 @@ const translations = {
   today: "hoy",
   REVIEW: "REPASAR",
   "Discovered:": "Descubierto:",
-  "RANK:": "RANGO:",
   "Mastered:": "Dominado:",
-  Play: "Jugar",
 
   "+{{x}}xp": "+{{x}}xp",
   "lvl.{{l}}": "lvl.{{l}}",
@@ -29,6 +27,7 @@ const translations = {
   CREDITS: "CRÉDITOS",
   "Developer: Asiel Diaz Benitez": "Desarrollador: Asiel Diaz Benitez",
   "Sentences collection: tatoeba.org": "Oraciones: tatoeba.org",
+  'UI Icons: "Pixel Icon" by HackerNoon': 'Íconos: "Pixel Icon" de HackerNoon',
   'Music: "Cave" by celestialghost8': 'Música: "Cave" de celestialghost8',
   "Sound effects by celestialghost8, Fupi and Dizzy Crow":
     "Efectos de sonido: celestialghost8, Fupi and Dizzy Crow",

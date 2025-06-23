@@ -1,4 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
+import PixelThumbsupSolid from "~icons/pixel/thumbsup-solid";
+import PixelThumbsdownSolid from "~icons/pixel/thumbsdown-solid";
 
 import { MAIN_COLOR, RED } from "~/lib/constants";
 import { _ } from "~/lib/lang";
@@ -10,10 +12,6 @@ import { tts } from "~/lib/tts";
 import MonsterCard from "~/components/MonsterCard";
 import Meanings from "~/components/Meanings";
 import StatusBar from "~/components/StatusBar";
-import TextIcon from "~/components/icons/TextIcon";
-import PixelatedImgIcon from "~/components/icons/PixelatedImgIcon";
-
-import checkmarkURL from "@img/checkmark.png";
 
 const baseBtn = {
   width: "50%",
@@ -68,6 +66,12 @@ function Quiz({
   const sfxEnabled = getSFXEnabled();
   const { sentence, meanings } = getCard(monster.id);
 
+  useEffect(() => {
+    if (ttsEnabled && defaultMode && !showingResults) tts(sentence);
+  }, [monster]);
+
+  const pendingCount = session.failed.length + session.pending.length;
+
   const onFailed = useCallback(() => {
     setShow(false);
     const ttsWillSpeak = ttsEnabled && defaultMode;
@@ -75,14 +79,12 @@ function Quiz({
     sendMonsterUpdate(monster, false);
   }, [monster, ttsEnabled, sfxEnabled, defaultMode]);
   const onCorrect = useCallback(() => {
-    const sessionFinished =
-      session.failed.length + session.pending.length === 1;
     const ttsWillSpeak = ttsEnabled && defaultMode;
-    if (sfxEnabled && (!ttsWillSpeak || sessionFinished)) {
+    if (sfxEnabled && (!ttsWillSpeak || pendingCount === 1)) {
       successSfx.play();
     }
     sendMonsterUpdate(monster, true);
-  }, [monster, ttsEnabled, sfxEnabled, defaultMode]);
+  }, [monster, ttsEnabled, sfxEnabled, defaultMode, pendingCount]);
   const onShow = useCallback(() => {
     if (ttsEnabled && !defaultMode) {
       tts(sentence);
@@ -96,10 +98,6 @@ function Quiz({
     () => <Meanings key={monster.id} meanings={meanings} />,
     [monster.id],
   );
-
-  useEffect(() => {
-    if (ttsEnabled && defaultMode && !showingResults) tts(sentence);
-  }, [monster]);
 
   const sentenceSize = sentence.length > 80 ? "0.9em" : undefined;
 
@@ -123,60 +121,69 @@ function Quiz({
   return (
     <div style={{ textAlign: "center" }}>
       {statusBarM}
-      <div style={{ padding: "0.5em 0.3em 0.3em 0.3em", marginBottom: "6em" }}>
-        {monsterM}
-        {show && (
-          <>
-            <div style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
-              <span style={{ fontSize: "1.5em" }}>↓</span>
-            </div>
-            {defaultMode ? (
-              meaningsComp
-            ) : (
-              <div className="selectable" style={{ fontSize: sentenceSize }}>
-                {sentence}
-              </div>
+      {pendingCount > 0 && (
+        <>
+          <div
+            style={{ padding: "0.5em 0.3em 0.3em 0.3em", marginBottom: "6em" }}
+          >
+            {monsterM}
+            {show && (
+              <>
+                <div style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
+                  <span style={{ fontSize: "1.5em" }}>↓</span>
+                </div>
+                {defaultMode ? (
+                  meaningsComp
+                ) : (
+                  <div
+                    className="selectable"
+                    style={{ fontSize: sentenceSize }}
+                  >
+                    {sentence}
+                  </div>
+                )}
+              </>
             )}
-          </>
-        )}
-      </div>
-      <div
-        style={{
-          position: "fixed",
-          bottom: "0",
-          width: "100%",
-          backgroundColor: "black",
-        }}
-      >
-        {show ? (
-          <>
-            <p style={{ fontSize: "0.8em" }}>{_("Did you know it?")}</p>
-            <button style={{ ...baseBtn, background: RED }} onClick={onFailed}>
-              <TextIcon text="X" />
-            </button>
-            <button
-              style={{ ...baseBtn, background: MAIN_COLOR }}
-              onClick={onCorrect}
-            >
-              <PixelatedImgIcon
-                src={checkmarkURL}
-                style={{ height: "1em", width: "auto" }}
-              />
-            </button>
-          </>
-        ) : (
-          <button
-            onClick={onShow}
+          </div>
+          <div
             style={{
-              ...baseBtn,
-              background: "#32526d",
+              position: "fixed",
+              bottom: "0",
               width: "100%",
+              backgroundColor: "black",
             }}
           >
-            {_("Reveal")}
-          </button>
-        )}
-      </div>
+            {show ? (
+              <>
+                <p style={{ fontSize: "0.8em" }}>{_("Did you know it?")}</p>
+                <button
+                  style={{ ...baseBtn, background: RED }}
+                  onClick={onFailed}
+                >
+                  <PixelThumbsdownSolid />
+                </button>
+                <button
+                  style={{ ...baseBtn, background: MAIN_COLOR }}
+                  onClick={onCorrect}
+                >
+                  <PixelThumbsupSolid />
+                </button>
+              </>
+            ) : (
+              <button
+                onClick={onShow}
+                style={{
+                  ...baseBtn,
+                  background: "#32526d",
+                  width: "100%",
+                }}
+              >
+                {_("Reveal")}
+              </button>
+            )}
+          </div>
+        </>
+      )}
     </div>
   );
 }
