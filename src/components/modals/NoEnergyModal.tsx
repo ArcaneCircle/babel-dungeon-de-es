@@ -1,11 +1,9 @@
 import { PLAY_ENERGY_COST } from "~/lib/constants";
-import { _ } from "~/lib/lang";
+import { _ } from "~/lib/i18n";
 
 import ConfirmModal from "./ConfirmModal";
 
 type Props = {
-  onClose: () => void;
-  isOpen: boolean;
   [key: string]: any;
 };
 
