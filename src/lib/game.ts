@@ -1,7 +1,7 @@
 import { ReceivedStatusUpdate, SendingStatusUpdate } from "@webxdc/types";
 
-import { SENTENCES } from "./sentences";
-import { MAX_LEVEL, MASTERED_STREAK, PLAY_ENERGY_COST } from "./constants";
+import { SENTENCES } from "~/lib/sentences";
+import { MAX_LEVEL, MASTERED_STREAK, PLAY_ENERGY_COST } from "~/lib/constants";
 import {
   db,
   getSession,
@@ -23,11 +23,9 @@ import {
   setMaxSerial,
   getMaxSerial,
   setShowIntro,
-  getMode,
-  setMode,
   importBackup,
   isValidBackup,
-} from "./storage";
+} from "~/lib/storage";
 
 const MONSTER_UPDATE_CMD = "mon-up",
   INIT_CMD = "init",
@@ -112,14 +110,16 @@ export function importGame(backup: Backup): boolean {
   return false;
 }
 
-export function startNewGame() {
-  const energy = getEnergy().energy - PLAY_ENERGY_COST;
+export function startNewGame(mode: GameMode) {
+  const energyCost =
+    mode === "easy" ? PLAY_ENERGY_COST : Math.floor(PLAY_ENERGY_COST / 2);
+  const energy = getEnergy().energy - energyCost;
   if (energy < 0) return;
 
   const uid = window.webxdc.selfAddr;
   window.webxdc.sendUpdate(
     {
-      payload: { uid, cmd: NEW_CMD, time: Date.now(), energy, mode: getMode() },
+      payload: { uid, cmd: NEW_CMD, time: Date.now(), energy, mode },
     },
     "",
   );
@@ -272,7 +272,8 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
       case MONSTER_UPDATE_CMD: {
         const session = getSession();
         if (session && payload.sessionId === session.start) {
-          const findMon = (m: Monster) => m.id === payload.monster.id;
+          const findMon = (m: Monster) =>
+            m.id === payload.monster.id && m.seen === payload.monster.seen;
           // hack for iOS bug: updates get processed twice
           if (
             session.correct.findIndex(findMon) === -1 &&
@@ -316,8 +317,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
       }
       case NEW_CMD: {
         setEnergy(payload.energy, payload.time);
-        setMode(payload.mode);
-        const session = await createNewSession(payload.time);
+        const session = await createNewSession(payload.time, payload.mode);
         setSession(session);
         setShowIntro();
         setSessionState(session);
@@ -335,7 +335,10 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
   if (update.serial === update.max_serial) setMaxSerial(update.serial);
 }
 
-async function createNewSession(start: number): Promise<Session> {
+async function createNewSession(
+  start: number,
+  mode: GameMode,
+): Promise<Session> {
   let monsters = await db.monsters
     .orderBy("due")
     .filter((monster) => monster.due <= start)
@@ -359,6 +362,7 @@ async function createNewSession(start: number): Promise<Session> {
   }
   return {
     start,
+    mode,
     xp: 0,
     failedIds: [],
     correct: [],
