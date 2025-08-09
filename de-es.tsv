@@ -5,11 +5,11 @@
 78	Ich muss schlafen gehen.	3084420	Tengo que irme a la cama.
 80	Was ist das?	2484	¿Qué es eso?
 80	Was ist das?	449942	¿Qué es esto?
-81	Heute ist der 18. Juni und das ist der Geburtstag von Muiriel!	2485	¡Hoy es 18 de junio y es el cumpleaños de Muiriel!
-82	Herzlichen Glückwunsch zum Geburtstag, Muiriel!	2486	¡Feliz cumpleaños, Muiriel!
-83	Muiriel ist jetzt 20.	2487	Ahora, Muiriel tiene 20 años.
-83	Muiriel ist jetzt 20.	1130133	Muiriel tiene 20 años ahora.
-84	Das Passwort ist "Muiriel".	2488	La contraseña es "Muiriel".
+81	Heute ist der 18. Juni und das ist der Geburtstag von Manuel!	2485	¡Hoy es 18 de junio y es el cumpleaños de Manuel!
+82	Herzlichen Glückwunsch zum Geburtstag, Manuel!	2486	¡Feliz cumpleaños, Manuel!
+83	Manuel ist jetzt 20.	2487	Ahora, Manuel tiene 20 años.
+83	Manuel ist jetzt 20.	1130133	Manuel tiene 20 años ahora.
+84	Das Passwort ist "Manuel".	2488	La contraseña es "Manuel".
 85	Ich werde bald zurück sein.	2489	Volveré pronto.
 85	Ich werde bald zurück sein.	493657	Volveré en seguida.
 87	Ich finde keine Worte.	2491	No tengo palabras.
@@ -299,7 +299,7 @@
 310	„Was passiert in der Höhle? Ich bin neugierig.“ – „Ich habe keine Ahnung.“	1423221	"¿Qué sucede dentro de la cueva? Tengo curiosidad." "No tengo idea."
 311	"Was ist dein Wunsch?", fragte das kleine weiße Kaninchen.	2710	—¿Cuál es tu deseo? —preguntó el pequeño conejo blanco.
 312	Wir müssen lernen, als Brüder zusammen zu leben, oder wir werden als Narren zusammen untergehen.	180518	Debemos aprender a vivir juntos como hermanos, o pereceremos juntos como tontos.
-313	Öh, wie funktioniert das?	180519	Eh... ¿Cómo está marchando eso?
+313	Äh... wie läuft's?	180519	Eh... ¿Cómo está marchando eso?
 314	"Um die Wahrheit zu sagen, ich habe Höhenangst." "Du bist ein Angsthase!"	2711	"A decir verdad, tengo vértigo." "¡Eres un cobarde!"
 315	"Vertraue mir", sagte er.	2712	"Confía en mí", dijo él.
 317	„Das sieht ziemlich interessant aus“, sagt Hiroshi.	2714	—Esto parece muy interesante —dice Hiroshi.
@@ -1469,7 +1469,7 @@
 331894	Ich habe Tony geholfen.	1068519	He ayudado a Tony.
 331895	Gestern habe ich meinem Vater geholfen.	562049	Ayer ayudé a mi padre.
 331896	Sie hat ihm eine Uhr gegeben.	345193	Ella le dio un reloj.
-331905	Wir haben jede Menge Nahrungsmittel.	446402	Tenemos la mar de alimentos.
+331905	Wir haben jede Menge Nahrungsmittel.	446402	Tenemos un montón de alimentos.
 331910	Ich will ein gutes Wörterbuch.	338916	Quiero un buen diccionario.
 331911	Deine Nase läuft.	1289929	Se te caen los mocos.
 331913	Ich werde mich in dieser Frage mit den Vorgesetzten besprechen.	3373413	Voy a hablar de este asunto con el gerente.
@@ -1673,7 +1673,7 @@
 340874	Er lebt in dem gelben Haus.	1343182	Él vive en la casa amarilla.
 340874	Er lebt in dem gelben Haus.	1671985	Él vive en aquella casa amarilla.
 340875	Grün steht dir.	1281296	El verde te queda.
-340876	Sie hasst grünen Pfeffer.	1361227	Ella odia los pimientos verdes.
+340876	Sie hasst schwarzen Pfeffer.	1361227	Ella odia la pimienta negra.
 340877	Der Hügel ist immer grün.	1797618	La colina siempre es verde.
 340878	Berge sind nicht unbedingt grün.	1359292	Las montañas no necesariamente son verdes.
 340879	Wir haben das Haus grün angestrichen.	1631427	Pintamos la casa de verde.
@@ -3891,7 +3891,7 @@
 354897	Ich habe die Nachricht im Radio gehört.	2392489	Oí la noticia por la radio.
 354917	Die Nachricht mag wohl wahr sein.	581784	La noticia bien podría ser verdadera.
 354992	Du musst spätestens um 5 Uhr am Bahnhof sein.	1341287	Debes estar a más tardar a las cinco en la estación.
-355043	Alles Gute zum Geburtstag, Muiriel!	2486	¡Feliz cumpleaños, Muiriel!
+355043	Alles Gute zum Geburtstag, Manuel!	2486	¡Feliz cumpleaños, Manuel!
 355047	Sie hat zehn Kinder.	1237135	Ella tiene diez hijos.
 355167	Ihre Geschichte kann nicht wahr sein.	1110894	Su historia no puede ser cierta.
 355168	Er überraschte die Öffentlichkeit.	1447402	Sorprendió al público.
@@ -12224,7 +12224,7 @@
 455698	Er log, ohne zu zögern.	1544990	Él mintió sin vacilar.
 455699	Ich kann nicht so fließend Englisch sprechen wie Naomi.	1254663	Yo no puedo hablar inglés tan fluidamente como Naomi.
 455704	Warte hier, bis ich zurückkomme.	456936	Espera aquí hasta que vuelva.
-455710	Muiriel ist Inderin.	456939	Muiriel es india.
+455710	Manuel ist Inder.	456939	Manuel es indio.
 455714	Manchmal verstehe ich ihn nicht.	456940	A veces no le entiendo.
 455716	Der Bambus biegt sich unter dem Gewicht des Schnees.	1926357	El bambú se dobla bajo el peso de la nieve.
 455734	Sie hat die Universität abgeschlossen.	967592	Ella ha finalizado sus estudios universitarios.
@@ -13362,7 +13362,7 @@
 502644	Entweder ist der Mann tot oder meine Uhr ist stehengeblieben.	529110	O este hombre está muerto o mi reloj se ha parado.
 503200	Sein Schnarchen ist geräuscharm, erst recht, wenn er wach ist.	1726255	Su ronquido suena despacio, sobre todo cuando está despierto.
 503233	Du solltest ihm unbedingt eine reinhauen, erst recht, wenn er sich über Pazifisten wie dich lustig macht.	1726258	Demás que deberías pegarle, sobre todo si se burla de pacifistas como tú.
-503251	Muiriel hat mir versprochen, dass sie mir mit meinen Mathematikhausaufgaben helfen wird, wenn ich das ganze Buch "Das Bildnis des Dorian Gray" auf Englisch lese.	503228	Muiriel me ha prometido que si leo el libro "El retrato de Dorian Gray" entero en inglés me ayudará con mis deberes de matemáticas.
+503251	Manuel hat mir versprochen, dass sie mir mit meinen Mathematikhausaufgaben helfen wird, wenn ich das ganze Buch "Das Bildnis des Dorian Gray" auf Englisch lese.	503228	Manuel me ha prometido que si leo el libro "El retrato de Dorian Gray" entero en inglés me ayudará con mis deberes de matemáticas.
 503277	Von allen Kindern, die ich im Kindergarten kennengelernt habe, ist Allan das netteste.	1726259	De todos los niños que he conocido en el jardín infantil, Allan es el más agradable.
 503330	Liebe ist, wenn du sie in deinen Träumen siehst.	539467	El amor es verla en tus sueños.
 503337	Einige Zeit lebte er in Frankreich, dann ging er nach Italien.	1304011	Vivió en Francia por algún tiempo, después se fue a Italia.
@@ -24671,7 +24671,7 @@
 766990	Er hatte so große Angst, dass er um sein Leben rannte.	1857615	Él tenía tanto miedo que corrió por su vida.
 766998	Sein Cousin, dessen Namen ich vergessen habe, war ein Krankenpfleger.	1082800	Su primo, cuyo nombre he olvidado, era enfermero.
 767002	Wir hoffen, dich wieder zu treffen.	1702678	Esperamos verte de nuevo.
-767005	Muiriel hat mir versprochen, dass sie mir mit meinen Mathehausaufgaben hilft, wenn ich das Buch "Das Bildnis des Dorian Gray" komplett auf Englisch lese.	503228	Muiriel me ha prometido que si leo el libro "El retrato de Dorian Gray" entero en inglés me ayudará con mis deberes de matemáticas.
+767005	Manuel hat mir versprochen, dass sie mir mit meinen Mathehausaufgaben hilft, wenn ich das Buch "Das Bildnis des Dorian Gray" komplett auf Englisch lese.	503228	Manuel me ha prometido que si leo el libro "El retrato de Dorian Gray" entero en inglés me ayudará con mis deberes de matemáticas.
 767009	Wie alt wart ihr, als der Krieg ausbrach?	1158172	¿Qué edad teníais cuando estalló la guerra?
 767011	Der Junge rannte weg.	1258388	El chico huyó.
 767015	Er trug alte Schuhe.	2311783	Él usaba zapatos viejos.
@@ -25942,7 +25942,7 @@
 784758	Kanntest du ihn?	1021905	¿Le conocías?
 784761	Das sind nur Blätter und Äste.	1769007	Son solo hojas y ramas.
 784766	Das Fleisch ist gefroren.	783250	La carne está congelada.
-784775	Muiriel ist zwanzig.	855634	Muiriel tiene veinte años.
+784775	Manuel ist zwanzig.	855634	Manuel tiene veinte años.
 784777	Ich habe deine Telefonnummer vergessen.	1323400	Olvidé tu número de teléfono.
 784889	Ich würde gern diesen Film entwickeln lassen.	1705499	Quisiera que me revelaran este rollo.
 784920	Darf ich zum Fluss gehen?	1413562	¿Puedo irme al río?
@@ -29469,7 +29469,7 @@
 902860	Das hast du verdient.	1690829	Te lo merecías.
 902864	Wer vermietet eine Wohnung an ein junges Ehepaar?	2029033	¿Quién le arrienda una vivienda a una pareja joven?
 902952	Gestern war ein Erdbeben.	941401	Hubo un terremoto ayer.
-902975	Muiriel ist jetzt zwanzig Jahre alt.	1130133	Muiriel tiene 20 años ahora.
+902975	Manuel ist jetzt zwanzig Jahre alt.	1130133	Manuel tiene 20 años ahora.
 903004	Es wäre schön, wenn ich nach Japan reisen könnte.	1809515	Sería lindo si pudiera viajar a Japón.
 903079	Ich weiß nicht, warum du sie nicht magst.	717090	No sé por qué no te gusta.
 903082	Und ich weiß, dass du es nicht für mich getan hast.	1499411	Y sé que no lo hiciste por mí.
@@ -29607,7 +29607,7 @@
 905071	Auf dem Weg zur Schule traf ich Tom.	922550	Me encontré con Tom de camino a la escuela.
 905074	Die Hälfte der Äpfel sind verfault.	1510027	La mitad de las manzanas están podridas.
 905081	"Macht es Ihnen was aus, wenn ich rauche?" "Überhaupt nicht. Nur zu."	2010897	"¿Le importa si fumo?" "En absoluto. Adelante."
-905222	Muiriel ist sehr gut darin, erfundene Geschichten zu erzählen.	1845365	A Muiriel se le da muy bien contar historias inventadas.
+905222	Manuel ist sehr gut darin, erfundene Geschichten zu erzählen.	1845365	A Manuel se le da muy bien contar historias inventadas.
 905272	Wir haben uns im Urwald verlaufen.	358661	Nos perdimos en la jungla.
 905274	Was dir einfach vorkommt, erscheint mir kompliziert.	799624	Lo que a ti te parece simple, a mí me parece complicado.
 905280	Mama und Papa sind ziemlich nervös.	858042	Mamá y papá están muy nerviosos.
@@ -51243,8 +51243,8 @@
 1673890	Entschuldigung, wie viel Uhr ist es?	10960897	Por favor, ¿qué hora es?
 1674062	Der Eierpreis steigt.	2229658	El precio de los huevos está en aumento.
 1674109	Man kann nicht verlieren, was man nicht besitzt.	1674088	No se pierde lo que no se tiene.
-1674119	Das Passwort lautet „Muiriel“.	2488	La contraseña es "Muiriel".
-1674122	Das Kennwort lautet „Muiriel“.	2488	La contraseña es "Muiriel".
+1674119	Das Passwort lautet „Manuel“.	2488	La contraseña es "Manuel".
+1674122	Das Kennwort lautet „Manuel“.	2488	La contraseña es "Manuel".
 1674129	Das wird nicht geschehen.	1023561	Eso no pasará.
 1674139	Alle lachen über mich.	1673427	¡Todos se ríen de mí!
 1674155	Warum hast du zwei Autos?	1676394	¿Por qué tenés dos coches?
