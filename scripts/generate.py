@@ -31,37 +31,22 @@ def sort3(pair: tuple[int, str]) -> int:
     return words_count
 
 
-def sort_tsv(path: str) -> None:
-    lines = {}
-    with open(path) as fd:
-        for line in fd.readlines():
-            id = int(line.split("\t")[0])
-            lines.setdefault(id, []).append(line)
-
-    with open(path, "w") as f:
-        for _, lns in sorted(lines.items()):
-            for line in lns:
-                f.write(line)
-
-
 def main() -> None:
     source = [each for each in os.listdir() if each.endswith(".tsv")][0]
     dest = "src/lib/sentences.ts"
     start = 0
     count = 100000
 
-    if len(sys.argv) == 2 and sys.argv[1] == "sort":
-        sort_tsv(source)
-        return
-
     sentences = {}
     meanings = {}
+    meanings_ids = {}
     with open(source) as fd:
         for line in fd.readlines():
             row = line.strip().split("\t")
             id = int(row[0])
             sentences[id] = row[1]
             meanings.setdefault(id, []).append(row[3])
+            meanings_ids[row[3]] = int(row[2])
 
     print(f"TOTAL: {len(sentences)}")
     count = min(len(sentences), count)
@@ -84,6 +69,15 @@ def main() -> None:
         new_sents.append((id, sen))
         del sentences[id]
 
+    if len(sys.argv) == 2 and sys.argv[1] == "sort":
+        with open(source, "w") as f:
+            for id, sen in new_sents:
+                for meaning in meanings[id]:
+                    mid = meanings_ids[meaning]
+                    f.write(f"{id}\t{sen}\t{mid}\t{meaning}\n")
+        print(f"sorted {len(new_sents)} sentences")
+        return
+
     with open(dest, "w") as f:
         f.write("export const SENTENCES = `")
         count2 = 0
@@ -93,6 +87,7 @@ def main() -> None:
             if count2 != count:
                 f.write("\n")
         f.write('`.split("\\n");\n')
+    print(f"generated {count2} sentences")
 
 
 if __name__ == "__main__":
