@@ -1282,9 +1282,9 @@
 331905	Wir haben jede Menge Nahrungsmittel.	446402	Tenemos un montón de alimentos.
 331910	Ich will ein gutes Wörterbuch.	338916	Quiero un buen diccionario.
 332128	Er wird gleich zurück sein.	738381	Vuelve enseguida.
-333647	Manuel spricht langsamer als Bill.	505963	Manuel habla más lentamente que Bill.
-333647	Manuel spricht langsamer als Bill.	781041	Manuel habla más lento que Bill.
-333647	Manuel spricht langsamer als Bill.	861306	Manuel habla más despacio que Bill.
+333647	Manuel spricht langsamer als Laura.	505963	Manuel habla más lentamente que Laura.
+333647	Manuel spricht langsamer als Laura.	781041	Manuel habla más lento que Laura.
+333647	Manuel spricht langsamer als Laura.	861306	Manuel habla más despacio que Laura.
 335394	Er sucht eine bessere Arbeit.	1292168	Él busca un mejor trabajo.
 337370	Dieser Kuchen schmeckt nach Käse.	1323025	Esta torta tiene gusto a queso.
 338267	Heute ist es kühl.	690252	Hoy hace fresco.
@@ -1331,8 +1331,8 @@
 340820	Ich kann nicht länger warten.	550565	No puedo esperar más tiempo.
 340821	Wann wurde diese Universität gegründet?	845635	¿Cuándo se fundó esta universidad?
 340822	Dieses Schloß ist schön.	445850	Este castillo es bonito.
-340831	Bill war in Japan.	383879	Bill estaba en Japón.
-340831	Bill war in Japan.	1238878	Bill estuvo en Japón.
+340831	Manuel war in Japan.	383879	Manuel estaba en Japón.
+340831	Manuel war in Japan.	1238878	Manuel estuvo en Japón.
 340833	Französisch wird in Frankreich gesprochen.	1446257	El francés se habla en Francia.
 340843	Meine Lieblingsfarbe ist Rot.	329820	El color que me encanta es el rojo.
 340843	Meine Lieblingsfarbe ist Rot.	460900	El rojo es mi color favorito.
@@ -1805,7 +1805,7 @@
 344633	Ab wann brauchst du es?	610535	¿A partir de cuándo lo necesitas?
 344634	Ich wollte nicht früh aufstehen.	1465155	No me quería levantar temprano.
 344636	Mein Vater ist sehr nett.	765150	Mi padre es muy amable.
-344646	Ich habe gestern Mary getroffen.	1418892	Ayer me encontré con Mary.
+344646	Ich habe gestern Laura getroffen.	1418892	Ayer me encontré con Laura.
 344648	Meiner Mutter ist Politik egal.	725659	A mi madre le es indiferente la política.
 344652	Wir haben gestern Tennis gespielt.	595901	Jugamos al tenis ayer.
 344655	Er trägt einen Hut.	1250913	Él lleva sombrero.
@@ -2588,7 +2588,7 @@
 358427	Kann jemand diesen Anruf annehmen?	1564499	¿Puede alguien atender esa llamada?
 358428	Ich spiele heute Nachmittag Tennis.	1239011	Jugaré tenis esta tarde.
 358428	Ich spiele heute Nachmittag Tennis.	5032595	Voy a jugar tenis esta tarde.
-358597	Bill kann Fahrrad fahren.	401577	Bill sabe montar en bicicleta.
+358597	Manuel kann Fahrrad fahren.	401577	Manuel sabe montar en bicicleta.
 358602	Sie kann sehr gut nähen.	1656985	Ella sabe coser muy bien.
 358605	Kann sie Gitarre spielen?	1116011	¿Ella sabe tocar la guitarra?
 358605	Kann sie Gitarre spielen?	1116013	¿Ella puede tocar la guitarra?
@@ -2936,7 +2936,7 @@
 362321	Katholiken sind gegen Geburtenkontrolle.	5042604	Los católicos están en contra del control de natalidad.
 362587	Er muss reich gewesen sein.	1292386	Él debe haber sido rico.
 362588	Plötzlich ging der Feueralarm los.	1733989	De repente, la alarma de incendios sonó.
-362601	Bill schaltete den Fernseher ein.	1442663	Bill ha encendido la tele.
+362601	Manuel schaltete den Fernseher ein.	1442663	Manuel ha encendido la tele.
 362602	Jeder kennt seinen Namen.	1336130	Todos conocen su nombre.
 362640	Dieser Kaffee ist zu bitter.	1207048	Este café está demasiado amargo.
 362641	Peter sieht sehr jung aus.	732492	Peter se ve muy joven.
@@ -3862,8 +3862,8 @@
 394180	Im Allgemeinen mögen Amerikaner Kaffee.	2133315	En general a los estadounidenses les gusta el café.
 394181	Allgemein gesagt: Geschichte wiederholt sich.	670241	Generalmente hablando, la historia se repite.
 394190	Ich möchte schwimmen gehen.	1134612	Quiero ir a nadar.
-394198	He, Bill. Wie gehts?	543226	Hola, Bill. ¿Cómo estás?
-394198	He, Bill. Wie gehts?	1284924	Hola Bill, ¿cómo estás?
+394198	He, Manuel. Wie gehts?	543226	Hola, Manuel. ¿Cómo estás?
+394198	He, Manuel. Wie gehts?	1284924	Hola Manuel, ¿cómo estás?
 394207	Alle sind dort hingegangen, nicht?	1507549	¿Todos fueron ahí, o no?
 394221	Oh, es regnet ja.	948991	Mira, está lloviendo.
 394222	Sie mag bestimmt Tiere.	2333717	Demás que le gustan los animales.
@@ -4502,7 +4502,7 @@
 413626	Es wird jeden Tag wärmer.	460883	Cada día hace más calor.
 413628	Ich habe immer noch Durst.	986026	Todavía tengo sed.
 413676	Mein Vater unterstützt mich finanziell.	1453606	Mi padre me mantiene financieramente.
-413722	Bill singt oft im Badezimmer.	917559	Bill canta a menudo en el cuarto de baño.
+413722	Manuel singt oft im Badezimmer.	917559	Manuel canta a menudo en el cuarto de baño.
 413747	Viel Glück für deine Prüfung!	503671	¡Buena suerte en el examen!
 413749	Er geht jede Woche angeln.	539419	Él se va a pescar todas las semanas.
 413759	Einstein war ein mathematisches Genie.	1080227	Einstein fue un genio de las matemáticas.
@@ -4651,7 +4651,7 @@
 425601	Warum bist du so glücklich?	482531	¿Por qué estás tan feliz?
 425603	Was hast du gemacht?	564558	¿Qué has hecho?
 425603	Was hast du gemacht?	738720	¿Qué hiciste?
-425604	Bill, mach die Tür auf.	672916	Bill, abre la puerta.
+425604	Manuel, mach die Tür auf.	672916	Manuel, abre la puerta.
 425605	Ich lerne jeden Tag Englisch.	524862	Estudio inglés todos los días.
 425605	Ich lerne jeden Tag Englisch.	10530964	Yo estudio inglés cada día.
 425617	Milch ist ein beliebtes Getränk.	1854917	La leche es una bebida popular.
@@ -6731,7 +6731,7 @@
 554591	Heute gehen wir tanzen.	1554578	Hoy nos vamos a bailar.
 554595	Diese Wand ist grün gestrichen.	345089	Ese muro está pintado de verde.
 554596	Stiehl Geld.	2951297	Roba dinero.
-554745	Willi ist ein guter Sportler.	866999	Willi es un buen deportista.
+554745	Manuel ist ein guter Sportler.	866999	Manuel es un buen deportista.
 554748	Ann kann keine Arbeit finden.	1342253	Ann no puede encontrar trabajo.
 554754	Jedes Kind kann das.	1363637	Cualquier niño puede hacer eso.
 554992	Er spielt sehr gut Gitarre.	817518	Toca la guitarra muy bien.
@@ -7722,7 +7722,7 @@
 608501	Schöne Vögel fliegen über Bäumen.	1469831	Bellas aves vuelan por sobre los árboles.
 608503	Meine Tochter bekam einen Schnupfen.	1192351	Mi hija se agarró un resfriado.
 608515	Ich mag ihr Gesicht nicht.	1403377	No me gusta su cara.
-608606	Bill raucht nicht mehr.	1682771	Bill ya no fuma.
+608606	Manuel raucht nicht mehr.	1682771	Manuel ya no fuma.
 608636	Das wirst du bereuen!	727786	¡Te arrepentirás!
 608636	Das wirst du bereuen!	994453	¡Te arrepentirás de eso!
 608636	Das wirst du bereuen!	1286141	¡Ya te arrepentirás de ello!
@@ -10102,8 +10102,8 @@
 743951	Sei flexibler.	1179106	Sé más flexible.
 743960	Die Struktur ist nicht sicher.	1085413	La estructura no es segura.
 743983	Tapferkeit ist eine hervorragende Tugend.	1698923	El valor es una excelente virtud.
-743987	Bill ist sehr zurückhaltend.	1546834	Bill es muy reservado.
-743989	Bill ist sehr reserviert.	1546834	Bill es muy reservado.
+743987	Manuel ist sehr zurückhaltend.	1546834	Manuel es muy reservado.
+743989	Manuel ist sehr reserviert.	1546834	Manuel es muy reservado.
 743990	Alle Soldaten waren tapfer.	5052870	Todos los soldados fueron valientes.
 743992	Wer ist der nächste Kandidat?	855388	¿Quién es el próximo candidato?
 744011	Sie war die letzte Kundin.	1457366	Ella fue la última cliente.
@@ -12107,7 +12107,7 @@
 852443	Ihr seid die neuen Studenten.	2046642	Sois los nuevos estudiantes.
 852506	Er antwortete kurz.	1456202	Él respondió brevemente.
 852516	Vertraust du ihr?	777054	¿Confías en ella?
-852563	Bill kommt nächste Woche zurück.	1060963	Bill vuelve la semana que viene.
+852563	Manuel kommt nächste Woche zurück.	1060963	Manuel vuelve la semana que viene.
 852572	Der Mann besucht Moskau.	462799	El hombre está visitando Moscú.
 852575	Maria versteht Chinesisch.	1386730	Maria entiende chino.
 852575	Maria versteht Chinesisch.	1678625	Maria comprende chino.
@@ -12146,7 +12146,7 @@
 860322	Ich gehe zurück.	1481663	Voy de regreso.
 860323	Ich möchte einen Kamillentee.	2177546	Quiero un té de manzanilla.
 860325	Michael Jackson ist gestorben.	872779	Michael Jackson ha muerto.
-860336	Bill ist mein bester Freund.	401580	Bill es mi mejor amigo.
+860336	Manuel ist mein bester Freund.	401580	Manuel es mi mejor amigo.
 860390	Sie ist seine wahre Mutter.	1339443	Ella es su madre real.
 860390	Sie ist seine wahre Mutter.	1435801	Ella es su verdadera madre.
 860397	Er ist achtzehn Monate alt.	434927	Él tiene dieciocho meses.
@@ -12733,7 +12733,7 @@
 908082	Er schloss ärgerlich die Türe.	1501493	Él cerró furiosamente la puerta.
 908091	Mein Geburtstag ist im Juli.	1464248	Mi cumpleaños es en julio.
 908097	Manuel studiert in Manaus.	891979	Manuel está estudiando en Manaos.
-908105	Bill war in seinem Schlafzimmer.	1703175	Bill estaba en su dormitorio.
+908105	Manuel war in seinem Schlafzimmer.	1703175	Manuel estaba en su dormitorio.
 908115	Mach deine Augen auf.	449333	Abre los ojos.
 908115	Mach deine Augen auf.	853775	¡Abre los ojos!
 908480	Ich kann ihm nicht vertrauen.	684553	No puedo confiar en él.
@@ -13659,8 +13659,8 @@
 341501	Ich mag Musik, besonders klassische Musik.	508833	Me gusta la música, especialmente la música clásica.
 341512	Er sieht aus wie dein Bruder.	4444201	Se parece a tu hermano.
 341523	Sein Bruder ist immer noch größer.	503597	Su hermano es todavía más alto.
-341525	Bill ging mit seinem Bruder in den Zoo.	741927	Bill fue con su hermano al zoológico.
-341525	Bill ging mit seinem Bruder in den Zoo.	1258544	Bill fue al zoológico con su hermano.
+341525	Manuel ging mit seinem Bruder in den Zoo.	741927	Manuel fue con su hermano al zoológico.
+341525	Manuel ging mit seinem Bruder in den Zoo.	1258544	Manuel fue al zoológico con su hermano.
 341526	Onkel Manuel ist der Bruder meiner Mutter.	594447	El tío Manuel es el hermano de mi madre.
 341528	John ist so alt wie mein Bruder.	1950095	John tiene la misma edad que mi hermano.
 341546	Rock ist die Musik der Jungen.	504474	El rock es la música de los jóvenes.
@@ -13785,7 +13785,7 @@
 342537	Er schaute, als wäre nichts passiert.	1446446	Él se veía como si no hubiera pasado nada.
 342540	Sei schnell oder du verpasst den Zug.	1683199	Apresúrate o te vas a perder el tren.
 342560	Ich habe viel über dich gehört.	1563094	He oído mucho acerca de ti.
-342562	Bill hat mir dieses Buch mitgebracht.	500083	Bill me trajo este libro.
+342562	Manuel hat mir dieses Buch mitgebracht.	500083	Manuel me trajo este libro.
 342574	Es ist fünf Jahre her, dass mein Vater gestorben ist.	1118819	Han pasado cinco años desde que mi padre murió.
 342576	Er hat Glück, so eine gute Ehefrau zu haben.	811434	Él es afortunado por tener tan buena esposa.
 342577	Obwohl sie viele Schwächen hat, vertraue ich ihr.	1156201	Aunque ella tenga muchas debilidades, yo confío en ella.
@@ -13959,7 +13959,7 @@
 344466	Ich würde gerne ein Auto mieten.	1084402	Me gustaría alquilar un coche.
 344466	Ich würde gerne ein Auto mieten.	1084403	Querría alquilar un coche.
 344469	Beeil dich, oder du verpasst deinen Zug.	336765	Apúrate, o perderás el tren.
-344470	Bill ist nicht so groß wie Bob.	612245	Bill no es tan alto como Bob.
+344470	Manuel ist nicht so groß wie Bob.	612245	Manuel no es tan alto como Bob.
 344471	Sie ist schüchtern und spricht wenig.	635763	Ella es tímida y habla poco.
 344472	Er hat vielleicht das Flugzeug verpasst.	962062	Quizás él ha perdido el avión.
 344472	Er hat vielleicht das Flugzeug verpasst.	1179006	Quizás él haya perdido el avión.
@@ -15424,7 +15424,7 @@
 365320	Ich wollte einen Hamburger, aber ich hielt mich zurück.	1118782	Yo quería una hamburguesa, pero me contuve.
 365330	Sie war so müde, dass sie nicht mehr gehen konnte.	540301	Ella estaba tan cansada que no podía andar.
 365335	Er war bereit, sich seinem Schicksal zu stellen.	503623	Él estaba preparado para enfrentarse a su destino.
-365341	Manuel läuft nicht so schnell wie Bill.	740723	Manuel no corre tan rápido como Bill.
+365341	Manuel läuft nicht so schnell wie Manuel.	740723	Manuel no corre tan rápido como Manuel.
 365355	Ich bin nicht so beschäftigt wie Yoshio.	739354	No estoy tan ocupado como Yoshio.
 365356	Wenn es morgen regnet, bleibe ich zu Hause.	398228	Si llueve mañana, me quedaré en casa.
 365356	Wenn es morgen regnet, bleibe ich zu Hause.	783343	Si mañana llueve, me quedaré en casa.
@@ -15516,7 +15516,7 @@
 365910	Der See ist an dieser Stelle am tiefsten.	1919527	Este lugar es el más profundo del lago.
 365911	Gibt es viele Bäume im Park?	674878	¿Hay muchos árboles en el parque?
 365921	Du musst diesen Film unbedingt sehen.	1769262	Debes ver esa película a como dé lugar.
-365922	Bill legte 100 Dollar für seine Reise beiseite.	4577613	Bill apartó cien dólares para su viaje.
+365922	Manuel legte 100 Dollar für seine Reise beiseite.	4577613	Manuel apartó cien dólares para su viaje.
 365923	Es war der größte Fehler meines Lebens.	940353	Fue el error más grande de mi vida.
 365928	Sein Verhalten ist heute sehr merkwürdig.	1298005	Su comportamiento es muy extraño hoy.
 365940	Er wurde im 19. Jahrhundert geboren.	780530	Nació en el siglo XIX.
@@ -16493,7 +16493,7 @@
 389122	Er ist eine Gefahr für die Gesellschaft.	1630509	Él es un peligro para la sociedad.
 389123	Er scheint reich gewesen zu sein.	1292394	Él parece haber sido rico.
 389126	Ich bitte euch, gebt mir noch eine Chance.	1585408	Os lo ruego, dadme otra oportunidad.
-389131	Bill hat mich letzte Nacht angerufen.	594232	Bill me llamó anoche.
+389131	Manuel hat mich letzte Nacht angerufen.	594232	Manuel me llamó anoche.
 389134	Meine Mutter ist eine sehr gute Köchin.	642205	Mi madre es una muy buena cocinera.
 389216	Linda erhob sich, um zu singen.	2667202	Linda se paró para cantar.
 389240	Der Senat hat den Gesetzentwurf verabschiedet.	1695451	El senado aprobó el proyecto de ley.
@@ -16922,7 +16922,7 @@
 402006	Manuel traf Mary auf dem Weg zur Schule.	963107	Manuel se encontró con Mary camino del colegio.
 402014	Er würde mir nicht erlauben, sein Auto zu fahren.	1449736	Él no me permitía conducir su auto.
 402017	Er antwortete, dass er es nicht wüsste.	1953368	Él respondió que no lo sabía.
-402019	Mein Vater erlaubt mir nicht, mit Bill auszugehen.	533207	Mi papá no me permite salir con Bill.
+402019	Mein Vater erlaubt mir nicht, mit Manuel auszugehen.	533207	Mi papá no me permite salir con Manuel.
 402020	Ich bin gegen fünf Uhr aufgestanden.	1364644	Me levanté hacia las cinco.
 402025	Das Leben ist bestenfalls ein Meer von Problemen.	553853	La vida es, en el mejor de los casos, un mar de problemas.
 402028	Sie war ganz in Schwarz gekleidet.	1864341	Ella estaba vestida entera de negro.
@@ -17109,7 +17109,7 @@
 405708	Ich frage mich, ob er mich liebt.	775000	Me pregunto si él me ama.
 405755	Ich bin an den Lärm gewöhnt.	509582	Estoy acostumbrado al ruido.
 405765	Sie ist die beste Pianistin nach Herrn Long.	964215	Ella es la mejor pianista después de el señor Long.
-405770	Manuel ist ungefähr so groß wie Bill.	1712088	Manuel es casi igual de alto que Bill.
+405770	Manuel ist ungefähr so groß wie Laura.	1712088	Manuel es casi igual de alto que Laura.
 405771	Dies ist ein Foto vom Flughafen.	1982342	Esta es una foto del aeropuerto.
 405796	Ohne Wasser kann ich diese Tablette nicht hinunterschlucken.	2525082	No me puedo tragar esta pastilla sin agua.
 405807	Da es Nacht geworden war, gingen wir heim.	1078394	Como se había hecho de noche, nos fuimos a casa.
@@ -17608,7 +17608,7 @@
 415988	Was möchtest du zum Frühstück essen?	508145	¿Qué quieres desayunar?
 415988	Was möchtest du zum Frühstück essen?	627423	¿Qué quieres para desayunar?
 416126	Er hat mich belogen, deshalb bin ich sauer auf ihn.	1676778	Me mintió, por eso estoy enojada con él.
-416129	Bill, ruf mich heute Abend an.	346335	Bill, llámame esta noche.
+416129	Manuel, ruf mich heute Abend an.	346335	Manuel, llámame esta noche.
 416325	Abgesehen von meiner Schwester schaut meine Familie kein Fernsehen.	1575909	Aparte de mi hermana, mi familia no ve televisión.
 416334	Er löste das Rätsel ohne Probleme.	966569	Él resolvió el acertijo sin problemas.
 416338	Seine Lektüre umspannt ein weites Gebiet.	1828828	Su lectura abarca un amplio campo.
@@ -17652,8 +17652,8 @@
 417594	Sie begrüßte uns mit einem Lächeln.	1606699	Ella nos saludó con una sonrisa.
 417599	Er begrüßte mich mit einem Lächeln.	757156	Me saludó con una sonrisa.
 417800	Er wird in zehn Minuten da sein.	1063237	Estará ahí en diez minutos.
-417955	Bill geht oft in den Park.	1495225	Bill frecuentemente va al parque.
-417955	Bill geht oft in den Park.	1495226	Bill a menudo va al parque.
+417955	Manuel geht oft in den Park.	1495225	Manuel frecuentemente va al parque.
+417955	Manuel geht oft in den Park.	1495226	Manuel a menudo va al parque.
 418465	Ich habe beschlossen, Stenografie zu lernen.	994775	He decidido estudiar taquigrafía.
 418865	Ist das eine Katze oder ein Hund?	505938	¿Eso es un gato o un perro?
 418946	Vor langer Zeit war hier eine Brücke.	1192337	Hace mucho tiempo había aquí un puente.
@@ -17713,8 +17713,8 @@
 423330	Du solltest so bald wie möglich anfangen.	1256525	Deberías partir tan pronto como sea posible.
 423478	Vier Familien kamen im Feuer ums Leben.	740557	Cuatro familias murieron en el incendio.
 423479	Noch ein Krieg, dann werden wir alle tot sein.	867033	Otra guerra y estaremos todos muertos.
-423484	Bill wurde mit einer Pistole getötet.	1508371	Mataron a Bill con una pistola.
-423485	Bill wurde von dem Mann umgebracht.	1508374	Ese hombre mató a Bill.
+423484	Manuel wurde mit einer Pistole getötet.	1508371	Mataron a Manuel con una pistola.
+423485	Manuel wurde von dem Mann umgebracht.	1508374	Ese hombre mató a Manuel.
 423486	Der Lehrer erzählte mir, dass Hitler sich selbst umgebracht hatte.	2764675	El profesor me contó que Hitler se suicidó.
 423496	Laura kann kein Geheimnis lange für sich behalten.	863820	Laura no sabe mantener un secreto durante mucho tiempo.
 423500	Laura redet, als wüsste sie alles.	714791	Laura habla como si lo supiera todo.
@@ -17761,7 +17761,7 @@
 424772	Wenn es Gott nicht gäbe, dann müsste man ihn erfinden.	859884	Si Dios no existiera, habría que inventarlo.
 424774	Ich werde bis sechs Uhr hier bleiben.	5053615	Voy a quedarme aquí hasta las seis.
 425031	Sie sagte: „Ich bin sehr zufrieden.“	534815	Ella dijo: "estoy muy contenta."
-425038	Bill und sein jüngerer Bruder ähneln sich überhaupt nicht.	553081	Bill y su hermano menor no se parecen para nada.
+425038	Manuel und sein jüngerer Bruder ähneln sich überhaupt nicht.	553081	Manuel y su hermano menor no se parecen para nada.
 425051	Es gibt keine Rosen ohne Dornen.	643719	No hay rosas sin espinas.
 425090	Er hatte, glaubte ich, kein Recht, das zu tun.	2729717	Yo creo que no tenía ningún derecho a hacer eso.
 425170	Der Dieb entkam mit dem Geld.	965104	El ladrón se escapó con el dinero.
@@ -21467,7 +21467,7 @@
 623870	Sie ist so intelligent wie er.	623874	Ella es tan inteligente como él.
 624122	Um wie viel Uhr möchtest du frühstücken?	624123	¿A qué hora quieres desayunar?
 624132	Es war uns ein Vergnügen, im Fluss zu schwimmen.	624133	Nos divertimos nadando en el río.
-624152	Bill kam wie üblich zu spät zur Schule.	624151	Bill fue tarde a la escuela como de costumbre.
+624152	Manuel kam wie üblich zu spät zur Schule.	624151	Manuel fue tarde a la escuela como de costumbre.
 624160	Ein Freund von mir studiert im Ausland.	624159	Un amigo mío está estudiando en el extranjero.
 624162	In nur zwei Wochen ist Weihnachten.	624167	Sólo faltan dos semanas para Navidad.
 624181	Wir haben ihn zu uns nach Hause eingeladen.	624179	Lo invitamos a nuestra casa.
@@ -22775,7 +22775,7 @@
 676951	Schall ist weniger schnell als Licht.	1315769	El sonido es menos veloz que la luz.
 676955	Kein Buch ist des Lesens wert.	701798	Ningún libro vale la pena leer.
 676958	Die Arbeiter waren bis zu den Hüften nackt.	1726541	Los trabajadores estaban desnudos hasta las caderas.
-676959	Bill ist wegen der Prüfung nervös.	401578	Bill está nervioso por el examen.
+676959	Manuel ist wegen der Prüfung nervös.	401578	Manuel está nervioso por el examen.
 676986	Ich werde es schaffen. Lass dir das gesagt sein.	4118495	Déjame decirte que yo me ocuparé de ello.
 676986	Ich werde es schaffen. Lass dir das gesagt sein.	4118496	Yo me ocuparé. Te lo aseguro.
 677009	Hast du in letzter Zeit irgendwelche Filme gesehen?	1688030	¿Has visto algunas películas últimamente?
@@ -22791,7 +22791,7 @@
 677033	Er ist das schwarze Schaf in der Familie.	1133087	Él es la oveja negra de la familia.
 677055	Er fragte sie, ob sie Laura sei.	2170087	Le preguntó si era Laura.
 677059	Diese Krawatte passt zu deinem Anzug.	4998429	Esta corbata hace juego con tu traje.
-677071	Bill klopfte mir auf die Schulter.	1448229	Bill me dio una palmadita en el hombro.
+677071	Manuel klopfte mir auf die Schulter.	1448229	Manuel me dio una palmadita en el hombro.
 677649	Manchmal wissen Kritiker nicht, was sie kritisieren.	329728	A veces los críticos no saben lo que critican.
 677690	Ich versuchte mit aller Kraft, die Tür zu öffnen.	1683234	Traté de abrir la puerta con toda mi fuerza.
 677696	Die Geschichte Chinas ist älter als die von Japan.	931607	La historia de la China es más antigua que la de Japón.
@@ -23008,7 +23008,7 @@
 688386	Ich mag lieber Fisch als Fleisch.	538632	Prefiero el pescado a la carne.
 688413	Ich habe einen Freund, dessen Vater ein bekannter Pianist ist.	559044	Tengo un amigo cuyo padre es un pianista famoso.
 688413	Ich habe einen Freund, dessen Vater ein bekannter Pianist ist.	1276056	Yo tengo un amigo cuyo padre es un famoso pianista.
-688416	Bill hält oft seine Versprechen nicht.	2238325	Bill a menudo rompe sus promesas.
+688416	Manuel hält oft seine Versprechen nicht.	2238325	Manuel a menudo rompe sus promesas.
 688428	Sie übersetzte den Brief aus dem Japanischen ins Französische.	2169896	Ella tradujo la carta del japonés al francés.
 688431	Er kaufte ein neues Paar Handschuhe.	2169894	Él compró un par de guantes nuevos.
 688442	Sie setzte sich ans Klavier und begann zu spielen.	1854901	Ella se sentó junto al teclado y comenzó a tocar.
@@ -24468,7 +24468,7 @@
 741922	Ich lief dem Regen davon, um nicht nass zu werden.	1730900	Corrí de la lluvia para no mojarme.
 742225	Gibt es einen Frisör im Hotel?	859833	¿Hay un peluquero en el hotel?
 742226	Ich bin von deiner Arbeit sehr beeindruckt.	747632	Estoy muy impresionado con tu trabajo.
-742233	Bill nahm seinen kleinen Bruder mit in den Zoo.	339027	Bill llevó a su hermano menor al zoo.
+742233	Manuel nahm seinen kleinen Bruder mit in den Zoo.	339027	Manuel llevó a su hermano menor al zoo.
 742235	Ich habe Liz heute Morgen gesehen.	790136	He visto a Liz esta mañana.
 742235	Ich habe Liz heute Morgen gesehen.	1506684	Vi a Liz esta mañana.
 742240	Ich bin nicht so gesprächig wie du.	627837	No soy tan parlanchina como tú.
@@ -24773,7 +24773,7 @@
 752639	Ich versuchte einen Freund zu überzeugen, nicht zu heiraten.	1447350	Intenté convencer a un amigo de que no se casase.
 752661	Junge Eltern verzärteln oft ihre Kinder.	1413469	Los padres jóvenes suelen mimar a los niños.
 752784	Fröhlichkeit und Mäßigkeit sind die besten Ärzte.	8624773	La alegría y la moderación son los mejores remedios.
-752890	Bill streitet sich nie mit anderen Leuten.	1828937	Bill nunca discute con otras personas.
+752890	Manuel streitet sich nie mit anderen Leuten.	1828937	Manuel nunca discute con otras personas.
 752913	Meine Nichte ist ein ernstes Mädchen.	1349402	Mi sobrina es una niña seria.
 752916	Sie sind voneinander getrennt und können sich nicht berühren.	1349403	Ellos están separados, y no pueden tocarse.
 752920	Sie wollen sich nach 40-jähriger Ehe trennen.	1349411	Ellos se quieren separar después de 40 años de matrimonio.
@@ -25390,7 +25390,7 @@
 772908	Endlich hört die Regierung auf das Volk.	1841311	Al fin el gobierno escucha al pueblo.
 773089	Ich habe ein Haus in den Bergen.	836669	Tengo una casa en las montañas.
 773618	Kannst du auf das Fest kommen?	777236	¿Puedes venir a la fiesta?
-773646	Bill wurde von einem Einbrecher getötet.	1508400	Un ladrón mató a Bill.
+773646	Manuel wurde von einem Einbrecher getötet.	1508400	Un ladrón mató a Manuel.
 773658	Sie passt auf ihre alte Mutter auf.	556313	Ella cuida de su vieja madre.
 773752	In der Wunde hat sich Eiter gebildet.	1693787	Se ha formado pus en la herida.
 773761	Ich weiß, dass du es besser machen kannst.	1675648	Sé que lo puedes hacer mejor.
@@ -27955,7 +27955,7 @@
 911803	Wozu brauchst du einen neuen Regenschirm?	894319	¿Por qué necesitas un paraguas nuevo?
 911806	Du kannst erst mal bei mir bleiben.	743316	Puedes quedarte conmigo por ahora.
 911809	Deine Prinzipien decken sich nicht mit deinem Handeln.	861711	Tus principios no son consecuentes con tus acciones.
-911810	Bill wohnt in Strandnähe.	771934	Bill vive cerca de la playa.
+911810	Manuel wohnt in Strandnähe.	771934	Manuel vive cerca de la playa.
 911811	Ich erzählte es William, aber er glaubte mir nicht.	1337789	Se lo dije a William, pero no me creyó.
 911812	Sie ist ziemlich angefressen, weil sie keine Gehaltserhöhung bekommen hat.	534668	Ella está bastante encabronada porque no le dieron un aumento de sueldo.
 911813	Jeder hat das Recht zu sagen, was er denkt.	1623790	Todo el mundo tiene el derecho a decir lo que piensa.
@@ -29042,7 +29042,7 @@
 927977	Er war dreimal in Frankreich.	1810359	Estuvo tres veces en Francia.
 927978	Er hat lange in Island gewohnt.	746263	Ha vivido mucho tiempo en Islandia.
 927979	Ich bin drei Jahre jünger als du.	740547	Tengo tres años menos que tú.
-927982	Bill stand zeitig auf, um den ersten Zug zu nehmen.	512337	Bill se levantó temprano para coger el primer tren.
+927982	Manuel stand zeitig auf, um den ersten Zug zu nehmen.	512337	Manuel se levantó temprano para coger el primer tren.
 927984	Twitter ist ein gutes Beispiel für etwas Lächerliches.	513216	Twitter es un buen ejemplo de absurdidad.
 927987	Sie sind sehr tapfer.	588014	Usted es muy valiente.
 927987	Sie sind sehr tapfer.	1678616	Es usted muy valiente.
@@ -30431,7 +30431,7 @@
 950527	Sie machte im letzten Moment einen Rückzieher.	456674	Ella se echó atrás en el último momento.
 950539	Ist das ein Lama?	4998452	¿Es una llama?
 950541	Er war eine Woche lang krank.	854138	Él estuvo enfermo durante una semana.
-950546	Bill brachte seinen Bruder zum Zoo.	741923	Bill llevó a su hermano al zoológico.
+950546	Manuel brachte seinen Bruder zum Zoo.	741923	Manuel llevó a su hermano al zoológico.
 950552	Der Amazonas ist ein Fluss.	875834	El Amazonas es un río.
 950563	Wird er bald wieder hier sein?	699159	¿Él estará aquí pronto?
 950570	Diese Uhr kostete mich zehntausend Yen.	483281	Este reloj me costó diez mil yenes.
@@ -30735,7 +30735,7 @@
 963164	Er hat reichlich Mehl und Öl gekauft.	355036	Él compró un montón de harina y de aceite.
 963164	Er hat reichlich Mehl und Öl gekauft.	618639	Él compró mucha harina y aceite.
 963168	Natürlich wäre ich traurig, wenn er sterben würde.	856856	Ciertamente, estaré triste si muere.
-963169	Nicht nur Bill, sondern auch Mac ist verrückt nach Computern.	635940	No sólo Bill, sino también Mac es loco por los ordenadores.
+963169	Nicht nur Manuel, sondern auch Mac ist verrückt nach Computern.	635940	No sólo Manuel, sino también Mac es loco por los ordenadores.
 963170	Lasst uns Baseball spielen!	702925	¡Vamos a jugar béisbol!
 963171	Ich will keinen Schmerz mehr fühlen.	625492	Ya no quiero sentir más dolor.
 963173	Ich will keine Schmerzen mehr haben.	625492	Ya no quiero sentir más dolor.
@@ -37172,8 +37172,8 @@
 1284866	Mach dir keine Sorgen!	1284864	¡No te preocupes!
 1284866	Mach dir keine Sorgen!	1284869	¡No se preocupe!
 1284918	Ich bin sehr müde heute.	1284916	Hoy estoy muy cansada.
-1284921	Hallo, Bill! Wie geht’s?	1284923	Hola Bill, ¿qué tal?
-1284921	Hallo, Bill! Wie geht’s?	1284924	Hola Bill, ¿cómo estás?
+1284921	Hallo, Manuel! Wie geht’s?	1284923	Hola Manuel, ¿qué tal?
+1284921	Hallo, Manuel! Wie geht’s?	1284924	Hola Manuel, ¿cómo estás?
 1284964	Ich bin gestern angekommen.	1284965	Llegué ayer.
 1285010	Er ist ein gestandener Mann.	943955	Él es un hombre hecho y derecho.
 1285017	Sie hat viel Talent.	1142209	Ella tiene mucho talento.
@@ -37277,7 +37277,7 @@
 1286534	Bald blühen die Maiglöckchen.	3939540	Pronto florecerá el muguete.
 1286537	Es kam niemand.	2859	Nadie vino.
 1286537	Es kam niemand.	569321	No vino nadie.
-1286538	Bill wird wohl gewinnen, nicht wahr?	1675581	Bill va a ganar, ¿no cierto?
+1286538	Manuel wird wohl gewinnen, nicht wahr?	1675581	Manuel va a ganar, ¿no cierto?
 1286552	Er hat mich angelogen.	330082	Él me mintió.
 1286557	Machst du das jeden Tag?	3215059	¿Haces esto todos los días?
 1286578	Mein Vater und meine Mutter saßen unter einem Baum.	1862107	Mi padre y mi madre estaban sentados bajo un árbol.
@@ -41272,7 +41272,7 @@
 1442302	So sei es!	1139991	¡Así sea!
 1442302	So sei es!	1442305	¡Amén!
 1442304	Er erweckt mein Mitleid.	1600531	Él despierta compasión en mí.
-1442311	Bill spricht etwas Japanisch.	1442317	Bill habla un poco de japonés.
+1442311	Manuel spricht etwas Japanisch.	1442317	Manuel habla un poco de japonés.
 1442316	Haben Sie Reis?	1442322	¿Tienen arroz?
 1442316	Haben Sie Reis?	5846897	¿Tiene arroz?
 1442316	Haben Sie Reis?	10000885	¿Usted tiene arroz?
@@ -49195,7 +49195,7 @@
 1732402	Wann reist ihr nach Paris?	1732407	¿Cuándo viajarán a París?
 1732403	Wann reisen Sie nach Paris?	1732407	¿Cuándo viajarán a París?
 1732403	Wann reisen Sie nach Paris?	1732408	¿Cuándo viajará usted a París?
-1732409	Willi und Johanna teilten die Süßigkeiten unter sich auf.	2141303	Bill y Joan se repartieron los dulces entre ellos.
+1732409	Manuel und Johanna teilten die Süßigkeiten unter sich auf.	2141303	Manuel y Joan se repartieron los dulces entre ellos.
 1732411	Vielleicht ist ihr etwas zugestoßen.	1268847	Algo debió haberle pasado a ella.
 1732412	Ihr könnte etwas zugestoßen sein.	1268847	Algo debió haberle pasado a ella.
 1732413	Vielleicht hat er sich verirrt.	1732428	Él tal vez se perdió.
@@ -49677,7 +49677,7 @@
 1750112	Ich liebe dieses Spiel.	1476900	Adoro este juego.
 1750157	Er wurde zu gemeinnütziger Arbeit verurteilt.	1750179	Él fue condenado a realizar servicios comunitarios.
 1750160	Du bringst mich zum Erröten.	1750178	Me haces sonrojar.
-1750168	Mein Vater lässt mich nicht mit Willi ausgehen.	533207	Mi papá no me permite salir con Bill.
+1750168	Mein Vater lässt mich nicht mit Manuel ausgehen.	533207	Mi papá no me permite salir con Manuel.
 1750218	Bis jetzt war alles vorhersehbar.	1750217	Hasta ahora todo ha sido previsible.
 1750233	Arbeite nicht. Spiele!	1751204	No trabajes, ¡juega!
 1750570	Der Prinz studierte Rhetorik, Arithmetik, Astronomie und Musik.	1751199	Él príncipe estudió retórica, aritmética, astronomía y música.
@@ -50478,7 +50478,7 @@
 1775460	Ich dachte erst, er wäre dein Bruder.	1589916	Al principio pensé que él era tu hermano.
 1775484	Warum sieht sie so traurig aus?	1655967	¿Por qué ella se ve tan triste?
 1775511	Der Bus hielt, um Fahrgäste aufzunehmen.	1783213	El bus paró para recoger pasajeros.
-1775565	Willi ist der Klügere der beiden Brüder.	1775569	Bill es el más inteligente de los dos hermanos.
+1775565	Manuel ist der Klügere der beiden Brüder.	1775569	Manuel es el más inteligente de los dos hermanos.
 1775567	Weißt du, wo Manuel herkommt?	1614363	¿Sabes de dónde es Manuel?
 1776289	Lieber faul als dumm.	1783404	Mejor flojo que tonto.
 1776292	Sie braucht jetzt ihren Mittagsschlaf.	1783405	Ella necesita ahora su siesta de mediodía.
@@ -50541,7 +50541,7 @@
 1779918	Weißt du, wann Manuel seinen Führerschein erhielt?	1614359	¿Sabes cuándo consiguió Manuel su licencia de conducir?
 1779923	Herr Braun hat vier Kinder.	1876047	El señor Brown tiene cuatro hijos.
 1779925	Eulen können im Dunkeln sehen.	1559561	Los búhos pueden ver en la oscuridad.
-1779928	Willi geht jeden zweiten Tag angeln.	3195863	Willi va a pescar una vez cada dos días.
+1779928	Manuel geht jeden zweiten Tag angeln.	3195863	Manuel va a pescar una vez cada dos días.
 1779929	Er geht alle zwei Tage angeln.	1905925	Él sale a pescar día por medio.
 1779933	Herr Braun ist unser Englischlehrer.	2002661	El señor Brown es nuestro profesor de inglés.
 1779937	Es regnet fast überhaupt nicht.	967575	Apenas llueve.
@@ -51202,7 +51202,7 @@
 1797042	Sie sind dabei, ein Loch zu graben.	1797013	Están cavando un agujero.
 1797049	Hast du jemals ein Auto verkauft?	1726780	¿Jamás has vendido un auto?
 1797049	Hast du jemals ein Auto verkauft?	1797011	¿Alguna vez has vendido un coche?
-1797051	Bill brachte mir das Buch.	1797008	Bill me trajo el libro.
+1797051	Manuel brachte mir das Buch.	1797008	Manuel me trajo el libro.
 1797057	Laura verhielt sich immer so, als wenn sie reich wäre.	1797004	Laura siempre se comportaba como si fuera rica.
 1797081	Lass die Suppe nicht kalt werden!	1797084	¡No dejes que se enfríe la sopa!
 1797089	Was hältst du von Reggae-Musik?	1797096	¿Qué opinas de la música reggae?
@@ -51714,8 +51714,8 @@
 1809669	Das stimmt, nicht wahr?	1810000	Es cierto, ¿no?
 1809766	Manuel und Mary wollen beide gehen.	1833801	Tanto Manuel como Mary quieren ir.
 1809778	Manuel und Maria wollen beide gehen.	1809997	Tanto Manuel como Maria quieren ir.
-1809824	Bill weinte stundenlang.	1485090	Bill lloró por horas.
-1809824	Bill weinte stundenlang.	1809812	Bill estuvo llorando durante horas.
+1809824	Manuel weinte stundenlang.	1485090	Manuel lloró por horas.
+1809824	Manuel weinte stundenlang.	1809812	Manuel estuvo llorando durante horas.
 1809842	Wir sind miteinander verheiratet.	1833808	Nos hemos casado.
 1809873	Geh an die Arbeit zurück!	1809991	¡Vuelve al trabajo!
 1809874	Rom ist berühmt für seine antike Architektur.	1340337	Roma es famosa por su antigua arquitectura.
@@ -53222,7 +53222,7 @@
 1852703	Dieses Buch war einfach.	532610	Este libro era fácil.
 1852731	Die Anzahl privater Universitäten ist gestiegen.	1737339	El número de universidades privadas ha crecido.
 1852792	Sieht so aus, als ob Manuel das Rennen gewonnen hat.	401596	Parece que Manuel ganó la carrera.
-1852796	Bill hat den Brief geschrieben.	580864	Bill escribió la carta.
+1852796	Manuel hat den Brief geschrieben.	580864	Manuel escribió la carta.
 1852847	Ich muss einen neuen Anzug für meinen Sohn kaufen.	732613	Tengo que comprar un nuevo traje para mi hijo.
 1852849	Chris schwang sein Schwert.	582767	Chris blandió su espada.
 1852870	Ich habe keine der Sprachen studiert.	1852933	No he estudiado ninguna de esas lenguas.
@@ -56563,7 +56563,7 @@
 1990991	Kaufe vier dicke Kartoffeln für mich.	1580326	Cómprame cuatro papas grandes.
 1990993	Kaufe mir vier dicke Kartoffeln.	1580326	Cómprame cuatro papas grandes.
 1991005	Was du auch willst, ich werde es dir kaufen.	1991835	Sea lo que sea que quieras, te lo compraré.
-1991010	Bill sprach ein erstaunlich flüssiges Japanisch.	1991834	Bill habló un japonés sorprendentemente fluido.
+1991010	Manuel sprach ein erstaunlich flüssiges Japanisch.	1991834	Manuel habló un japonés sorprendentemente fluido.
 1991013	Das hätte ich wirklich wissen müssen.	1991832	Realmente debí haber sabido eso.
 1991022	Eines Tages werde ich in dein Land kommen.	1433844	Algún día iré a tu país.
 1991023	Er ähnelte einem Affen.	1991831	Él se parecía a un mono.
@@ -58181,8 +58181,8 @@
 2118326	Ich habe keine Fotos gemacht.	1271538	No hice ninguna foto.
 2118327	Ich habe nicht fotografiert.	1271538	No hice ninguna foto.
 2118554	Er war drei Minuten unter Wasser.	2849170	Él estuvo tres minutos bajo el agua.
-2118589	Ich sah Bill gestern in der Bücherei.	2688463	Ayer vi a Bill en la biblioteca.
-2118590	Ich sah Bill gestern in der Bibliothek.	2688463	Ayer vi a Bill en la biblioteca.
+2118589	Ich sah Manuel gestern in der Bücherei.	2688463	Ayer vi a Manuel en la biblioteca.
+2118590	Ich sah Manuel gestern in der Bibliothek.	2688463	Ayer vi a Manuel en la biblioteca.
 2118594	Lieber ein bekannter Säufer sein als ein anonymer Alkoholiker.	1371289	Es mejor ser un borracho famoso que un alcohólico anónimo.
 2118614	Die Wahrheit zu sagen ist viel einfacher als zu lügen.	1736804	Decir la verdad es mucho más fácil que mentir.
 2118764	Es ist kleiner als Tokio.	2132135	Es más pequeño que Tokio.
@@ -59862,7 +59862,7 @@
 2229003	Ich wollte Manuels Gesicht nicht sehen.	2184689	No quise verle la cara a Manuel.
 2229199	Jene Kamera gehört mir.	2229799	Aquella cámara es mía.
 2229199	Jene Kamera gehört mir.	2852402	Esa cámara me pertenece.
-2229210	Bill spricht ein wenig Japanisch.	1442317	Bill habla un poco de japonés.
+2229210	Manuel spricht ein wenig Japanisch.	1442317	Manuel habla un poco de japonés.
 2229215	Ich finde meine Handschuhe nicht.	1491471	No encuentro mis guantes.
 2229273	Auch schöne Äpfel können sauer sein.	2229788	También las manzanas bonitas pueden estar ácidas.
 2229274	Ich will außer Landes reisen.	2229787	Quiero viajar al extranjero.
@@ -63157,7 +63157,7 @@
 2507003	Rund um den Teich stehen zahlreiche Bäume.	1413704	Hay muchos árboles alrededor de la laguna.
 2507016	George ist fünf Jahre älter als ich.	1272519	George es cinco años mayor que yo.
 2507086	Manuel hat Maria betrunken gemacht.	2429179	Manuel emborrachó a Mary.
-2507302	Ein Dieb tötete Bill.	1508400	Un ladrón mató a Bill.
+2507302	Ein Dieb tötete Manuel.	1508400	Un ladrón mató a Manuel.
 2507871	Ich schwöre dir, das nie wieder zu tun!	966249	Te juro que jamás lo volveré a hacer.
 2508004	Wie ist der Titel des Buches?	1225502	¿Cuál es el título del libro?
 2508055	Das Billige kann teuer kommen.	2508023	Lo barato puede salir caro.
@@ -65889,7 +65889,7 @@
 2856319	Manuel beklagt sich nahezu nie über etwas.	2711139	Manuel casi nunca se queja de nada.
 2856397	Ihr seid alle Rassisten.	2916696	Todos ustedes son racistas.
 2856451	Ich möchte wissen, warum Manuel nicht hier ist.	2856394	Quiero saber por qué Manuel no está aquí.
-2856462	Den Brief hat Bill geschrieben.	2856496	La carta la ha escrito Bill.
+2856462	Den Brief hat Manuel geschrieben.	2856496	La carta la ha escrito Manuel.
 2856487	Ich hatte große Schwierigkeiten.	2856495	Tuve grandes dificultades.
 2856501	Ich muss jetzt mit Manuel sprechen.	2452867	Ahora tengo que hablar con Manuel.
 2856735	Sie schläft auf dem Bauch.	2807611	Ella duerme boca abajo.
@@ -68060,7 +68060,7 @@
 3174521	Hast du den Film gesehen?	5070448	¿Viste la película?
 3174596	Es dauert nur ein paar Minuten.	3174606	Solo tomará un par de minutos.
 3174893	Der Tod hat keinen Kalender.	5019764	La muerte no tiene fecha.
-3174962	Manuel ist schon da, doch Bill ist noch nicht gekommen.	3177194	Manuel ya está aquí, pero Bill todavía no ha llegado.
+3174962	Manuel ist schon da, doch Manuel ist noch nicht gekommen.	3177194	Manuel ya está aquí, pero Manuel todavía no ha llegado.
 3174974	Wie macht ihr am liebsten Forelle?	3177193	¿Cómo os gusta más preparar la trucha?
 3175354	Ich werde einige Freiwillige benötigen.	3177192	Voy a necesitar algunos voluntarios.
 3175801	Der Patient kann jeden Moment sterben.	3175778	El paciente puede morir en cualquier momento.
@@ -75046,7 +75046,7 @@
 5310445	Wie viele Male pro Monat wäschst du ungefähr dein Auto?	724012	¿Aproximadamente cuántas veces al mes lavas tu coche?
 5310449	Ich bestätigte die Bestellung.	818723	Confirmé el pedido.
 5310456	Die Kinder möchten Obstsaft.	1352056	Los niños quieren zumo de frutas.
-5310457	Bill und sein kleiner Bruder sehen sich nicht ähnlich.	2072201	Bill y su hermano más jóven no se parecen.
+5310457	Manuel und sein kleiner Bruder sehen sich nicht ähnlich.	2072201	Manuel y su hermano más jóven no se parecen.
 5310458	Er bereist das ganze Land.	2072284	Él viajó por todo el país.
 5310460	Ich bitte Sie um Ihr Verständnis.	2473731	Ruego su comprensión.
 5310472	Warum nimmst du nicht hier Platz?	4463208	¿Por qué no te sientas aquí?
@@ -75632,7 +75632,7 @@
 5709555	Das Haus wurde günstig verkauft.	5713637	La casa fue vendida a buen precio.
 5709562	Er ist sexy.	5713623	Él es sexy.
 5709563	Es riecht hier so seltsam.	5713626	Aquí huele tan raro.
-5709748	Bill ist auf dem Weg nach New York.	5713621	Bill está de camino a Nueva York.
+5709748	Manuel ist auf dem Weg nach New York.	5713621	Manuel está de camino a Nueva York.
 5709772	Ich esse Frühstück um sieben Uhr.	5713618	Tomo el desayuno a las siete.
 5709805	Bitte erzähle mir die Geschichte noch einmal.	5713610	Por favor, cuéntame la historia otra vez.
 5709812	Das war der schönste Tag meines Lebens.	5713611	Ese fue el día más bonito de mi vida.
@@ -84723,7 +84723,7 @@
 10939697	Ich glaube, Manuel hatte Heimweh.	10940955	Creo que Manuel extrañaba su hogar.
 10941058	Die ganze Welt weiß das.	531797	Todo el mundo lo sabe.
 10942717	Danke! Ich habe es mir schon gedacht.	10945930	¡Gracias! Ya había pensado en eso.
-10943278	Bill ist in Japan.	10943279	Bill está en Japón.
+10943278	Manuel ist in Japan.	10943279	Manuel está en Japón.
 10943445	Warum machst du keine Siesta?	10929202	¿Por qué no tomas una siesta?
 10944367	Manuel isst mit offenem und spricht mit vollem Mund.	10944266	Manuel come con la boca abierta y habla con la boca llena.
 10945950	Danke! Ich habe schon daran gedacht.	10945930	¡Gracias! Ya había pensado en eso.
@@ -88555,7 +88555,7 @@
 604568	Ja, aber es ist nicht nötig, bis zum Ende zu bleiben.	339396	Sí, pero no es necesario quedarse hasta el final.
 606221	Wenn Sie mit mir sprechen möchten, rufen Sie mich bitte an.	1286319	Si quiere hablar conmigo, por favor llámeme.
 606222	Wenn du mit mir sprechen willst — bitte rufe mich an.	1286320	Si quieres hablar conmigo, por favor llámame.
-606842	Bill ist früh aufgestanden um den ersten Zug nicht zu verpassen.	2746896	Bill se levantó pronto para no perder el primer tren.
+606842	Manuel ist früh aufgestanden um den ersten Zug nicht zu verpassen.	2746896	Manuel se levantó pronto para no perder el primer tren.
 607451	Seine ökologische Verantwortung anerkennend startet der Automobilhersteller die Serienproduktion von Flößen.	607472	Reconociendo su responsabilidad ecológica, el constructor automovilístico lanza la fabricación de balsas en serie.
 607458	Da ist ein Mann an der Tür, der dich sehen will.	733798	Hay un hombre junto a la puerta que quiere verte.
 609001	Wenn ich groß bin, würde ich gerne ein großer Wissenschaftler sein.	358474	Cuando crezca me gustaría ser un gran científico.
@@ -89262,7 +89262,7 @@
 1286197	Ohne Pass kommt es nicht in Frage, das Land zu verlassen.	2420339	Sin pasaporte no es posible salir del país.
 1286205	Schwarzer Reis schmeckt nach Tinte, weil er mit Tintenfischtinte gemacht wird.	722335	El arroz negro sabe a tinta porque está hecho con tinta de calamar.
 1286237	Sein Plan ist es, eine Brücke über diesen Fluss zu bauen.	1786911	Su plan es construir un puente por sobre ese río.
-1290233	Bill und John treffen sich gerne einmal im Monat zum Quatschen.	1669492	A Bill y a John les gusta juntarse a conversar una vez al mes.
+1290233	Manuel und John treffen sich gerne einmal im Monat zum Quatschen.	1669492	A Manuel y a John les gusta juntarse a conversar una vez al mes.
 1290865	Ich habe dich den ganzen Tag gesucht, aber dich nirgendwo gefunden.	1290866	Te he buscado todo el día, pero no te encontré en ninguna parte.
 1292231	Ich mag es, zu tanzen und in angenehmer Gesellschaft zu reisen.	1659049	Me gusta bailar y viajar en buena compañía.
 1292416	Das Pferd, das man nicht haben kann, hat immer einen Fehler.	7004547	Caballo ajeno siempre tiene un defecto.
@@ -89485,8 +89485,8 @@
 1579582	Willst du mal hören, was diese Person über dich gesagt hat?	1748362	¿Quieres oír lo que esa persona dijo sobre ti?
 1581374	Ich habe im Kindergarten nicht alles gelernt, was ich wissen muss.	1614478	No aprendí todo lo que necesitaba saber en el jardín infantil.
 1584884	Der Anteil von Proteinen in der Pflanzenzelle beträgt ungefähr vier Prozent.	1390098	El porcentaje de proteínas en la célula vegetal es de aproximadamente el cuatro por ciento.
-1585160	"Weißt du etwas über Bill?" "Nein, was ist mit ihm passiert?"	1056280	"¿Sabés algo de Bill?" "No, ¿qué le pasó?"
-1585160	"Weißt du etwas über Bill?" "Nein, was ist mit ihm passiert?"	2257149	"¿Sabes algo de Bill?" "No, ¿qué le pasó?"
+1585160	"Weißt du etwas über Manuel?" "Nein, was ist mit ihm passiert?"	1056280	"¿Sabés algo de Manuel?" "No, ¿qué le pasó?"
+1585160	"Weißt du etwas über Manuel?" "Nein, was ist mit ihm passiert?"	2257149	"¿Sabes algo de Manuel?" "No, ¿qué le pasó?"
 1585888	Die Frau, die er für seine Tante hielt, war eine Fremde.	1793297	La mujer que él pensó que era su tía era una extraña.
 1585903	Alle waren verkleidet, darum könnte ich nicht sagen, wer wer war.	2079724	Todos estaban disfrazados, así que no podía decir quién era quien.
 1586691	Ich habe versucht ihn zu erreichen, aber die Leitung war besetzt.	1543212	Traté de llamarlo, pero la línea estaba ocupada.
@@ -90418,7 +90418,7 @@
 3717467	„In welcher Sprache schreibt man dem Weihnachtsmann?“ – „In Englisch natürlich.“	3718791	"¿En qué idioma se le escribe al viejo pascuero?" "En inglés, por supuesto."
 3748911	Was ist das da mit dem grünen Dach für ein Gebäude?	12929450	¿Qué clase de edificio es ese de allí con el tejado verde?
 3758414	Ich glaube nicht, dass irgendjemand bemerkt hat, was wir getan haben.	3762309	No creo que nadie notara lo que hicimos.
-3760536	Bill tauchte in den Fluss, um den ertrinkenden Jungen zu retten.	1606480	Bill se zambulló en el río para salvar al chico que se ahogaba.
+3760536	Manuel tauchte in den Fluss, um den ertrinkenden Jungen zu retten.	1606480	Manuel se zambulló en el río para salvar al chico que se ahogaba.
 3760568	Auf dem Markt kauften wir Pfirsiche, Artischocken, Zucchini, Erdbeeren und Auberginen.	3760567	En el mercado compramos melocotones, alcachofas, calabacines, fresas y berenjenas.
 3760581	Man nimmt an, das Möwen bis zu 40 Jahre alt werden.	986122	Se presume que las gaviotas pueden vivir hasta 40 años.
 3760583	Eine Möwe schwebt über dem Meer, so ungreifbar wie ein Traum.	3435108	Una gaviota se cierne sobre el mar, tan intangible como un sueño.
