@@ -2232,7 +2232,7 @@
 353547	Wir gehen nach Hause.	3712941	Estamos yendo a casa.
 353548	Wir wollen ein Auto.	1247705	Nosotros queremos un auto.
 353553	Wir waren alle müde.	720111	Estábamos todos cansados.
-353565	Laura hilft uns morgen.	1086934	Laura nos ayudará mañana.
+353565	Laura hilft uns morgen.	1187277	Laura nos ayudará mañana.
 353565	Laura hilft uns morgen.	1187277	Laura nos ayudará mañana.
 353566	Wir hören dich oft singen.	769738	A menudo te oímos cantar.
 353567	Wir haben genug Wasser.	1277022	Tenemos suficiente agua.
@@ -7339,6 +7339,7 @@
 590717	Er hat gestern viel getrunken.	919030	Ayer bebió mucho.
 590967	Kennen Sie ihn?	573169	¿Le conoce?
 590967	Kennen Sie ihn?	573170	¿Ustedes le conocen?
+591082	Laura war eine berühmte Opernsängerin.	340572	Laura fue una famosa cantante de ópera.
 591095	Wo lebt er?	589788	¿Dónde vive él?
 591220	Einen Augenblick, bitte.	853321	Espera un momento, por favor.
 591227	Sie hat kurzes Haar.	1207497	Ella tiene el cabello corto.
@@ -7722,7 +7723,7 @@
 608501	Schöne Vögel fliegen über Bäumen.	1469831	Bellas aves vuelan por sobre los árboles.
 608503	Meine Tochter bekam einen Schnupfen.	1192351	Mi hija se agarró un resfriado.
 608515	Ich mag ihr Gesicht nicht.	1403377	No me gusta su cara.
-608606	Manuel raucht nicht mehr.	1682771	Manuel ya no fuma.
+608606	Manuel raucht nicht mehr.	2234390	Manuel ya no fuma.
 608636	Das wirst du bereuen!	727786	¡Te arrepentirás!
 608636	Das wirst du bereuen!	994453	¡Te arrepentirás de eso!
 608636	Das wirst du bereuen!	1286141	¡Ya te arrepentirás de ello!
@@ -12146,7 +12147,7 @@
 860322	Ich gehe zurück.	1481663	Voy de regreso.
 860323	Ich möchte einen Kamillentee.	2177546	Quiero un té de manzanilla.
 860325	Michael Jackson ist gestorben.	872779	Michael Jackson ha muerto.
-860336	Manuel ist mein bester Freund.	401580	Manuel es mi mejor amigo.
+860336	Manuel ist mein bester Freund.	1524568	Manuel es mi mejor amigo.
 860390	Sie ist seine wahre Mutter.	1339443	Ella es su madre real.
 860390	Sie ist seine wahre Mutter.	1435801	Ella es su verdadera madre.
 860397	Er ist achtzehn Monate alt.	434927	Él tiene dieciocho meses.
@@ -12823,8 +12824,6 @@
 910988	Sie hat ihm vergeben.	1425735	Ella lo perdonó.
 910988	Sie hat ihm vergeben.	5035093	Lo perdonó.
 911005	Sie gab ihm eine Massage.	1036512	Ella le dio un masaje.
-911007	Sie gab ihm ein Buch.	892103	Ella le entregó un libro.
-911007	Sie gab ihm ein Buch.	1330801	Ella le dio un libro.
 89	Ich weiß einfach nicht, was ich sagen soll.	2493	Simplemente no sé qué decir...
 93	Ich weiß nicht, ob ich Zeit dazu habe.	2497	No sé si tengo tiempo.
 93	Ich weiß nicht, ob ich Zeit dazu habe.	981556	No sé si tengo tiempo para esto.
@@ -20528,7 +20527,7 @@
 589635	Mama, kannst du mir eine Gute-Nacht-Geschichte vorlesen?	2033210	Mamá, ¿me puedes leer un cuento de buenas noches?
 589655	Seine schöne Frau ist sein Stolz.	859864	Su bella esposa es su orgullo.
 589684	Ich kann die Arbeit nicht alleine machen.	589689	No puedo hacer el trabajo solo.
-589845	Laura ist so groß wie Manuel.	1498831	Laura es tan alta como Manuel.
+589845	Laura ist so groß wie Manuel.	1410031	Laura es tan alta como Manuel.
 589859	Meine Schwester zeigte mir eine neue Uhr.	1923532	Mi hermana me mostró un reloj nuevo.
 589861	Nur ein paar Leute sind gestern zu der Sitzung gekommen.	1937194	Solo unas pocas personas vinieron ayer a la reunión.
 589876	Sie haben die Angelegenheit intern geregelt.	1754009	Ellos trataron el asunto entre ellos.
@@ -20584,7 +20583,6 @@
 591017	Es ist das beste Buch, das ich je gelesen habe.	1866643	Es el mejor libro que haya leído.
 591066	Shakespeare verglich die Welt mit einer Bühne.	1718562	Shakespeare comparaba al mundo con un escenario.
 591078	Ruf mich an, wann du willst.	690172	Llámame cuando quieras.
-591082	Laura war eine berühmte Opernsängerin.	340572	Laura fue una famosa cantante de ópera.
 591084	Schwimmen ist gut für die Gesundheit.	866043	Nadar es bueno para la salud.
 591216	Er wartete bis zehn Uhr auf ihn.	1859684	Él lo esperó hasta las diez.
 591221	Du erinnerst mich an meine Mutter.	1355316	Me recuerdas a mi madre.
@@ -27903,6 +27901,8 @@
 910999	Sie gab ihm etwas Kaltes zu trinken.	1370009	Ella le dio algo frío para beber.
 911002	Sie hat ihm all das Geld gegeben, was sie hatte.	964629	Ella le ha dado todo el dinero que tenía.
 911004	Sie gab ihm ein Stück Papier.	1425728	Ella le dio un trozo de papel.
+911007	Sie gab ihm ein Buch.	892103	Ella le entregó un libro.
+911007	Sie gab ihm ein Buch.	1330801	Ella le dio un libro.
 911008	Sie hat einen Platz für ihn gefunden.	1425731	Ella le encontró un asiento.
 911009	Sie hat vergessen, ihm zu schreiben.	1425732	Ella olvidó escribirle.
 911009	Sie hat vergessen, ihm zu schreiben.	1425733	Ella se olvidó de escribirle.
@@ -42795,7 +42795,7 @@
 1513748	Sie gab vor, nichts darüber zu wissen.	1513868	Ella fingió no saber nada al respecto.
 1513751	Wen magst du lieber, Laura oder Anna?	2188308	¿Quién te gusta más, Laura o Anna?
 1513759	Der Mensch ist ein egozentrisches Tier.	1247906	El humano es un animal egocéntrico.
-1513762	Laura ist genauso groß wie Manuel.	1498831	Laura es tan alta como Manuel.
+1513762	Laura ist genauso groß wie Manuel.	1410031	Laura es tan alta como Manuel.
 1513772	Der Dieb rannte weg, als er einen Polizisten sah.	1078552	El ladrón huyó cuando vio un policía.
 1513774	Laura ist beliebter als Judy.	2005808	Laura es más popular que Judy.
 1513775	Ich mag Laura mehr.	1703043	Me gusta más Laura.
