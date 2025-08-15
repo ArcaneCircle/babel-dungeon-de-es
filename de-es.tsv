@@ -821,6 +821,8 @@
 435970	Ich bin Anton.	435824	Yo soy Antonio.
 436005	Zeichne einen Kreis.	1213951	Traza un círculo.
 437118	Einigkeit macht stark.	514265	La unión hace la fuerza.
+437396	Ich niese oft.	631780	Estornudo mucho.
+437396	Ich niese oft.	2139126	Estornudo con frecuencia.
 77	Lass uns etwas versuchen!	2481	¡Intentemos algo!
 77	Lass uns etwas versuchen!	4825795	¡Déjanos intentar algo!
 78	Ich muss schlafen gehen.	2482	Tengo que irme a dormir.
@@ -4800,8 +4802,6 @@
 436000	Wann kommst du zurück?	872275	¿Cuándo volverás?
 436061	Er flüsterte mir etwas zu.	867053	Él me susurró algo.
 437390	Er schlief tief und fest.	1363598	Él estaba profundamente dormido.
-437396	Ich niese oft.	631780	Estornudo mucho.
-437396	Ich niese oft.	2139126	Estornudo con frecuencia.
 437410	Wir essen Suppe mit Löffeln.	3111506	Nosotros tomamos sopa con cuchara.
 437480	Sie ist in Manuel verliebt.	922685	Ella está enamorada de Manuel.
 437484	Wählen heißt verzichten.	1619924	Elegir significa renunciar.
@@ -12827,6 +12827,7 @@
 911007	Sie gab ihm ein Buch.	892103	Ella le entregó un libro.
 911007	Sie gab ihm ein Buch.	1330801	Ella le dio un libro.
 911014	Sie hört ihm nicht zu.	1425723	Ella no lo escucha.
+911167	Ich muss früh raus.	6988761	Debo levantarme temprano.
 89	Ich weiß einfach nicht, was ich sagen soll.	2493	Simplemente no sé qué decir...
 93	Ich weiß nicht, ob ich Zeit dazu habe.	2497	No sé si tengo tiempo.
 93	Ich weiß nicht, ob ich Zeit dazu habe.	981556	No sé si tengo tiempo para esto.
@@ -27915,7 +27916,6 @@
 911151	Meine Erwartungen an dieses Restaurant wurden enttäuscht.	970031	Este restaurante no cumplió mis expectativas.
 911155	Mal sehen, ob unsere Autos noch genügend Benzin haben.	718788	Vamos a ver si nuestros coches tienen suficiente gasolina.
 911156	Uns ging mitten in der Wüste das Benzin aus.	864410	Nos quedamos sin gasolina en mitad del desierto.
-911167	Ich muss früh raus.	6988761	Debo levantarme temprano.
 911193	Unser Auto hatte mitten auf der Straße eine Panne.	2457478	Nuestro auto quedó en pana en medio de la calle.
 911216	In seiner Garage parken zwei Autos.	1999783	Hay dos autos en su cochera.
 911342	Vögel fliegen in den Süden, wenn es Winter wird.	1803686	Los pájaros vuelan al sur en el invierno.
@@ -47929,7 +47929,6 @@
 1703392	Alle revolutionären Ideen sind einfach.	2099573	Todas las ideas revolucionarias son sencillas.
 1703396	Das ist eine sehr einfache Idee.	2314716	Es una idea muy sencilla.
 1703398	Maria wurde von Piraten entführt.	1394297	Maria fue secuestrada por piratas.
-1703398	Maria wurde von Piraten entführt.	9432585	Maria fue secuestrada por piratas.
 1703428	Da ist nichts, was man fürchten muss.	1704897	No hay nada de qué asustarse.
 1703462	Sie haben nichts zu essen.	1198053	Ellos no tienen nada para comer.
 1703589	Es gibt keinen Weg zur Liebe. Liebe ist der Weg.	2301203	No existe un camino hacia el amor. El amor es el camino.
@@ -51702,7 +51701,6 @@
 1809638	Mit jedem Seufzer wirst du älter.	1809627	Con cada suspiro te haces más viejo.
 1809669	Das stimmt, nicht wahr?	1810000	Es cierto, ¿no?
 1809766	Manuel und Maria wollen beide gehen.	1833801	Tanto Manuel como Maria quieren ir.
-1809778	Manuel und Maria wollen beide gehen.	1809997	Tanto Manuel como Maria quieren ir.
 1809824	Manuel weinte stundenlang.	1485090	Manuel lloró por horas.
 1809824	Manuel weinte stundenlang.	1809812	Manuel estuvo llorando durante horas.
 1809842	Wir sind miteinander verheiratet.	1833808	Nos hemos casado.
@@ -65595,7 +65593,6 @@
 2818874	Geister können von Menschen Besitz ergreifen.	2818871	Los fantasmas pueden poseer personas.
 2818912	Manuel hat Maria beobachtet.	2819069	Manuel observó a Maria.
 2818913	Ich habe Maria einen Brief geschrieben.	2419049	Le escribí una carta a Maria.
-2818913	Ich habe Maria einen Brief geschrieben.	5567113	Le escribí una carta a Maria.
 2818940	Was machen sie da?	2818949	¿Qué hacen allí?
 2818974	Schmeckt es nicht gut?	2819065	¿No está bueno?
 2818979	In dieser Firma wird von Montag bis Sonntag gearbeitet.	1039750	En esta empresa se trabaja de lunes a domingo.
@@ -67403,6 +67400,9 @@
 3075571	Einverstanden, aber nur unter einer Bedingung.	3098096	De acuerdo, pero solo con una condición.
 3075585	Ich weiß, wie alt Manuel ist.	2120361	Sé cuántos años tiene Manuel.
 3075958	Maria ist schön.	3098094	Maria es guapa.
+3075958	Maria ist schön.	5015713	Maria es linda.
+3075958	Maria ist schön.	5015714	Maria es bella.
+3075958	Maria ist schön.	2154841	Maria es hermosa.
 3075971	Bist du am Freitagnachmittag frei?	2255921	¿Estás libre el viernes por la tarde?
 3075984	Jeder weiß, dass Bienen Honig trinken.	1361014	Todos saben que las abejas beben miel.
 3076039	Ich verkaufe ein neues Auto.	2924770	Vendo un auto nuevo.
@@ -71022,9 +71022,6 @@
 3854489	Sie ist nicht mehr hier.	5139527	No está más aquí.
 3854791	Es scheint, dass er noch am Leben ist.	10490879	Parece que sigue vivo.
 3854794	Ich will mit dem Zug reisen.	5019735	Quiero viajar en tren.
-3854796	Maria ist schön.	5015713	Maria es linda.
-3854796	Maria ist schön.	5015714	Maria es bella.
-3854796	Maria ist schön.	2154841	Maria es hermosa.
 3855259	Er war erschöpft und legte sich sofort in sein Bett.	5117393	Estaba exhausto y se recostó inmediatamente en la cama.
 3855392	Ich vertraue dir nicht mehr.	3855830	Ya no confío en ti.
 3855400	Ich vertraue euch nicht mehr.	3855828	Ya no confío en vosotros.
@@ -76794,7 +76791,6 @@
 6463822	Hat Maria ihre Meinung geändert?	6463869	¿Maria cambió de opinión?
 6463825	Maria sagt, dass Manuel sie geküsst habe.	6463865	Maria dice que Manuel la besó.
 6463834	Dies ist ein Bild von meinem Wagen.	6463862	Esta es una foto de mi auto.
-6464725	Ich heiße Manuel.	12721205	Me llamo Manuel.
 6464727	Muriel ist zwanzig Jahre alt.	10145059	Muriel tiene 20 años.
 6464867	Manuel hat schon seit einer Woche nicht mehr gebadet.	12021685	Hace ya una semana que Manuel no se baña.
 6469095	Ich glaube nicht, dass Manuel sich an mich erinnert.	10028263	Yo no creo que Manuel se acuerde de mí.
@@ -80253,7 +80249,6 @@
 8296068	Esst ihr Reis?	8297331	¿Estás comiendo arroz?
 8296080	Manuel war ein sensibles Kind.	8297328	Manuel era un niño sensible.
 8296081	Manuel und Maria spielen jeden Tag Tennis.	8296148	Manuel y Maria juegan al tenis todos los días.
-8296081	Manuel und Maria spielen jeden Tag Tennis.	10879744	Manuel y Maria juegan al tenis todos los días.
 8296082	Bist du blöd oder unfähig?	8296147	¿Eres estúpido o incompetente?
 8296083	Ich bin ein sehr sensibler und emotionaler Mensch.	8296146	Soy una persona muy sensible y emocional.
 8296103	Kaffee ist gesünder, als viele denken.	8296144	El café es más saludable de lo que mucha gente piensa.
