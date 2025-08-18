@@ -51,13 +51,15 @@ def main() -> None:
             id = int(row[0])
             sentences_ids.add(id)
             sentence = row[1]
-            if sentence not in sentences or sentences[sentence] > id:
+            if sentences.get(sentence, id + 1) > id:
                 sentences[sentence] = id
             mlist = meanings.setdefault(sentence, [])
             meaning = row[3]
             if meaning not in mlist:
                 mlist.append(meaning)
-                meanings_ids[meaning] = int(row[2])
+            mid = int(row[2])
+            if meanings_ids.get(meaning, mid + 1) > mid:
+                meanings_ids[meaning] = mid
 
     print(f"TOTAL: {len(sentences_ids)}")
     print(f"UNIQUE: {len(sentences)}")
