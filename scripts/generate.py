@@ -43,8 +43,9 @@ def main() -> None:
 
     sentences: dict[str, int] = {}
     sentences_ids: set[int] = set()  # for counting duplicates
-    meanings: dict[str, list[str]] = {}
-    meanings_ids: dict[str, int] = {}
+    sent2mean: dict[str, list[str]] = {}
+    meanings: dict[str, int] = {}
+    meanings_ids: set[int] = set()  # for counting duplicates
     with open(source) as fd:
         for line in fd.readlines():
             row = line.strip().split("\t")
@@ -53,18 +54,39 @@ def main() -> None:
             sentence = row[1]
             if sentences.get(sentence, id + 1) > id:
                 sentences[sentence] = id
-            mlist = meanings.setdefault(sentence, [])
+            mlist = sent2mean.setdefault(sentence, [])
             meaning = row[3]
             if meaning not in mlist:
                 mlist.append(meaning)
             mid = int(row[2])
-            if meanings_ids.get(meaning, mid + 1) > mid:
-                meanings_ids[meaning] = mid
+            meanings_ids.add(mid)
+            if meanings.get(meaning, mid + 1) > mid:
+                meanings[meaning] = mid
 
-    print(f"TOTAL: {len(sentences_ids)}")
-    print(f"UNIQUE: {len(sentences)}")
+    error = False
+    print(f"TOTAL SENTENCES: {len(sentences_ids)}")
+    print(f"UNIQUE SENTENCES: {len(sentences)}")
+    for sentence, id in sentences.items():
+        if id not in sentences_ids:
+            print(id, ":", sentence)
+            error = True
+        else:
+            sentences_ids.remove(id)
+    print("")
+    print(f"TOTAL MEANINGS: {len(meanings_ids)}")
+    print(f"UNIQUE MEANINGS: {len(meanings)}")
+    for meaning, id in meanings.items():
+        if id not in meanings_ids:
+            print(id, ":", meaning)
+            error = True
+        else:
+            meanings_ids.remove(id)
+    print("")
+    if error:
+        print("ERROR")
+        return
+
     count = min(len(sentences), count)
-
     new_sents = []
     items = sorted(sort(sentences), key=sort0)
     for id, sen in list(items)[:100]:
@@ -86,8 +108,8 @@ def main() -> None:
     if len(sys.argv) == 2 and sys.argv[1] == "sort":
         with open(source, "w") as f:
             for id, sen in new_sents:
-                for meaning in meanings[sen]:
-                    mid = meanings_ids[meaning]
+                for meaning in sent2mean[sen]:
+                    mid = meanings[meaning]
                     f.write(f"{id}\t{sen}\t{mid}\t{meaning}\n")
         print(f"sorted {len(new_sents)} sentences")
         return
@@ -97,7 +119,7 @@ def main() -> None:
         count2 = 0
         for id, sen in new_sents[start:count]:
             count2 += 1
-            f.write(f"{sen}\t{'|'.join(meanings[sen])}".replace("`", "\`"))
+            f.write(f"{sen}\t{'|'.join(sent2mean[sen])}".replace("`", "\`"))
             if count2 != count:
                 f.write("\n")
         f.write('`.split("\\n");\n')
