@@ -38,8 +38,14 @@ def sort3(pair: tuple[int, str]) -> int:
 def main() -> None:
     source = [each for each in os.listdir() if each.endswith(".tsv")][0]
     dest = "src/lib/sentences.ts"
-    start = 0
-    count = 100000
+
+    args = sys.argv[1:]
+    if len(args) == 3 and args[0] == "generate":
+        start = int(args[1])
+        count = int(args[2])
+    else:
+        start = 0
+        count = 100000
 
     sentences: dict[str, int] = {}
     sentences_ids: set[int] = set()  # for counting duplicates
@@ -100,7 +106,7 @@ def main() -> None:
     for id, sen in list(items)[:10000]:
         new_sents.append((id, sen))
         del sentences[sen]
-    items = sorted(sort(sentences), key=sort3)
+    items = sorted(sort(sentences), key=sort2)
     for id, sen in list(items):
         new_sents.append((id, sen))
         del sentences[sen]
