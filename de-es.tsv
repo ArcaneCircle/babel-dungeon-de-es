@@ -765,8 +765,8 @@
 426313	Sprecht ihr Deutsch?	2304533	¿Habláis alemán?
 426314	Sprechen Sie Deutsch?	522399	¿Habla usted alemán?
 426348	Ist das kostenlos?	506049	¿Es gratis?
-426463	Karis ist Österreicherin	798983	Karis es austríaca
-426769	Essen Sie Piment?	482075	¿Usted come pimiento?
+426463	Sie ist Österreicherin	798983	Ella es austríaca
+426769	Essen Sie Piment?	482075	¿Comes pimienta de Jamaica?
 427047	Hallo! Wie geht’s?	381198	Hola, ¿qué tal?
 427047	Hallo! Wie geht’s?	473456	Hola, ¿cómo estás?
 427047	Hallo! Wie geht’s?	535236	¡Hola! ¿Qué tal?
@@ -1624,8 +1624,10 @@
 341993	Ich werde sie glücklich machen	475732	Yo le haré feliz
 341994	Der Brief wird morgen ankommen	832449	La carta llegará mañana
 342006	Er schrie um Hilfe	342012	Gritó pidiendo socorro
-342019	Ich komme aus Singapur	762940	Soy de Singapur
-342019	Ich komme aus Singapur	1693290	Vengo de Singapur
+342019	Ich komme aus Spanien	762940	Soy de España
+342019	Ich komme aus Spanien	1266281	Vengo de España
+342019	Ich komme aus Spanien	1370466	Yo soy de España
+342019	Ich komme aus Spanien	859244	Yo vengo de España
 342024	Drei Kinder spielten im Park	538882	Tres niños estaban jugando en el parque
 342029	Vielen Dank für das Geschenk	1345310	Gracias por el obsequio
 342042	Was macht Manuel jetzt?	1351468	¿Qué está haciendo Manuel ahora?
@@ -1828,7 +1830,6 @@
 344934	Sie sagt, sie wird kommen	499608	Ella dice que vendrá
 344938	Lassen Sie das mich machen	1673572	Déjeme hacer esto
 344943	Alle Hunde sind lebendig	1567987	Todos los perros están vivos
-344961	Ich komme aus Japan	1196404	Yo vengo de Japón
 344989	Diese Daten sind falsch	11476333	Estos datos están incorrectos
 344994	Laura kam zuerst an	1466276	Laura llegó primero
 344995	Das ist zu teuer	858703	Eso es demasiado caro
@@ -1909,7 +1910,7 @@
 348136	Wann fängt es an?	503562	¿Cuándo empieza?
 348140	Hier wurden viele Soldaten getötet	1568001	Aquí murieron muchos soldados
 348142	Ja, das ist Anthony	712053	Sí, es Anthony
-348144	Ben hat in Singapur gelebt	580868	Bin vivió en Singapur
+348144	Er hat in Singapur gelebt	580868	Él vivió en Singapur
 348146	Er ist nicht so groß	711463	Él no es tan alto
 348148	Demokratie ist eine Herrschaftsform	1454110	La democracia es una forma de gobierno
 348150	Zwei Gläser Orangensaft, bitte	1568002	Dos vasos de jugo de naranja, por favor
@@ -2571,9 +2572,6 @@
 358383	Ich kann Tennis spielen	491070	Sé jugar al tenis
 358384	Ich weiß, wo er wohnt	445693	Sé dónde vive
 358387	Ich weiß, wer er ist	1236878	Sé quién es
-358400	Ich komme aus Saitama	859244	Yo vengo de Saitama
-358402	Ich komme aus Australien	1266281	Vengo de Australia
-358405	Ich komme aus England	1693294	Vengo de Inglaterra
 358409	Komm mich morgen besuchen	1637886	Ven a visitarme mañana
 358409	Komm mich morgen besuchen	1637887	Ven a verme mañana
 358410	Komm her und hilf mir	842241	Ven aquí y ayúdame
@@ -5218,8 +5216,6 @@
 446595	Die Autobatterie ist leer	1940153	La batería del auto está muerta
 446604	Kann ich das Fenster öffnen?	1627385	¿Puedo abrir la ventana?
 446624	Legen Sie Ihre Waffen nieder	336763	Bajen sus armas
-446653	Ich komme aus Norwegen	483142	Yo soy de Noruega
-446653	Ich komme aus Norwegen	2135907	Yo vengo de Noruega
 446656	Ich hab jetzt etwas Geld	936339	Ahora tengo un poco de dinero
 446666	Beide Eltern leben noch	1715945	Los dos padres aún viven
 446731	Was hatte er vor?	1751517	¿Qué pretendía?
@@ -6064,11 +6060,6 @@
 501434	Er wohnt in einem Dorf	714959	Él vive en una aldea
 501453	Latein ist eine tote Sprache	379239	El latín es una lengua muerta
 501856	Und ich bin Ihr Coach	854800	Y, yo soy su entrenador
-501867	Ich komme aus Shikoku	1370466	Yo soy de Shikoku
-501868	Ich komme aus Shizuoka	854978	Soy de Shizuoka
-501870	Ich komme aus Russland	436346	Soy de Rusia
-501870	Ich komme aus Russland	1240386	Vengo de Rusia
-501875	Ich komme aus Ägypten	1693296	Vengo de Egipto
 502282	Ich verstehe dich	502071	Te entiendo
 502452	Ich besitze mehrere Silbermünzen	1279024	Yo tengo muchas monedas de plata
 503357	Das ist nicht mein Lieblingsthema	503448	No es mi tema preferido
@@ -6191,7 +6182,6 @@
 511185	Die Mayonnaise ist reine Chemie	2105499	La mayonesa es química pura
 511228	Das ist, wonach ich suche	858530	Esto es lo que busco
 511233	Er hat weniger Brot	434903	Él tiene menos pan
-511873	Ich komme aus Brasilien	511308	Vengo de Brasil
 511876	Ich suche meinen Kuli	533189	Estoy buscando mi bolígrafo
 511887	Ich habe ihre Adresse vergessen	1071929	He olvidado su dirección
 511889	Er geht oft nach Madrid	993984	Él va con frecuencia a Madrid
@@ -8781,7 +8771,6 @@
 661758	Er trinkt nur Wasser	1279679	Él sólo bebe agua
 661798	Wilde Tiere leben im Dschungel	1174258	Los animales salvajes viven en la jungla
 661817	Wo ist die Wäsche?	687653	¿Dónde está la lavandería?
-661832	Ich komme aus Kyōto	1195217	Soy de Kioto
 661846	Sein Vater starb letztes Jahr	991062	Su padre murió el año pasado
 661871	Vögel sangen im Wald	1733227	Los pájaros cantaban en el bosque
 661937	Ich habe dich gefunden	2176876	Te encontré
@@ -9148,7 +9137,6 @@
 683974	Wir sind fähige Tänzer	1385960	Nosotras somos hábiles bailarinas
 683977	Manuel kann Fußball spielen	871069	Manuel sabe jugar al fútbol
 683977	Manuel kann Fußball spielen	871070	Manuel puede jugar al fútbol
-684094	Ich komme aus China	1693438	Vengo de China
 684103	Ich habe einige gute Freunde	1857055	Tengo algunos buenos amigos
 684108	Heute sind wir zuhause	545616	Hoy estamos en casa
 684123	Ich bin sehr glücklich	535045	Soy muy feliz
@@ -11533,7 +11521,6 @@
 810401	Er irrt sich nie	1422023	Él jamás erra
 810494	Es schmeckt sehr süß	1855435	Sabe muy dulce
 810589	Island hat viele Vulkane	1394486	Islandia tiene muchos volcanes
-810673	Ich komme aus Kolumbien	1564893	Vengo de Colombia
 810733	Geteilte Freude ist doppelte Freude	1855439	Alegría compartida es doble alegría
 810855	Ich will etwas Kaltes trinken	1323410	Quiero beber algo frío
 810875	Stets zu Diensten!	810880	¡Siempre a la orden!
@@ -11866,7 +11853,6 @@
 829748	Niemand wohnt in diesem Gebäude	645780	En este edificio no vive nadie
 829748	Niemand wohnt in diesem Gebäude	1044431	Nadie vive en este edificio
 829748	Niemand wohnt in diesem Gebäude	1289107	Nadie vive en ese edificio
-829805	Ich komme aus Kanada	1236868	Vengo de Canadá
 829940	Sein Hund bellt mich an	878688	Su perro me ladra
 829987	Laura ölte ihr Fahrrad	2240002	Laura lubricó su bicicleta
 830120	Ich habe einfach aufgegeben	1933445	Sencillamente me rendí
@@ -21999,8 +21985,6 @@
 1714725	Ich mag Gedichte schreiben	1715060	Me gusta escribir poemas
 1714728	Sollen wir zusammen kochen?	1715551	¿Cocinemos juntos?
 1714737	Ich studiere zuhause Esperanto	1715552	Yo estudio esperanto en casa
-1714746	Ich komme aus Dänemark	1715056	Soy de Dinamarca
-1714746	Ich komme aus Dänemark	1715543	Vengo de Dinamarca
 1714866	Ich wünsche dir alles Gute	1715051	Te deseo todo lo mejor
 1714965	Maria und Manuel spielen Rommé	2181429	Maria y Manuel están jugando Rummy
 1715033	Manuel wollte Maria alles sagen	1715046	Manuel quería decírselo todo a Maria
@@ -24112,10 +24096,6 @@
 1878556	Tennis spielen ist leicht	2087207	Jugar tenis es fácil
 1879702	Bitte, nehmen Sie Platz	614450	Tome asiento, por favor
 1879755	Heute ist es nicht kalt	1923239	Hoy no hace frío
-1879758	Ich komme aus Frankreich	1923243	Vengo de Francia
-1879758	Ich komme aus Frankreich	2351497	Soy de Francia
-1879771	Ich komme aus Spanien	1923241	Vengo de España
-1879774	Ich komme aus Portugal	1923247	Vengo de Portugal
 1879780	Das ist nicht meine Frau	2256372	Esa no es mi esposa
 1879863	Ich komme aus Rumänien	3615710	Yo soy de Rumania
 1880032	Ich bin Vegetarierin	399432	Soy vegetariano
@@ -28407,8 +28387,8 @@
 2459125	Wer nicht wagt, gewinnt nicht	1331379	Quien no arriesga, no gana
 2459182	Niemand beobachtet sie	2220588	Nadie la está observando
 2459416	Du hast den Eingang gefunden	2516643	Has encontrado la entrada
-2459549	Wir sind aus Kolumbien	464347	Somos de Columbia
-2459550	Wir kommen aus Kolumbien	464347	Somos de Columbia
+2459549	Wir sind aus Kolumbien	464347	Somos de Colombia
+2459550	Wir kommen aus Kolumbien	464347	Somos de Colombia
 2459715	Das muss weh getan haben!	5035687	¡Tiene que haber dolido!
 2459715	Das muss weh getan haben!	1512797	¡Eso debe haber dolido!
 2460563	Traue nie einer nackten Frau!	5018060	¡Nunca te confíes de una mujer desnuda!
@@ -35330,7 +35310,6 @@
 6051799	Gib mir ein Stück Papier	1737372	Dame un pedazo de papel
 6057836	Wie viele Enkel hat er?	6061392	¿Cuántos nietos tiene él?
 6058766	Ich will nach Nordkorea	6058773	Quiero ir a Corea del Norte
-6058776	Ich komme aus Nordkorea	10625844	Soy de Corea del Norte
 6059968	Es ist ein Dorf	6061371	Es un pueblo
 6060006	Ich will mich amüsieren	1371984	Quiero divertirme
 6060006	Ich will mich amüsieren	6061375	Quiero pasármelo bien
@@ -36922,7 +36901,6 @@
 7794084	Das will ich hören	2182255	Eso es lo que quiero escuchar
 7795816	Ich werde sie nie vergessen	11594550	Jamás la olvidaré
 7796129	Ich probierte eines	3039147	Probé una
-7796749	Ich komme aus Serbien	12852530	Soy de Serbia
 7798055	Wir sind auf dem Nachhauseweg	6874974	Vamos hacia casa
 7798652	Meine Schwester singt sehr schön	1121829	Mi hermana canta muy bien
 7798670	Er sitzt direkt neben mir	4274225	Él está sentado a mi lado
@@ -40707,7 +40685,7 @@
 12625828	Hauptsache, wir sind gesund	10093308	Lo más importante es que somos ricos
 12627555	Wir suchen ihn	4622180	Lo estamos buscando
 12629365	Ich bin aus Griechenland	1963201	Soy de Grecia
-12629701	Ich bin aus Singapur	762940	Soy de Singapur
+12629701	Ich bin aus Spanien	762940	Soy de España
 12630124	Neu-Delhi ist die Hauptstadt Indiens	11930616	Nueva Delhi es la capital de India
 12631036	Ich bin aus Ägypten	6681567	Soy de Egipto
 12632149	Heute gehe ich ins Kino	12631636	Hoy me voy al cine
