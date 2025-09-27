@@ -332,7 +332,7 @@
 349824	Er ist Lehrer	1281275	Él es profesor
 349837	Ich esse Nudeln	3127609	Yo como pasta
 349837	Ich esse Nudeln	3127611	Como pasta
-349887	Sind Sie Oberschüler?	1368373	¿Eres un estudiante de instituto?
+349887	Bist du Oberschüler?	1368373	¿Eres un estudiante de secundaria?
 349982	Ist da jemand?	1421470	¿Hay alguien ahí?
 351060	Zitronen sind sauer	598218	Los limones son ácidos
 351060	Zitronen sind sauer	2393028	Los limones son acedos
@@ -352,7 +352,7 @@
 352769	Ich mag Hunde	2206296	Los perros me gustan
 352770	Ich mag Katzen	2049195	Me encantan los gatos
 352772	Er kommt vielleicht	477295	Tal vez él vendrá
-352773	Bob kann kochen	1055603	Bob sabe cocinar
+352773	Er kann kochen	1055603	Él sabe cocinar
 353018	Trink deine Milch	621845	Bebe tu leche
 353018	Trink deine Milch	1191780	Tómate tu leche
 353018	Trink deine Milch	1191781	Bébete tu leche
@@ -382,7 +382,8 @@
 356169	Das ist seltsam	1310863	Eso es extraño
 356170	Es ist unglaublich	456222	Es increíble
 356170	Es ist unglaublich	1240434	¡Eso es increíble!
-356181	Sind Sie müde?	2213708	¿Está usted cansado?
+356181	Bist du müde?	449318	¿Estás cansado?
+356181	Bist du müde?	2306613	¿Estás cansada?
 356294	Er ist hier!	754628	¡Él está aquí!
 356294	Er ist hier!	557921	¡Aquí está él!
 356296	Er ist glücklich	542842	Él es feliz
@@ -568,15 +569,16 @@
 371122	Sie sind Christen	4685148	Son cristianos
 371122	Sie sind Christen	4685149	Son cristianas
 371166	Kommen Sie übermorgen	883932	Venga pasado mañana
-371793	Sind Sie fertig?	434833	¿Ha terminado usted?
+371793	Bist du fertig?	434833	¿Has terminado?
+371793	Bist du fertig?	584053	¿Estás listo?
+371793	Bist du fertig?	685494	¿Estás lista?
+371793	Bist du fertig?	1592948	¿Has acabado?
 371805	Alle Kameraden schliefen	966616	Todos los camaradas dormían
 371839	Er war beharrlich	1451739	Él era persistente
 372336	Sie liebt Kinder	948819	Ella ama a los niños
 372336	Sie liebt Kinder	951050	Ella ama los niños
 372396	Hat er Brüder?	338825	¿Él tiene hermanos?
 372640	Ich war müde	537856	Estaba cansado
-372641	Bist du müde?	449318	¿Estás cansado?
-372641	Bist du müde?	2306613	¿Estás cansada?
 372642	Ich bin müde!	436444	Estoy cansado
 372642	Ich bin müde!	455960	Estoy cansada
 372642	Ich bin müde!	2445058	¡Estoy cansado!
@@ -766,7 +768,7 @@
 426313	Sprecht ihr Deutsch?	2304533	¿Habláis alemán?
 426314	Sprechen Sie Deutsch?	522399	¿Habla usted alemán?
 426348	Ist das kostenlos?	506049	¿Es gratis?
-426769	Essen Sie Piment?	482075	¿Comes pimienta de Jamaica?
+426769	Isst du Piment?	482075	¿Comes pimienta de Jamaica?
 427047	Hallo! Wie geht’s?	381198	Hola, ¿qué tal?
 427047	Hallo! Wie geht’s?	473456	Hola, ¿cómo estás?
 427047	Hallo! Wie geht’s?	535236	¡Hola! ¿Qué tal?
@@ -823,6 +825,8 @@
 437573	Sie lügen nie	1311887	Usted no miente nunca
 437573	Sie lügen nie	1311888	Ellos no mienten nunca
 437892	Fenster oder Gang?	508613	¿Ventana o pasillo?
+438719	Sie ist eigensinnig	336315	Ella es una persona obstinada
+438719	Sie ist eigensinnig	865246	Ella es obstinada
 77	Lass uns etwas versuchen!	2481	¡Intentemos algo!
 77	Lass uns etwas versuchen!	4825795	¡Déjanos intentar algo!
 78	Ich muss schlafen gehen	2482	Tengo que irme a dormir
@@ -1766,7 +1770,6 @@
 344473	Er hat mir geholfen	336324	Él me ayudó
 344475	Diese Länder gehörten zu Frankreich	2133307	Estos países le pertenecían a Francia
 344477	Er hat drei Brüder	754039	Él tiene tres hermanos
-344477	Er hat drei Brüder	454678	Ella tiene tres hermanos
 344486	Dieses Mädchen hat keine Mutter	1520887	Esta niña no tiene madre
 344487	Gestern hatte ich Zahnschmerzen	1520886	Ayer tuve dolor de muelas
 344488	Stört mich nicht beim Lernen	521193	No me molestes cuando estoy estudiando
@@ -1783,7 +1786,8 @@
 344520	Ich bin überhaupt nicht müde	634735	No estoy nada cansado
 344520	Ich bin überhaupt nicht müde	636789	No estoy cansado en absoluto
 344522	Ich muss meine Hausaufgaben machen	1751893	Tengo que hacer los deberes
-344523	Hast du ihn schon getroffen?	1520891	¿Ya te juntaste con él?
+344523	Hast du ihn schon getroffen?	1520891	¿Ya lo conociste?
+344523	Hast du ihn schon getroffen?	9999006	¿Ya te has encontrado con él?
 344526	Wir kennen uns seit Jahren	1567837	Nos conocemos desde hace años
 344539	Niemand kennt seinen echten Namen	722062	Nadie sabe su verdadero nombre
 344543	Sie hat kurze Haare	1207497	Ella tiene el cabello corto
@@ -3094,7 +3098,7 @@
 365015	Wie fühlen Sie sich heute?	1965448	¿Cómo se siente hoy?
 365026	Ich mag diese Jacke nicht	515925	No me gusta esta chaqueta
 365027	Der Zweite Weltkrieg endete 1945	1286357	La Segunda Guerra Mundial terminó el 1945
-365031	Sind Sie Chinese oder Japaner?	1286070	¿Es usted chino o japonés?
+365031	Bist du Chinese oder Japaner?	482390	¿Eres chino o japonés?
 365036	Ich möchte heute niemanden sehen	817063	Hoy no quiero ver a nadie
 365039	Das Auto fährt nicht schnell	937795	El coche no corre rápido
 365048	Heute ist das Wetter schlecht	2403340	Hoy hace mal tiempo
@@ -4474,7 +4478,7 @@
 412200	Habt Mitleid mit mir!	1600502	¡Ten compasión de mí!
 412203	Lüg mich nicht an	580984	No me mientas
 412268	Glaubst du wirklich an Geister?	569579	¿De verdad crees en fantasmas?
-412272	Sind Sie ein japanischer Student?	1502257	¿Es un estudiante japonés?
+412272	Bist du ein japanischer Student?	1502257	¿Eres un estudiante japonés?
 412273	Hast du ein eigenes Zimmer?	633106	¿Tienes un cuarto propio?
 412275	Wie lange werdet ihr hierbleiben?	1003629	¿Cuánto tiempo os quedaréis aquí?
 412276	Haben Sie das Konzert aufgenommen?	2690593	¿Usted grabó ese concierto?
@@ -4840,8 +4844,6 @@
 438707	Ich werde es tun	445877	Lo haré yo
 438707	Ich werde es tun	3949483	Lo haré
 438718	Wie teuer ist dies?	436194	¿Cuánto cuesta?
-438719	Sie ist eigensinnig	336315	Ella es una persona obstinada
-438719	Sie ist eigensinnig	865246	Ella es obstinada
 438747	Ich frühstücke jeden Morgen	1633568	Desayuno todas las mañanas
 438747	Ich frühstücke jeden Morgen	1633569	Tomo el desayuno cada mañana
 438755	Sie hat seine Mutter umgebracht	504507	Ella mató a su madre
@@ -6219,7 +6221,8 @@
 515903	Oh! Ernsthaft?	515901	¡Oh! ¿En serio?
 516039	Wessen Zimmer ist das?	686927	¿De quién es esta habitación?
 516046	Sie haben wenige Bücher	647758	Tienen pocos libros
-516048	Sind Sie Japaner?	981211	¿Usted es japonés?
+516048	Bist du Japaner?	981211	¿Eres japonés?
+516048	Bist du Japaner?	1190140	¿Tú eres japonés?
 516050	Hier ist dein Buch	698997	Aquí está tu libro
 516051	Das ist dein Buch	521940	Es tu libro
 516051	Das ist dein Buch	1258477	Aquél es tu libro
@@ -6701,7 +6704,7 @@
 553013	Frauen reden gerne	520732	A las mujeres les gusta hablar
 553176	Er muss dies nicht tun	507295	Él no tiene que hacer eso
 553347	Er sah, dass er irrte	553350	Vio que estaba equivocado
-553359	Sind Sie Amerikaner oder Franzose?	1612243	¿Usted es americano o francés?
+553359	Bist du Amerikaner oder Franzose?	1612243	¿Eres americano o francés?
 553429	Ich ging bis zur Post	1726785	Fui hasta la oficina de correos
 553730	Er kennt viele Leute	477144	Él conoce a mucha gente
 553765	Mein Name ist Henry	456450	Mi nombre es Henry
@@ -6758,7 +6761,6 @@
 555887	Ich muss mit dir sprechen	937428	Tengo que hablar contigo
 555906	Er lernt Chinesisch	849795	Está estudiando chino
 555906	Er lernt Chinesisch	977641	Él aprende chino
-555910	Bist du Chinese oder Japaner?	482390	¿Eres chino o japonés?
 555921	Wem gehören diese Bücher?	508100	¿De quién son esos libros?
 555921	Wem gehören diese Bücher?	604343	¿De quién son estos libros?
 555942	Kennen Sie seinen Bruder?	5032586	¿Conoce a su hermano?
@@ -7855,7 +7857,6 @@
 614607	Der Maler starb jung	1416570	El pintor murió joven
 614623	Darf ich dieses Wörterbuch benutzen?	697349	¿Puedo usar este diccionario?
 614629	Sie hat ihre Autoschlüssel verloren	952676	Ella perdió las llaves de su coche
-614638	Sind Sie nicht müde?	5053672	¿No está cansado?
 614639	Seid ihr nicht müde?	5053673	¿No están cansados?
 614735	Fledermäuse fliegen bei Dunkelheit	1178344	Los murciélagos vuelan en la oscuridad
 614736	Wir haben zwei Kinder	614763	Tenemos dos niños
@@ -8753,8 +8754,7 @@
 661675	Ich brauche etwas Papier	1071933	Necesito un poco de papel
 661676	Die Sonne geht bald unter	1393379	Pronto se pone el sol
 661677	Bist du gerade beschäftigt?	941445	¿Estás ocupado ahora?
-661678	Sind Sie gerade beschäftigt?	2767291	¿Está ocupada ahora?
-661678	Sind Sie gerade beschäftigt?	2767292	¿Está ocupado ahora?
+661677	Bist du gerade beschäftigt?	2767291	¿Estás ocupada ahora?
 661685	Mir fiel etwas Seltsames auf	1999744	Algo raro llamó mi atención
 661704	Mein Bruder ist ein Idiot	661702	Mi hermano es un idiota
 661704	Mein Bruder ist ein Idiot	741520	Mi hermano es idiota
@@ -9803,8 +9803,8 @@
 728048	Bring deinen Freund mit	1335552	Trae a tu amigo
 728048	Bring deinen Freund mit	2152557	Tráete a tu amigo
 728055	Er wird gut bezahlt	746366	A él le pagan bien
-728069	Sind Sie Lehrer oder Schüler?	790171	¿Usted es un profesor o un alumno?
-728069	Sind Sie Lehrer oder Schüler?	790173	¿Usted es una profesora o una estudiante?
+728069	Bist du Lehrer oder Schüler?	790171	¿Eres un profesor o un alumno?
+728069	Bist du Lehrer oder Schüler?	1355658	¿Eres un profesor o un estudiante?
 728071	Ich verstehe überhaupt kein Französisch	861359	No entiendo absolutamente nada de francés
 728071	Ich verstehe überhaupt kein Französisch	3089408	No entiendo nada de francés
 728131	Gestern war Sonntag, nicht Sonnabend	624141	Ayer fue domingo, no sábado
@@ -9887,9 +9887,6 @@
 734535	Dieses Buch ist sehr dick	839813	Este libro es muy grueso
 734537	Der Wald ist sehr dicht	1386557	El bosque es muy espeso
 734541	Das sind nicht meine Schlüssel	686899	Estas llaves no son mías
-734551	Bist du fertig?	584053	¿Estás listo?
-734551	Bist du fertig?	685494	¿Estás lista?
-734551	Bist du fertig?	1592948	¿Has acabado?
 734787	Kannst du mein Alter erraten?	781034	¿Puedes adivinar mi edad?
 735057	Eine Biene stach mich	1365281	Me picó una abeja
 735089	Ich sah ihn Baseball spielen	1690789	Le vi jugar al béisbol
@@ -11547,8 +11544,7 @@
 813642	Gibt es uns?	811679	¿Existimos?
 813642	Gibt es uns?	1256834	¿Acaso existimos?
 814159	Ich glaube, mir ist kalt	436988	Creo que tengo frío
-814264	Sind Sie schon angekommen?	1082809	¿Ya han llegado?
-814264	Sind Sie schon angekommen?	1082810	¿Ya ha llegado?
+814264	Bist du schon angekommen?	1082809	¿Ya has llegado?
 814312	Ich bin gerade am Flughafen	574561	Estoy ahora en el aeropuerto
 814336	Ich bin ziemlich glücklich	1281472	Soy bastante feliz
 814528	Bedenke, dass du sterben sollst	608400	Recuerda que debes morir
@@ -11825,7 +11821,7 @@
 829301	Ich werde dich nie verlassen	1674233	No te voy a abandonar jamás
 829335	Wann frühstückt ihr?	2079737	¿Cuándo desayunáis?
 829345	Seid ihr zum Arzt gegangen?	2720108	¿Habéis ido al médico?
-829347	Sind Sie zum Arzt gegangen?	1834752	¿Ha ido al médico?
+829347	Bist du zum Arzt gegangen?	1834752	¿Fuiste al médico?
 829358	Sie versuchte, sich umzubringen	338731	Ella intentó suicidarse
 829358	Sie versuchte, sich umzubringen	1295647	Intentó suicidarse
 829399	Ist Herr Brown Lehrer?	1827611	¿El señor Brown es un profesor?
@@ -12541,7 +12537,6 @@
 901620	Frauen sind schön	1444086	Las mujeres son bellas
 901627	Lazaro Zamenhof ist Pole	510610	Lázaro Zamenhof es polaco
 901637	Verzeihung	699451	Pido perdón
-901650	Sind Sie beschäftigt?	2881093	¿Está usted ocupada?
 901651	Ich verlor den Schlüssel	8935494	Perdí mi llave
 901691	Mein Hobby ist Gitarre spielen	958742	Mi hobby es tocar la guitarra
 901691	Mein Hobby ist Gitarre spielen	5036588	Mi pasatiempo es tocar la guitarra
@@ -13404,8 +13399,6 @@
 933946	Berlin ist eine deutsche Stadt	984951	Berlín es una ciudad alemana
 933987	Wer spielt denn da Gitarre?	540312	¿Quién está tocando la guitarra?
 933992	Der Kuchen schmeckt gut	726962	El pastel está sabroso
-933998	Sind Sie sicher?	895222	¿Está segura?
-933998	Sind Sie sicher?	895231	¿Están seguras?
 934033	Ich kann ihn gut leiden	473575	Le quiero mucho
 934049	Manuel suchte nach dir	1490421	Manuel te estaba buscando
 934063	Wir sind alle glücklich	1490423	Todos nosotros somos felices
@@ -14116,7 +14109,7 @@
 973801	Vielleicht regnet es morgen	854362	Quizás llueva mañana
 973812	Es wird täglich heißer	342449	Va haciendo más calor día a día
 973831	Scipio hat Hannibal besiegt	1602307	Escipión venció a Aníbal
-973838	Sind Sie einsam?	859334	¿Te sientes solo?
+973838	Bist du einsam?	859334	¿Te sientes solo?
 973841	Wer singt dieses Lied?	1625003	¿Quién canta esta canción?
 973850	Er verschwand in der Menschenmenge	1321059	Él desapareció entre la multitud
 974027	Ich bin aus der Türkei	1389489	Soy de Turquía
@@ -20531,7 +20524,7 @@
 1617270	Was ist dein Lebensziel?	1496937	¿Cuál es tu meta en la vida?
 1617286	Kann ich meine Tasche hierlassen?	1496954	¿Puedo dejar mi mochila aquí?
 1617634	Wir benötigen dringend neue Mitarbeiter	1754765	Necesitamos con urgencia nuevos colaboradores
-1617754	Sind Sie Fräulein Neusa?	1140372	¿Usted es la señorita Neusa?
+1617754	Sind Sie Fräulein Laura?	1140372	¿Usted es la señorita Laura?
 1617864	Sie haben uns gerettet	1617843	Ellos nos salvaron
 1617864	Sie haben uns gerettet	1619725	Ellas nos salvaron
 1619086	Sie war verschwunden	1619195	Ella estaba desaparecida
@@ -24560,7 +24553,7 @@
 1923346	Sie mag meine Witze	2471168	Le gustan mis bromas
 1923347	Er mag meine Witze	2471168	Le gustan mis bromas
 1923348	Ihm gefallen meine Witze	2471168	Le gustan mis bromas
-1923377	Sind Sie anderer Ansicht?	10476972	¿Discrepa usted?
+1923377	Bist du anderer Ansicht?	10476972	¿Estás en desacuerdo?
 1923381	Stehe auf!	1384667	¡Párate!
 1923382	Ich hasse Sand	1923462	Odio la arena
 1923388	Er bekommt eine Glatze	1923461	Se está quedando calvo
@@ -26125,7 +26118,6 @@
 2128259	Das Opfer starb sofort	2141386	La víctima murió inmediatamente
 2128273	Der Versuch misslang	2141384	El intento fracasó
 2128545	Bist du Buddhist?	2129641	¿Eres budista?
-2128553	Sind Sie Buddhist?	2129640	¿Usted es budista?
 2128582	Besser genährt als gelehrt	2129637	Mejor nutrido que educado
 2128782	Ich denke, er ist wütend	1678590	Creo que él está enojado
 2128828	Jetzt ist alles in Ordnung	1211321	Ahora todo está en orden
@@ -27184,7 +27176,6 @@
 2272250	Wohin führt die Straße?	2270182	¿A dónde va ese camino?
 2272284	Welches Datum trägt der Brief?	2270156	¿Qué fecha tiene la carta?
 2272285	Ich bin älter als er	3613638	Yo soy mayor que él
-2272303	Bist du Lehrer oder Schüler?	1355658	¿Eres un profesor o un estudiante?
 2272308	Wo ist Osten?	2278564	¿Dónde está el este?
 2272327	Leben sie in Algerien?	1821967	¿Ellos viven en Argelia?
 2272327	Leben sie in Algerien?	5001881	¿Viven en Argelia?
@@ -27461,8 +27452,6 @@
 2310026	Die Zeit fliegt pfeilschnell dahin	1279639	El tiempo vuela como una flecha
 2310170	Bist du bei ArcaneChat?	1054442	¿Tienes ArcaneChat?
 2310170	Bist du bei ArcaneChat?	1054447	¿Estás en ArcaneChat?
-2310172	Sind Sie bei ArcaneChat?	1054449	¿Está en ArcaneChat?
-2310172	Sind Sie bei ArcaneChat?	1054450	¿Están en ArcaneChat?
 2310173	Seid ihr bei ArcaneChat?	1054448	¿Estáis en ArcaneChat?
 2312033	Gibt es hier schöne Frauen?	2314617	¿Aquí hay mujeres guapas?
 2312607	Ich habe einen Fehler gemacht	2698848	He cometido un error
@@ -27615,8 +27604,7 @@
 2329008	Ich bin nicht so betrunken	2327307	No estoy tan borracho
 2329013	Ist er noch hier?	1001449	¿Todavía está aquí?
 2329014	Ist sie noch hier?	1001449	¿Todavía está aquí?
-2329017	Sind Sie noch hier?	1001449	¿Todavía está aquí?
-2329017	Sind Sie noch hier?	2402532	¿Todavía están aquí?
+2329017	Bist du noch hier?	9999005	¿Todavía estás aquí?
 2329283	Sie ging etwas besorgen	339785	Ella salió a un recado
 2329285	Genug davon!	336365	¡Ya basta con eso!
 2329297	Eine Sprache muss man benutzen!	647008	¡Un idioma hay que usarlo!
@@ -29494,7 +29482,7 @@
 2796303	Das ist ein großes Missverständnis	2800757	Ese es un gran malentendido
 2796410	Manuel öffnete seine Bürotür	2839057	Manuel abrió la puerta de su oficina
 2796426	Manuel telefoniert gerade mit Maria	2839090	Manuel está ahora al teléfono con Maria
-2797017	Sind Sie ohne Arbeit?	5017796	¿No tiene trabajo?
+2797017	Bist du ohne Arbeit?	5017796	¿No tienes trabajo?
 2797285	Ich muss jetzt gehen. Tschüss!	3182257	Ya me tengo que ir. ¡Chao!
 2798511	Manuel und Laura suchen Daniel	5018990	Manuel y Laura buscan a Daniel
 2798550	Er nervte mich	3088958	Él me hizo rabiar
@@ -30128,8 +30116,6 @@
 2980064	Ich benötige Antworten	2246199	Necesito respuestas
 2980338	Ich bin in Dubai	2944822	Estoy en Dubái
 2980359	Welche Farbe hat es?	2980399	¿De qué color es?
-2980377	Bist du Japaner?	1190140	¿Tú eres japonés?
-2980377	Bist du Japaner?	1214252	¿Eres japonés?
 2980723	Ich habe einen Freund	2489900	Tengo un amigo
 2980726	Er hat auch eine	5029672	También tiene una
 2980727	Er hat auch eins	5029673	También tiene uno
@@ -31096,8 +31082,8 @@
 3263810	Manuel hat viele Katzen	3269101	Manuel tiene muchos gatos
 3263955	Wir kauften fünf rote Äpfel	5041887	Compramos cinco manzanas rojas
 3265367	Ich habe ein brandneues Fahrrad	3807656	Tengo una bicicleta completamente nueva
-3265376	Sind Sie der neue Lehrer?	10740109	¿Eres el profesor nuevo?
-3265378	Sind Sie die neue Lehrerin?	10740112	¿Eres la profesora nueva?
+3265376	Bist du der neue Lehrer?	10740109	¿Eres el profesor nuevo?
+3265378	Bist du die neue Lehrerin?	10740112	¿Eres la profesora nueva?
 3265409	Es ist ein neuer Tag	1731004	Es un nuevo día
 3265411	Ist das eine neue Krawatte?	8305788	¿Es una corbata nueva?
 3266464	Ich spreche Russisch	3265698	Hablo ruso
@@ -32152,8 +32138,6 @@
 3766314	Die beiden sind weg	5033498	Ambos se fueron
 3766467	Bist du blind?	5099793	¿Estás ciego?
 3766467	Bist du blind?	5099794	¿Eres ciego?
-3766470	Sind Sie blind?	5099809	¿Es usted ciego?
-3766470	Sind Sie blind?	5099811	¿Está usted ciego?
 3766505	Er schläft gerne nackt	5019890	Le gusta dormir desnudo
 3766624	Überall wird Dürre herrschen	3876743	La aridez reinará en todas partes
 3766634	Kommen Sie bitte mit mir	2073979	Por favor, ven conmigo
@@ -33869,7 +33853,7 @@
 4964052	Wo haben Sie studiert?	3899314	¿Dónde estudiaron ustedes?
 4964052	Wo haben Sie studiert?	5012250	¿Dónde ha estudiado?
 4965254	Bist du gegen Erdnüsse allergisch?	5012247	¿Eres alérgico al maní?
-4965256	Sind Sie auf Erdnüsse allergisch?	5012248	¿Es usted alérgico al maní?
+4965256	Bist du auf Erdnüsse allergisch?	5012247	¿Eres alérgico al maní?
 4965418	Lasst uns anfangen zu arbeiten!	5012245	¡Empecemos a trabajar!
 4965419	Ich glaube das noch	5012242	Todavía lo creo
 4965420	Dies könnte viel schlechter sein	5012238	Podría ser mucho peor
@@ -34626,7 +34610,7 @@
 5338916	Diese Fernbedienung ist ergonomisch	1000517	Este mando a distancia es ergonómico
 5338999	Bewahren Sie bitte Ruhe	861458	Mantengan la calma por favor
 5339003	Ich brauche nur eins	2122403	Solo necesito una cosa
-5339011	Sind Sie in Boston aufgewachsen?	5023095	¿Creció en Boston?
+5339011	Bist du in Boston aufgewachsen?	5023095	¿Creciste en Boston?
 5339013	Hör mir nun gut zu	5140990	Ahora escuchá con mucho cuidado
 5340983	Was für eine bizarre Geschichte!	5340984	¡Qué historia tan rara!
 5341204	Manuel mag kein Mathe	1705451	A Manuel no le gustan las mates
@@ -35369,7 +35353,7 @@
 6215857	Du hast nichts gegessen	4452165	No has comido nada
 6215911	Führe uns den geraden Weg	1205894	Guíanos por el sendero recto
 6216471	Seid ihr nass geworden?	12442122	¿Se mojaron?
-6216472	Sind Sie nass geworden?	12442123	¿Se mojó?
+6216472	Bist du nass geworden?	12442123	¿Te mojaste?
 6216679	Belüge dich nicht selbst	979935	No te mientas a ti mismo
 6217793	Er ist soeben hinausgegangen	1133057	Él recién salió afuera
 6284265	Maria wollte Krankenschwester werden	8011464	Maria quería ser enfermera
@@ -36409,8 +36393,6 @@
 7478564	Ich brauche Manuels Hilfe	9685218	Necesito la ayuda de Manuel
 7478566	Bist du sicher, Manuel?	8402866	¿Estás seguro, Manuel?
 7478567	Bist du in Gefahr?	2733336	¿Estás en peligro?
-7478568	Sind Sie in Gefahr?	12019584	¿Está en peligro?
-7478568	Sind Sie in Gefahr?	12019585	¿Está usted en peligro?
 7478596	Sie wurde berühmt	9462665	Se hizo famosa
 7478840	Manuel hatte Spaß	3231229	Manuel se estaba divirtiendo
 7478863	Ich habe gerade gegessen	1555948	Acabo de comer
@@ -37565,7 +37547,6 @@
 8308217	Wir müssen mehr tun	5847110	Tenemos que hacer más
 8308218	Wir müssen mehr machen	5847110	Tenemos que hacer más
 8308221	Bist du Raucher?	8309851	¿Eres fumador?
-8308223	Sind Sie Raucher?	8309850	¿Es usted fumador?
 8308228	Der Raum ist zu klein	8309849	La habitación es demasiado pequeña
 8308230	Das Zimmer ist zu klein	8309849	La habitación es demasiado pequeña
 8308402	Meine Kehle ist trocken	1386305	Mi garganta está seca
@@ -38088,7 +38069,6 @@
 8450042	Er kämpft gegen Windmühlen	8821004	Lucha contra molinos de viento
 8450042	Er kämpft gegen Windmühlen	13017134	Él pelea contra los molinos de viento
 8453009	Bist du Maria?	8453030	¿Tú eres Maria?
-8453010	Sind Sie Maria?	8453027	¿Es usted Maria?
 8454289	Wir haben drei Wochen	2732801	Tenemos tres semanas
 8459728	Wir haben morgen zu	464457	Estamos cerrados mañana
 8461680	Wie heißt deine Freundin?	7823121	¿Cuál es el nombre de tu novia?
@@ -40948,8 +40928,7 @@
 13033259	Ich habe sie überrascht	3198499	La sorprendí
 13033259	Ich habe sie überrascht	3930005	Los sorprendí
 13034363	Ich bin gerade zurückgekommen	3420161	Acabo de regresar
-13034365	Sind Sie gerade zurückgekommen?	7166645	¿Acabas de regresar?
-13034367	Bist du gerade zurückgekommen?	7166645	¿Acabas de regresar?
+13034365	Bist du gerade zurückgekommen?	7166645	¿Acabas de regresar?
 13034369	Ich bringe dich zurück	12933508	Te llevaré de regreso
 13034451	Ich werde es reparieren	5087775	Iré a arreglarlo
 13034475	Manuel faltete seine Laken	2525420	Manuel dobló sus sábanas
@@ -41129,8 +41108,8 @@
 13087325	Der Mann stöhnt laut	13087324	El hombre gime en voz alta
 13088040	Sie reibt sich die Schläfen	13088036	Ella se frota las sienes
 13088045	Nachts arbeitete er als Taxifahrer	13088043	Por la noche, trabajaba como remisero
-13088050	Fühlen Sie sich niedergeschlagen?	13088048	¿Estas de bajón?
-13088051	Sind Sie niedergeschlagen?	13088048	¿Estas de bajón?
+13088050	Fühlst du dich niedergeschlagen?	8453027	¿Te sientes deprimido?
+13088051	Bist du niedergeschlagen?	13088048	¿Estás deprimido?
 13088108	Diese Reise hat ihn verändert	13088107	Este viaje le ha transformado
 13088154	Wir bedauern die Unannehmlichkeiten sehr	13088148	Lamentamos mucho las molestias
 13088185	Der Kater beißt Sofia	13088184	El gato muerde a Sofia
@@ -45603,7 +45582,7 @@
 758997	Ich pflanze Bohnen in meinem Garten	2114330	Estoy plantando judías en mi jardín
 758999	Papa hat mir einige Bücher gekauft	758982	Papá me compró unos libros
 759003	Vati hat mir einige Bücher gekauft	758982	Papá me compró unos libros
-759006	Sind Sie gegen irgendwelche Pflanzen allergisch?	1085411	¿Es alérgico a alguna planta?
+759006	Bist du gegen irgendwelche Pflanzen allergisch?	1085411	¿Eres alérgico a alguna planta?
 759197	Aus welcher Epoche stammt dieses Gemälde?	1713052	¿De qué época proviene esta pintura?
 759206	Unsere Mannschaft hat alle Spiele verloren	702630	Nuestro equipo perdió todos los partidos
 759206	Unsere Mannschaft hat alle Spiele verloren	743589	Nuestro equipo ha perdido todos los partidos
@@ -46081,8 +46060,7 @@
 808925	Ich träume manchmal von meiner Mutter	534281	A veces sueño con mi madre
 808927	Ist dieser Ring aus echtem Gold?	1419991	¿Ese anillo está hecho de oro auténtico?
 808956	Vor Luise öffnen sich alle Türen	1690865	Todas las puertas se abren para Louise
-809110	Sind Sie jemals in Berlin gewesen?	920982	¿Usted ha estado alguna vez en Berlín?
-809110	Sind Sie jemals in Berlin gewesen?	920983	¿Han estado en Berlín alguna vez?
+809110	Bist du jemals in Berlin gewesen?	920982	¿Has estado alguna vez en Berlín?
 809126	Es gab fünf Brände gestern Abend	1702633	Hubo cinco incendios anoche
 809305	Weißt du, wie spät es ist?	760194	¿Sabes qué hora es?
 809318	Ich finde, es ist zu groß	808675	Pienso que es demasiado grande
@@ -46153,10 +46131,10 @@
 817048	Das Laboratorium hat die modernste Ausrüstung	3116850	El laboratorio tiene el equipamiento más moderno
 817141	Er dreht fast durch vor Freude	1706310	Él casi se vuelve loco de la alegría
 817403	Kannst du mir ein Taxi rufen?	817510	¿Puedes llamarme un taxi?
-817735	Sind Sie mit Ihrem Alltagsleben zufrieden?	817748	¿Está contento con su vida diaria?
+817735	Bist du mit deinem Alltag zufrieden?	9999007	¿Estás contento con tu vida diaria?
 817744	Von wem wurde das Buch geschrieben?	1717692	¿Por quién fue escrito el libro?
 817750	Ist er mit seinem Alltag zufrieden?	817748	¿Está contento con su vida diaria?
-817752	Ist sie mit ihrem Alltag zufrieden?	817748	¿Está contento con su vida diaria?
+817752	Ist sie mit ihrem Alltag zufrieden?	9999008	¿Está contenta con su vida diaria?
 817838	Eine Weltkarte stellt alle Länder dar	5853548	Un mapamundi muestra todos los países
 817856	Laura wird eine gute Krankenschwester sein	818819	Laura será una buena enfermera
 818155	Zwei Kinder spielten auf der Straße	818807	Dos niños jugaban en la calle
@@ -62357,7 +62335,7 @@
 1179668	„Worüber lachst du?” - „Über deine Visage.”	1136467	"¿De qué te estás riendo?" "De tu cara."
 1179848	Warum sieht Manuel immer so müde aus?	1715928	¿Por qué Manuel siempre se ve tan cansado?
 1179978	Manuel ist nicht so jung wie ich	972971	Manuel no es tan joven como yo
-1180920	Sind Sie sicher, dass Sie mich kennen?	1546379	¿Está seguro de que me conoce?
+1180920	Bist du sicher, dass du mich kennst?	1546379	¿Estás seguro que me conoces?
 1181592	Die Japaner sind ein sehr reinliches Volk	1102346	Los japoneses son un pueblo muy limpio
 1183060	Sie fragte mich, wohin ich denn ginge	1182201	Ella me preguntó adónde iba
 1183802	Gut, es sind schon seltsamere Dinge passiert	1634571	Bueno, han pasado cosas aún más extrañas
@@ -68701,7 +68679,7 @@
 8346198	Ich bezahle dich, sobald du fertig bist	8322245	Te pago tan pronto como termines
 8346323	Ich weiß nicht, ob sich das auszahlt	8317932	No sé si vale la pena
 8356474	Wir haben eine weite Reise hinter uns	901978	Hemos hecho un largo viaje
-8356477	Sind Sie sicher, dass das funktionieren wird?	3343538	¿Está seguro de que eso va a funcionar?
+8356477	Bist du sicher, dass das funktionieren wird?	3343538	¿Estás seguro de que eso va a funcionar?
 8357876	Ich habe drei Freunde, die Manuel heißen	12852495	Tengo tres amigos que se llaman Manuel
 8357876	Ich habe drei Freunde, die Manuel heißen	12852496	Tengo tres amigos llamados Manuel
 8381750	Ich weiß nicht, wer es montiert hat	8371090	No sé quién la montó
