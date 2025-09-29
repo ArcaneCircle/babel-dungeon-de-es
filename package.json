@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "generate": "./scripts/generate.py generate 0 89000",
+    "generate": "./scripts/generate.py generate 0 80000",
     "sort": "./scripts/generate.py sort",
     "start": "vite --port 3000",
     "fix": "prettier --write .",
