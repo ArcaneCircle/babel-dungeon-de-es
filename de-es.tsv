@@ -354,8 +354,8 @@
 352090	Sie ist unhöflich	2750049	Es maleducada
 352304	Er spricht schnell	686932	Él habla rápido
 352522	Er rächte sich	339103	Él se vengó
-352559	Wie heißt er?	461028	¿Cómo se llama?
-352559	Wie heißt er?	180721	¿Cuál es su nombre?
+352559	Wie heißt er?	9999010	¿Cómo se llama? (él)
+352559	Wie heißt er?	9999011	¿Cuál es su nombre? (él)
 352585	Bald ist Frühling	573282	La primavera llegará pronto
 352769	Ich mag Hunde	558715	Me gustan los perros
 352769	Ich mag Hunde	2206296	Los perros me gustan
@@ -1260,7 +1260,6 @@
 182048	Kann Ihr Bruder Auto fahren?	1279965	¿Tu hermano puede conducir un auto?
 182198	Die Bäume sind grün	475582	Los árboles son verdes
 330125	Weißt du, wer sie sind?	520736	¿Sabes quiénes son ellos?
-330125	Weißt du, wer sie sind?	969736	¿Sabes quienes son ellos?
 330463	„Weine nicht“, sagte sie	5046029	"No llores", dijo ella
 330465	Ich scheine Fieber zu haben	1236587	Parece que tengo fiebre
 330473	Ich ähnele meiner Mutter	3028939	Me parezco a mi madre
@@ -1283,7 +1282,7 @@
 331894	Ich habe ihm geholfen	2624498	Lo ayudé
 331905	Wir haben jede Menge Nahrungsmittel	446402	Tenemos un montón de alimentos
 331910	Ich will ein gutes Wörterbuch	338916	Quiero un buen diccionario
-332128	Er wird gleich zurück sein	738381	Vuelve enseguida
+332128	Er wird gleich zurück sein	9999009	Él vuelve enseguida
 333647	Er spricht langsamer als sie	505963	Él habla más lentamente que ella
 333647	Er spricht langsamer als sie	781041	Él habla más lento que ella
 333647	Er spricht langsamer als sie	861306	Él habla más despacio que ella
@@ -1798,7 +1797,7 @@
 344578	Beurteile niemanden nach seinem Aussehen	1695066	No juzgues a nadie por su aspecto
 344597	Jemand packte mich am Arm	591128	Alguien me agarró por el brazo
 344598	Ich habe sie zufällig getroffen	488850	Me la encontré por casualidad
-344603	Er ist meinem Rat gefolgt	515888	Él siguió mi consejo
+344603	Er hat meinen Rat befolgt	515888	Él siguió mi consejo
 344608	Ich rufe dich zurück	507330	Te vuelvo a llamar
 344612	Er ist nicht mein Cousin	399804	No es mi primo
 344613	Lass uns einen Schwangerschaftstest machen	545948	Hagamos un test de embarazo
@@ -1846,7 +1845,7 @@
 345028	Wo warst du gestern?	595596	¿Dónde estuviste ayer?
 345028	Wo warst du gestern?	596010	¿Dónde estabas ayer?
 345029	Die Miete ist morgen fällig	879427	Hay que pagar la renta mañana
-345030	Helen schrie vor Angst	2344193	Helen gritó de miedo
+345030	Sie schrie vor Angst	2344193	Ella gritó de miedo
 345038	Sie spricht ein wenig Arabisch	1174898	Ella habla un poco de árabe
 345053	Ich werde morgen Fußball spielen	982813	Mañana voy a jugar al fútbol
 345240	Sie ist nie pünktlich	1567986	Ella nunca es puntual
@@ -3324,8 +3323,8 @@
 368825	Es war ein langer Brief	890063	Era una larga carta
 368832	Wir sind gerade sehr beschäftigt	666104	Estamos muy ocupados ahora mismo
 368834	Hast du eine Schuluniform?	1203147	¿Tienes uniforme escolar?
-369132	Helen, dies ist mein Cousin	562559	Helen, éste es mi primo
-369133	Helen, dies ist meine Cousine	562560	Helen, ésta es mi prima
+369132	Laura, dies ist mein Cousin	562559	Laura, éste es mi primo
+369133	Laura, dies ist meine Cousine	562560	Laura, ésta es mi prima
 369134	Du wirst zur Schule gehen	1303958	Irás a la escuela
 369135	Seine Geschichte muss wahr sein	1132775	Su historia debe de ser verdad
 369136	Meine Schulnoten waren durchschnittlich	1263690	Mis calificaciones eran promedio
@@ -4647,7 +4646,7 @@
 425184	Ich will Sportjournalist werden	1053210	Quiero ser periodista deportivo
 425475	Der Schreibtisch ist staubbedeckt	1713378	El escritorio está cubierto de polvo
 425570	Eine Tasse Tee bitte	710244	Una taza de té, por favor
-425573	Helen ist siebzehn Jahre alt	1077397	Helen tiene diecisiete años
+425573	Sie ist siebzehn Jahre alt	1077397	Ella tiene diecisiete años
 425601	Warum bist du so glücklich?	482531	¿Por qué estás tan feliz?
 425603	Was hast du gemacht?	564558	¿Qué has hecho?
 425603	Was hast du gemacht?	738720	¿Qué hiciste?
@@ -5105,8 +5104,8 @@
 444671	Geh immer geradeaus	1694242	Sigue siempre recto
 444679	Die dritte Straße nach rechts	959936	La tercera calle a la derecha
 444684	Ich werde dich begleiten	1584242	Te acompañaré
-444710	Wie ist Ihr Name?	461028	¿Cómo se llama?
-444710	Wie ist Ihr Name?	180721	¿Cuál es su nombre?
+444710	Wie ist Ihr Name?	461028	¿Cómo se llama? (usted)
+444710	Wie ist Ihr Name?	180721	¿Cuál es su nombre? (usted)
 444725	Das Auto fährt schnell	503274	El automóvil corre rápido
 444725	Das Auto fährt schnell	2035795	El auto anda rápido
 444750	Nein, setz dich hin	855550	No, siéntate
@@ -8314,6 +8313,7 @@
 641290	Ich werde darüber nachdenken	1446612	Pensaré en ello
 641587	Ich hätte gern Hühnersuppe	455790	Quisiera sopa de pollo
 641636	Wo haben Sie Italienisch gelernt?	641824	¿Dónde ha aprendido italiano?
+641699	Sie war taub und blind	727869	Ella era sorda y ciega
 641727	Die Preise sind plötzlich gefallen	1020587	Los precios bajaron súbitamente
 641731	Ich habe Manuel unterwegs getroffen	1361853	Me encontré en el camino con Manuel
 641746	Könnten Sie das bitte buchstabieren?	2445189	¿Podría deletrearlo, por favor?
@@ -8321,7 +8321,7 @@
 641751	Wem sieht er ähnlich?	541306	¿A quién se parece?
 641764	Weil ich Übersetzer werden möchte	791011	Porque quiero ser traductor
 641769	Yukiko mag Kartoffeln	548182	A Yukiko le gustan las patatas
-641807	Steve kam nicht nachhause	1726834	Steve no vino a casa
+641807	Er kam nicht nachhause	1726834	Él no vino a casa
 641826	Wo hat er Italienisch gelernt?	641824	¿Dónde ha aprendido italiano?
 641828	Wo hat sie Italienisch gelernt?	641824	¿Dónde ha aprendido italiano?
 641925	Hallo! Arbeitest du hier?	1288096	Hola, ¿trabajas aquí?
@@ -10935,8 +10935,8 @@
 783553	Heute ist ein schönes Wetter	1069674	Hoy hace muy buen tiempo
 783553	Heute ist ein schönes Wetter	2168604	Hoy hace un tiempo espléndido
 783554	Der Fisch schwamm im Wasser	2079735	El pez nadaba en el agua
-783560	Wie ist ihr Name?	461028	¿Cómo se llama?
-783560	Wie ist ihr Name?	180721	¿Cuál es su nombre?
+783560	Wie ist ihr Name?	9999012	¿Cómo se llama? (ella)
+783560	Wie ist ihr Name?	9999013	¿Cuál es su nombre? (ella)
 783561	Wie ist dein Name?	449153	¿Cómo te llamas?
 783561	Wie ist dein Name?	1213833	¿Cuál es tu nombre?
 783565	Ich lebe in Schottland	2228146	Estoy viviendo en Escocia
@@ -11553,7 +11553,6 @@
 816161	Beeile dich, wir gehen los!	776985	¡Apúrate, que nos vamos!
 816169	Mein Nachbar heißt Deng Daping	777036	Mi vecino se llama Deng Daping
 816473	Der Rückspiegel ist abgefallen	1704697	El espejo retrovisor se cayó
-816476	Steve sah sehr glücklich aus	854093	Steve parecía muy feliz
 816615	Sprich nicht so schnell	642355	No hables tan rápido
 816621	Was hat dich hierher verschlagen?	645005	¿Qué te ha traído acá?
 816643	Ich will nicht zurückgehen	977789	No quiero volver
@@ -12398,7 +12397,7 @@
 898509	Er steht früh auf	1023572	Él se levanta temprano
 898595	Ohne dich bin ich nichts	863365	Sin ti no soy nada
 898601	Das Hemd kostet zehn Dollar	950791	Esta camisa cuesta diez dólares
-898602	Helen spielt im Garten	1259781	Helen está jugando en el patio
+898602	Sie spielt im Garten	1259781	Ella está jugando en el patio
 898604	Esperanto ist eine lebende Sprache	2144085	El esperanto es una lengua viva
 898657	Ich hatte viel Hunger	1237326	Tenía mucha hambre
 898660	Ich war sehr hungrig	1237326	Tenía mucha hambre
@@ -12653,7 +12652,7 @@
 909646	Er ist sehr nett	750466	Es muy amable
 909668	Mein großer Bruder ist Lehrer	593415	Mi hermano mayor es profesor
 909783	Bieten Sie irgendwelche Rundfahrten an?	434613	¿Ustedes ofrecen algún tipo de tours?
-909789	Sie nannten ihre Tochter Helen	886475	Llamaron a su hija Helen
+909789	Sie nannten ihre Tochter Laura	886475	Llamaron a su hija Laura
 909797	Seid ihr sicher?	895229	¿Están seguros?
 909801	Ich heiße Edgar Degas	2181197	Me llamo Edgar Degas
 909867	Sie ist jünger als er	962963	Ella es más joven que él
@@ -18559,7 +18558,7 @@
 1420626	Manuel hat Maria heute gesehen	2059595	Hoy Manuel ha visto a Maria
 1420648	Der Mann erötete	1284279	El hombre se sonrojó
 1420886	Was wirst du damit machen?	1353007	¿Qué vas a hacer con eso?
-1421126	Was ist dein neuer Kauf?	856481	¿Cual es tu última adquisición?
+1421126	Was ist dein neuer Kauf?	856481	¿Cuál es tu última adquisición?
 1421144	Schäl bitte die Kartoffeln	853728	Por favor, pela las patatas
 1421156	Der Krach wird immer lauter	1854569	El ruido se hace más y más fuerte
 1421178	Sie kam mich besuchen	1451073	Ella vino a verme
@@ -27849,7 +27848,7 @@
 2372564	Ich bin Brasilianer. Du auch?	1087037	Soy brasilero. ¿Tú también?
 2373546	Sie verhielt sich sehr ungewöhnlich	2373939	Se comportaba de una forma muy extraña
 2373787	Es scheint einfach ungerecht	2373930	Simplemente parece injusto
-2373791	Wie viele Fragen gibt es?	2373926	¿Cuantas preguntas hay?
+2373791	Wie viele Fragen gibt es?	2373926	¿Cuántas preguntas hay?
 2374727	Warum fragst du das?	2574	¿Por qué lo preguntas?
 2374903	Es ist nicht wichtig	2591	No es importante
 2375647	In welche Richtung gehen Sie?	2270200	¿En qué dirección va usted?
@@ -41876,7 +41875,7 @@
 361035	Ich bin froh, sie zu sehen	878687	Me alegra verla
 361035	Ich bin froh, sie zu sehen	1249692	Estoy contento de verla
 361092	Ich möchte, dass du sie siehst	1623946	Quiero que la veas
-361100	Steve bekam einen Brief von Laura	977672	Steve recibió una carta de Laura
+361100	Er bekam einen Brief von Laura	977672	Él recibió una carta de Laura
 361119	Er ist ungefähr in deinem Alter	345136	Él tiene más o menos tu misma edad
 361139	Gott weiß, dass es wahr ist	1080784	Dios sabe que es verdad
 361143	Vor Gott sind alle Menschen gleich	1752131	Todos los hombres son iguales ante Dios
@@ -44459,8 +44458,7 @@
 641298	Lass mich dich nach Hause begleiten	812542	Deja que te lleve a casa
 641594	Wird es morgen wieder heiß werden?	570289	¿Mañana volverá a hacer calor?
 641617	Was sie kaufte, war sehr teuer	1964751	Lo que ella compró era muy caro
-641699	Helen Keller war taub und blind	727869	Helen Keller era sorda y ciega
-641819	Steve ist nicht nach Hause gekommen	1726834	Steve no vino a casa
+641819	Er ist nicht nach Hause gekommen	1726834	Él no vino a casa
 641840	Dieser Hut ist mir zu klein	1726833	Este sombrero es demasiado pequeño para mí
 642061	Sie versammelte ihre Kinder um sich	872800	Ella reunió a sus hijos a su alrededor
 642067	Er ist so alt wie ich	614740	Él tiene la misma edad que yo
@@ -49130,7 +49128,7 @@
 1490819	Wir haben vier Französisch-Stunden pro Woche	996602	Tenemos cuatro clases de francés a la semana
 1492206	Den ersten Kuss vergessen wir nie	2564600	Nunca olvidamos el primer beso
 1492254	Er lebte und starb in Vergessenheit	1503538	Él vivió y murió en el anonimato
-1492284	Helen besucht ihren Onkel jeden Sonntag	968990	Helen visita a su tío cada domingo
+1492284	Sie besucht ihren Onkel jeden Sonntag	968990	Ella visita a su tío cada domingo
 1492517	Das Treffen war fast zu Ende	1492054	La reunión casi había terminado
 1492710	Es gibt viele Elendsviertel in Mexiko	1163813	Hay muchos barrios bajos en México
 1492881	Niemand kam, um mir zu helfen	360406	Nadie vino a ayudarme
@@ -51306,7 +51304,7 @@
 1878049	Er setzte sich auf die Bank	733886	Él se sentó en el banco
 1878493	Sie machte Urlaub in Sri Lanka	10472108	Se fue de vacaciones a Sri Lanka
 1879737	Es freut mich, dich zu sehen	1227570	Me alegra verte
-1880126	Helen ist von Natur aus Optimistin	2047485	Helen es optimista por naturaleza
+1880126	Sie ist von Natur aus Optimistin	2047485	Ella es optimista por naturaleza
 1880846	Japan handelt viel mit den USA	2951396	Japón tiene mucho comercio con Estados Unidos
 1880920	Manuel wollte nicht mit Maria streiten	1434060	Manuel no quería discutir con Maria
 1880956	Es scheint, dass ihm Geld fehlte	1262506	Parece que le faltaba dinero
@@ -59584,7 +59582,7 @@
 645124	Wir drücken unsere Gedanken durch Worte aus	802050	Expresamos nuestros pensamientos mediante palabras
 645681	Deine Kommentare haben mir immer sehr geholfen	2294371	Tus comentarios siempre me han ayudado mucho
 646229	Ich weiß nicht, ob es wahr ist	866094	No sé si es verdad
-646679	Helen wiegt nicht mehr als 40 Kilo	968507	Helen no pesa más de 40 kilogramos
+646679	Sie wiegt nicht mehr als 40 Kilo	968507	Ella no pesa más de 40 kilogramos
 646819	Im Moment habe ich nichts zu tun	1569375	No tengo nada que hacer por el momento
 646831	Meine Kollegen haben mich sehr herzlich empfangen	1458560	Mis colegas me recibieron muy cálidamente
 646865	Der Fluss windet sich durch den Wald	1517047	El río fluye a través del bosque
@@ -83040,7 +83038,7 @@
 5644348	Ich habe eine zehnprozentige Anzahlung auf das Auto geleistet	5644204	Pagué una señal del diez por ciento por el coche
 5644499	Das hinter Maria kommende Auto konnte nicht rechtzeitig bremsen	5644256	El coche que seguía a Maria no pudo frenar a tiempo
 5654643	Ich habe ihn nie schlecht über andere sprechen hören	5660977	Nunca le he oído hablar mal de nadie
-5657146	Mathias und ich sind mit Helene in der Universität	5657151	Mathias y yo estamos en la universidad con Helene
+5657146	Manuel und ich sind mit Laura in der Universität	5657151	Manuel y yo estamos en la universidad con Laura
 5686012	Außerdem bin ich sehr glücklich, dich kennengelernt zu haben	5714764	Además, soy muy feliz de haberte conocido
 5688098	Ich glaube kein Wort von dem, was Manuel sagt	5714835	No me creo ni una palabra de lo que dice Manuel
 5688423	Die einzige Konstante in der Natur ist der Wandel	5714848	La única constante en la naturaleza es el cambio
@@ -85010,7 +85008,7 @@
 930385	Mein Freund entwirft gerade eine Benutzeroberfläche für das neue Betriebssystem	3254482	Mi amigo está diseñando una interfaz de usuario para el nuevo sistema operativo
 930572	Ich will keine Glatze bekommen, solange ich noch jung bin	1372190	No quiero volverme calvo mientras aún soy joven
 930572	Ich will keine Glatze bekommen, solange ich noch jung bin	1446265	No quiero quedarme calvo cuando aún soy joven
-930590	Wie lange soll das dauern? Ungefähr eine bis zwei Wochen	1757088	¿Cuanto debería durar? Alrededor de unas dos semanas
+930590	Wie lange soll das dauern? Ungefähr eine bis zwei Wochen	1757088	¿Cuánto debería durar? Alrededor de unas dos semanas
 931162	Er hat sich an dem heißen Tee die Zunge verbrüht	5057030	Se quemó la lengua con el té caliente
 931248	Was habe ich mich erschreckt, als ich die Tür aufmachte!	464487	¡Qué susto me llevé cuando abrí la puerta!
 931291	Das ist das hässlichste Baby, das ich je gesehen habe	1476786	Ese es el bebé más feo que haya visto
