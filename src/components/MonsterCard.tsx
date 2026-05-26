@@ -1,6 +1,6 @@
-import { MAIN_COLOR, GOLDEN, MASTERED_STREAK } from "~/lib/constants";
+import { MASTERED_STREAK } from "~/lib/game";
 import { _ } from "~/lib/i18n";
-import { TEXT_TERTIARY, BG_PRIMARY } from "~/lib/theme";
+import { MAIN_COLOR, GOLDEN, TEXT_TERTIARY, BG_PRIMARY } from "~/lib/theme";
 
 import MonsterImg from "~/components/MonsterImg";
 
@@ -44,7 +44,7 @@ export default function MonsterCard({ monster, sentence, meanings }: Props) {
       {meanings ? (
         meanings
       ) : (
-        <div className="selectable" style={{ fontSize }}>
+        <div className="selectable" style={{ fontSize, lineHeight: "1.5em" }}>
           {sentence}
         </div>
       )}
