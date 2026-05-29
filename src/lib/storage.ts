@@ -3,7 +3,7 @@ import Dexie, { type EntityTable } from "dexie";
 import { LANG1_CODE, LANG2_CODE } from "~/lib/constants";
 import { SENTENCES } from "~/lib/sentences";
 
-const VERSION = 4;
+const VERSION = 5;
 
 export const db = new Dexie("gamedb") as Dexie & {
   monsters: EntityTable<Monster, "id">;
@@ -32,6 +32,8 @@ export async function exportBackup(): Promise<Backup> {
     motivatedSkill: localStorage.motivatedSkill,
     maxEnergySkill: localStorage.maxEnergySkill,
     berserkerSkill: localStorage.berserkerSkill,
+    goldenTouchSkill: localStorage.goldenTouchSkill,
+    lifeStealSkill: localStorage.lifeStealSkill,
     // UI settings
     sfx: localStorage.sfx,
     tts: localStorage.tts,
@@ -42,6 +44,15 @@ export async function exportBackup(): Promise<Backup> {
 export async function importBackup(backup: Backup) {
   if (!isValidBackup(backup)) {
     return;
+  }
+
+  if (backup.version < 5) {
+    backup.energy = (parseInt(backup.energy) * 10).toString();
+    if (backup.session) {
+      const session = JSON.parse(backup.session);
+      session.energyGained = 0;
+      backup.session = JSON.stringify(session);
+    }
   }
 
   await db.monsters.bulkPut(
@@ -61,6 +72,8 @@ export async function importBackup(backup: Backup) {
   localStorage.motivatedSkill = backup.motivatedSkill || "0";
   localStorage.maxEnergySkill = backup.maxEnergySkill || "0";
   localStorage.berserkerSkill = backup.berserkerSkill || "0";
+  localStorage.goldenTouchSkill = backup.goldenTouchSkill || "0";
+  localStorage.lifeStealSkill = backup.lifeStealSkill || "0";
   // UI settings
   localStorage.sfx = backup.sfx || "";
   localStorage.tts = backup.tts || "";
@@ -148,9 +161,9 @@ export function setXp(xp: number) {
   localStorage.xp = xp;
 }
 
-export function getEnergy(): { energy: number; time: number } {
+export function getEnergy(defEnergy: number): { energy: number; time: number } {
   return {
-    energy: parseInt(localStorage.energy || "30"),
+    energy: parseInt(localStorage.energy || defEnergy),
     time: parseInt(localStorage.energyTimestamp || "0"),
   };
 }
@@ -190,6 +203,22 @@ export function getBerserkerSkillLevel(): number {
 
 export function setBerserkerSkillLevel(level: number) {
   localStorage.berserkerSkill = level.toString();
+}
+
+export function getGoldenTouchSkillLevel(): number {
+  return parseInt(localStorage.goldenTouchSkill || "0");
+}
+
+export function setGoldenTouchSkillLevel(level: number) {
+  localStorage.goldenTouchSkill = level.toString();
+}
+
+export function getLifeStealSkillLevel(): number {
+  return parseInt(localStorage.lifeStealSkill || "0");
+}
+
+export function setLifeStealSkillLevel(level: number) {
+  localStorage.lifeStealSkill = level.toString();
 }
 
 export function getStudiedToday(): number {

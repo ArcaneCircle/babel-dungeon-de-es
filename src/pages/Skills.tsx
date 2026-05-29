@@ -9,6 +9,11 @@ import {
   MOTIVATED_SKILL_MAX_LEVEL,
   MAX_ENERGY_SKILL_MAX_LEVEL,
   BERSERKER_SKILL_MAX_LEVEL,
+  GOLDEN_TOUCH_SKILL_MAX_LEVEL,
+  LIFE_STEAL_SKILL_MAX_LEVEL,
+  LIFE_STEAL_BASE_CHANCE,
+  LIFE_STEAL_CHANCE_PER_LEVEL,
+  getLifeStealChance,
   getBerserkerReductionPercent,
 } from "~/lib/game";
 import {
@@ -42,12 +47,18 @@ export default function Skills({ player, onBack }: Props) {
   const motivatedPercent = getMotivatedRestorePercent(motivatedLevel);
   const maxEnergyLevel = player.skills.maxEnergy;
   const berserkerLevel = player.skills.berserker;
+  const goldenTouchLevel = player.skills.goldenTouch;
+  const lifeStealLevel = player.skills.lifeSteal;
   const canUpgradeMotivated =
     player.skillPoints > 0 && motivatedLevel < MOTIVATED_SKILL_MAX_LEVEL;
   const canUpgradeMaxEnergy =
     player.skillPoints > 0 && maxEnergyLevel < MAX_ENERGY_SKILL_MAX_LEVEL;
   const canUpgradeBerserker =
     player.skillPoints > 0 && berserkerLevel < BERSERKER_SKILL_MAX_LEVEL;
+  const canUpgradeGoldenTouch =
+    player.skillPoints > 0 && goldenTouchLevel < GOLDEN_TOUCH_SKILL_MAX_LEVEL;
+  const canUpgradeLifeSteal =
+    player.skillPoints > 0 && lifeStealLevel < LIFE_STEAL_SKILL_MAX_LEVEL;
 
   const onUpgradeMotivated = useCallback(async () => {
     await upgradeSkill("motivated");
@@ -58,6 +69,12 @@ export default function Skills({ player, onBack }: Props) {
   const onUpgradeBerserker = useCallback(async () => {
     await upgradeSkill("berserker");
   }, []);
+  const onUpgradeGoldenTouch = useCallback(async () => {
+    await upgradeSkill("goldenTouch");
+  }, []);
+  const onUpgradeLifeSteal = useCallback(async () => {
+    await upgradeSkill("lifeSteal");
+  }, []);
 
   const currMotivated = _("{{x}}% of max. energy restored").replace(
     "{{x}}",
@@ -65,7 +82,7 @@ export default function Skills({ player, onBack }: Props) {
   );
   const currMaxEnergy = _("+{{x}} max. energy").replace(
     "{{x}}",
-    `${maxEnergyLevel}`,
+    `${maxEnergyLevel * 10}`,
   );
 
   const currBerserkerEasy = getBerserkerReductionPercent(
@@ -85,13 +102,21 @@ export default function Skills({ player, onBack }: Props) {
     .replace("{{normal}}", String(currBerserkerNormal))
     .replace("{{x}}", String(player.toReview));
 
+  const currGoldenTouch = _(
+    "Monster's level increased by +{{x}} when the golden button is used",
+  ).replace("{{x}}", String(5 + goldenTouchLevel));
+
+  const currLifeSteal = _(
+    "{{x}}% chance of +5 energy on correct answer",
+  ).replace("{{x}}", String(getLifeStealChance(lifeStealLevel)));
+
   return (
     <div style={{ padding: "0.5em" }}>
       <div style={card}>
         <div style={{ fontSize: "1.2em", color: MAIN_COLOR }}>
           {_("SKILLS")}
         </div>
-        <div style={{ marginTop: "1em" }}>
+        <div style={{ marginTop: "1em", lineHeight: 1.6 }}>
           {_("Spend skill points to upgrade your passive abilities.")}
         </div>
         <div style={{ marginTop: "1em", color: BLUE }}>
@@ -161,7 +186,7 @@ export default function Skills({ player, onBack }: Props) {
           </div>
         </div>
         <div style={{ marginTop: "1em", lineHeight: 1.6 }}>
-          {_("Increases your maximum energy by +1 per upgrade.")}
+          {_("Increases your maximum energy by +10 per upgrade.")}
         </div>
         <div style={{ marginTop: "1em", color: TEXT_TERTIARY }}>
           {_("Current Level: {{x}}").replace("{{x}}", currMaxEnergy)}
@@ -218,6 +243,88 @@ export default function Skills({ player, onBack }: Props) {
           }}
         >
           {berserkerLevel >= BERSERKER_SKILL_MAX_LEVEL
+            ? _("MAXED")
+            : _("Upgrade")}
+        </MenuButton>
+      </div>
+
+      <div style={card}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            gap: "1em",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ color: MAIN_COLOR, fontSize: "1.1em" }}>
+            {_("Golden Touch")}
+          </div>
+          <div>
+            {_("LEVEL")} {goldenTouchLevel}/{GOLDEN_TOUCH_SKILL_MAX_LEVEL}
+          </div>
+        </div>
+        <div style={{ marginTop: "1em", lineHeight: 1.6 }}>
+          {_(
+            "Pressing the golden button increases the monster's level more than usual, +1 level per upgrade.",
+          )}
+        </div>
+        <div style={{ marginTop: "1em", color: TEXT_TERTIARY }}>
+          {_("Current Level: {{x}}").replace("{{x}}", currGoldenTouch)}
+        </div>
+        <MenuButton
+          disabled={!canUpgradeGoldenTouch}
+          onClick={onUpgradeGoldenTouch}
+          style={{
+            marginTop: "1.5em",
+            color: canUpgradeGoldenTouch ? "black" : TEXT_PRIMARY,
+            background: canUpgradeGoldenTouch ? MAIN_COLOR : BG_TERTIARY,
+            opacity: canUpgradeGoldenTouch ? 1 : 0.7,
+          }}
+        >
+          {goldenTouchLevel >= GOLDEN_TOUCH_SKILL_MAX_LEVEL
+            ? _("MAXED")
+            : _("Upgrade")}
+        </MenuButton>
+      </div>
+
+      <div style={card}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            gap: "1em",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ color: MAIN_COLOR, fontSize: "1.1em" }}>
+            {_("Life Steal")}
+          </div>
+          <div>
+            {_("LEVEL")} {lifeStealLevel}/{LIFE_STEAL_SKILL_MAX_LEVEL}
+          </div>
+        </div>
+        <div style={{ marginTop: "1em", lineHeight: 1.6 }}>
+          {_(
+            "Each correct answer has a {{base}}% chance of restoring +5 energy, plus an additional +{{inc}}% chance per upgrade.",
+          )
+            .replace("{{base}}", String(LIFE_STEAL_BASE_CHANCE))
+            .replace("{{inc}}", String(LIFE_STEAL_CHANCE_PER_LEVEL))}
+        </div>
+        <div style={{ marginTop: "1em", color: TEXT_TERTIARY }}>
+          {_("Current Level: {{x}}").replace("{{x}}", currLifeSteal)}
+        </div>
+        <MenuButton
+          disabled={!canUpgradeLifeSteal}
+          onClick={onUpgradeLifeSteal}
+          style={{
+            marginTop: "1.5em",
+            color: canUpgradeLifeSteal ? "black" : TEXT_PRIMARY,
+            background: canUpgradeLifeSteal ? MAIN_COLOR : BG_TERTIARY,
+            opacity: canUpgradeLifeSteal ? 1 : 0.7,
+          }}
+        >
+          {lifeStealLevel >= LIFE_STEAL_SKILL_MAX_LEVEL
             ? _("MAXED")
             : _("Upgrade")}
         </MenuButton>

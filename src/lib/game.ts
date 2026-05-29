@@ -22,6 +22,10 @@ import {
   setMaxEnergySkillLevel,
   getBerserkerSkillLevel,
   setBerserkerSkillLevel,
+  getGoldenTouchSkillLevel,
+  setGoldenTouchSkillLevel,
+  getLifeStealSkillLevel,
+  setLifeStealSkillLevel,
   getLastPlayed,
   setLastPlayed,
   getStudiedToday,
@@ -37,14 +41,18 @@ import {
 } from "~/lib/storage";
 
 export const MAX_LEVEL = 1000;
-export const PLAY_ENERGY_COST = 10;
+export const PLAY_ENERGY_COST = 100;
 export const MASTERED_STREAK = 5;
 export const MAX_ENERGY_SKILL_MAX_LEVEL = 50;
-export const BASE_MAX_ENERGY = 30;
+export const BASE_MAX_ENERGY = 300;
 export const MOTIVATED_BASE_RESTORE_PERCENT = 50;
 export const MOTIVATED_SKILL_PER_LEVEL_PERCENT = 1;
 export const MOTIVATED_SKILL_MAX_LEVEL = 50;
 export const BERSERKER_SKILL_MAX_LEVEL = 50;
+export const GOLDEN_TOUCH_SKILL_MAX_LEVEL = 50;
+export const LIFE_STEAL_SKILL_MAX_LEVEL = 50;
+export const LIFE_STEAL_BASE_CHANCE = 10;
+export const LIFE_STEAL_CHANCE_PER_LEVEL = 0.5;
 
 const MONSTER_UPDATE_CMD = "mon-up",
   INIT_CMD = "init",
@@ -54,7 +62,6 @@ const MONSTER_UPDATE_CMD = "mon-up",
   FINISHED_CMD = "finished",
   IMPORT_CMD = "import";
 const MAX_MONSTER_STREAK = 999;
-const sixMinutes = 6 * 60 * 1000;
 let energyLastCheck = 0;
 let setPlayerState = null as ((player: Player) => void) | null;
 let setSessionState = (_: Session | null) => {};
@@ -64,6 +71,7 @@ const pendingMonsterUpdates: Array<{
   monster: Monster;
   sessionId: number;
   xp: number;
+  energyGained: number;
 }> = [];
 
 // Initialize SENTENCES based on learning language
@@ -91,13 +99,14 @@ const workerLoop = async () => {
   }
   const now = Date.now();
   if (now - energyLastCheck >= 10000) {
-    let { energy, time } = getEnergy();
+    let { energy, time } = getEnergy(BASE_MAX_ENERGY);
     let changed = false;
+    const recoveryDelay = 36 * 1000;
     while (
-      energy < getMaxEnergy(getMaxEnergySkillLevel()) &&
-      now - time >= sixMinutes
+      now - time >= recoveryDelay &&
+      energy < getMaxEnergy(getMaxEnergySkillLevel())
     ) {
-      time += sixMinutes;
+      time += recoveryDelay;
       setEnergy(++energy, time);
       changed = true;
     }
@@ -130,7 +139,7 @@ export async function getPlayer(): Promise<Player> {
   const xp = getXp();
   const totalXp = lvl === MAX_LEVEL ? 0 : toNextLevelMediumFast(lvl);
 
-  const energyState = getEnergy();
+  const energyState = getEnergy(BASE_MAX_ENERGY);
   const maxEnergy = getMaxEnergy(getMaxEnergySkillLevel());
   const energy = Math.min(energyState.energy, maxEnergy);
   if (energy !== energyState.energy) {
@@ -148,6 +157,8 @@ export async function getPlayer(): Promise<Player> {
       motivated: getMotivatedSkillLevel(),
       maxEnergy: getMaxEnergySkillLevel(),
       berserker: getBerserkerSkillLevel(),
+      goldenTouch: getGoldenTouchSkillLevel(),
+      lifeSteal: getLifeStealSkillLevel(),
     },
     streak,
     studiedToday,
@@ -191,7 +202,7 @@ export function importGame(rawBackup: string): boolean {
 }
 
 export function startNewGame(mode: GameMode, energyCost: number): boolean {
-  const energy = getEnergy().energy - energyCost;
+  const energy = getEnergy(BASE_MAX_ENERGY).energy - energyCost;
   if (energy < 0) return false;
 
   const uid = window.webxdc.selfAddr;
@@ -213,6 +224,8 @@ export async function upgradeSkill(
   const motivatedSkill = getMotivatedSkillLevel();
   const maxEnergySkill = getMaxEnergySkillLevel();
   const berserkerSkill = getBerserkerSkillLevel();
+  const goldenTouchSkill = getGoldenTouchSkillLevel();
+  const lifeStealSkill = getLifeStealSkillLevel();
 
   const uid = window.webxdc.selfAddr;
   window.webxdc.sendUpdate(
@@ -225,6 +238,9 @@ export async function upgradeSkill(
         motivated: skill === "motivated" ? motivatedSkill + 1 : motivatedSkill,
         maxEnergy: skill === "maxEnergy" ? maxEnergySkill + 1 : maxEnergySkill,
         berserker: skill === "berserker" ? berserkerSkill + 1 : berserkerSkill,
+        goldenTouch:
+          skill === "goldenTouch" ? goldenTouchSkill + 1 : goldenTouchSkill,
+        lifeSteal: skill === "lifeSteal" ? lifeStealSkill + 1 : lifeStealSkill,
       },
     },
     "",
@@ -243,6 +259,7 @@ function getResultsModal(
     type: "results",
     time: endTime - session.start,
     xp: session.xp,
+    energyGained: session.energyGained,
     accuracy: Math.round((correct / total) * 100),
     next,
   };
@@ -305,12 +322,15 @@ export function sendMonsterUpdate(
   }
 
   const session = getSession()!;
-  for (const { monster, xp } of pendingMonsterUpdates) {
+  for (const { monster, xp, energyGained } of pendingMonsterUpdates) {
     updateMonster(monster, session);
     session.xp += xp;
+    session.energyGained += energyGained;
   }
   updateMonster(monster, session);
   session.xp += xp;
+  const currentEnergyGained = correct > 0 ? rollLifeSteal() : 0;
+  session.energyGained += currentEnergyGained;
   if (!session.pending.length && !session.failed.length) {
     // session finished, clear pending updates queue,
     // session contains updated state
@@ -342,6 +362,7 @@ export function sendMonsterUpdate(
       monster,
       sessionId: session.start,
       xp,
+      energyGained: currentEnergyGained,
     });
     setSessionState(session);
   }
@@ -398,7 +419,12 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
       case MONSTER_UPDATE_CMD: {
         const session = getSession();
         let needsUpdate = false;
-        for (const { monster, sessionId, xp } of payload.monsters) {
+        for (const {
+          monster,
+          sessionId,
+          xp,
+          energyGained,
+        } of payload.monsters) {
           if (session && sessionId === session.start) {
             const findMon = (m: Monster) =>
               m.id === monster.id && m.seen === monster.seen;
@@ -409,6 +435,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
             ) {
               updateMonster(monster, session);
               if (xp) session.xp += xp;
+              if (energyGained) session.energyGained += energyGained;
               needsUpdate = true;
             }
           }
@@ -422,6 +449,13 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
       case FINISHED_CMD: {
         const session = payload.session;
         await db.monsters.bulkPut(session.correct);
+
+        if (session.energyGained) {
+          const { energy, time } = getEnergy(BASE_MAX_ENERGY);
+          const maxEnergy = getMaxEnergy(getMaxEnergySkillLevel());
+          const newEnergy = Math.min(energy + session.energyGained, maxEnergy);
+          if (newEnergy > energy) setEnergy(newEnergy, time);
+        }
 
         const currentLevel = getLevel();
         const { xp, level } = increaseXp(session.xp);
@@ -462,6 +496,8 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         setMotivatedSkillLevel(payload.motivated);
         setMaxEnergySkillLevel(payload.maxEnergy);
         setBerserkerSkillLevel(payload.berserker);
+        setGoldenTouchSkillLevel(payload.goldenTouch);
+        setLifeStealSkillLevel(payload.lifeSteal);
         if (setPlayerState) setPlayerState(await getPlayer());
         break;
       }
@@ -522,6 +558,7 @@ async function createNewSession(
     start,
     mode,
     xp: 0,
+    energyGained: 0,
     failedIds: [],
     correct: [],
     failed: [],
@@ -564,7 +601,7 @@ function increaseXp(xp: number): { xp: number; level: number } {
 
 function getLevelUpRewards(currentLevel: number, newLevel: number) {
   const lvlCount = newLevel - currentLevel;
-  const { energy } = getEnergy();
+  const { energy } = getEnergy(BASE_MAX_ENERGY);
   const maxEnergy = getMaxEnergy(getMaxEnergySkillLevel());
   const missingEnergy = Math.max(0, maxEnergy - energy);
   const restoredPercent = getMotivatedRestorePercent(getMotivatedSkillLevel());
@@ -604,7 +641,9 @@ export function getBerserkerReductionPercent(
 
   const reductionPerPoint = getBerserkerReductionPerPoint(toReview);
   const modeMultiplier = mode === "easy" ? 0.5 : 1;
-  return berserkerLevel * reductionPerPoint * modeMultiplier;
+  return (
+    Math.round(berserkerLevel * reductionPerPoint * modeMultiplier * 10) / 10
+  );
 }
 
 export function getPlayEnergyCost(
@@ -628,5 +667,18 @@ function toNextLevelMediumFast(level: number): number {
 }
 
 function getMaxEnergy(level: number): number {
-  return BASE_MAX_ENERGY + level;
+  return BASE_MAX_ENERGY + level * 10;
+}
+
+export function getLifeStealChance(level: number): number {
+  return level
+    ? LIFE_STEAL_BASE_CHANCE + level * LIFE_STEAL_CHANCE_PER_LEVEL
+    : 0;
+}
+
+function rollLifeSteal(): number {
+  const lifeStealLevel = getLifeStealSkillLevel();
+  if (!lifeStealLevel) return 0;
+  const chance = getLifeStealChance(lifeStealLevel);
+  return Math.random() * 100 < chance ? 5 : 0;
 }
