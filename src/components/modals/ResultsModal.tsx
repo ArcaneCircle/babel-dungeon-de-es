@@ -1,13 +1,17 @@
 import { MAIN_COLOR, RED } from "~/lib/theme";
 import { _ } from "~/lib/i18n";
 import { formatTime } from "~/lib/dateutil";
+import type { CSSProperties } from "react";
 
 import ConfirmModal from "./ConfirmModal";
+import styles from "./ResultsModal.module.css";
+
+const CHEST_BEAM_COUNT = 7;
 
 type Props = {
   time: number;
   xp: number;
-  energyGained: number;
+  onFireXp: number;
   accuracy: number;
   [key: string]: any;
 };
@@ -15,7 +19,7 @@ type Props = {
 export default function ResultsModal({
   time,
   xp,
-  energyGained,
+  onFireXp,
   accuracy,
   ...props
 }: Props) {
@@ -34,25 +38,50 @@ export default function ResultsModal({
           {_("ROUND COMPLETED!")}
           <hr />
         </div>
-        <div>
-          <div style={divStyle}>
-            <span>{_("Total XP:")}</span>
-            <span>+{xp}</span>
-          </div>
-          <div style={divStyle}>
-            <span>{_("Accuracy:")}</span>
-            <span style={{ color: accuracyColor }}>{accuracy}%</span>
-          </div>
+        <div style={{ textAlign: "center" }}>
+          {onFireXp > 0 && (
+            <>
+              <div className={styles.chestContainer}>
+                <div aria-hidden className={styles.chestFlare}>
+                  {Array.from({ length: CHEST_BEAM_COUNT }).map((_, i) => (
+                    <span
+                      key={i}
+                      className={styles.chestFlareBeam}
+                      style={
+                        {
+                          "--beam-rotation": `${(360 / CHEST_BEAM_COUNT) * i}deg`,
+                        } as CSSProperties
+                      }
+                    />
+                  ))}
+                </div>
+                <img
+                  src={"/chest.png"}
+                  aria-hidden
+                  className={styles.chestImage}
+                />
+              </div>
+              <div style={{ marginTop: "0.5em", marginBottom: "1em" }}>
+                {_("+{{x}}xp").replace("{{x}}", String(onFireXp))}
+              </div>
+              <hr />
+            </>
+          )}
+
           <div style={divStyle}>
             <span>{_("Time:")}</span>
             <span>{formatTime(time)}</span>
           </div>
-          {energyGained > 0 && (
-            <div style={divStyle}>
-              <span>{_("Energy gained:")}</span>
-              <span>+{energyGained}</span>
-            </div>
-          )}
+
+          <div style={divStyle}>
+            <span>{_("Accuracy:")}</span>
+            <span style={{ color: accuracyColor }}>{accuracy}%</span>
+          </div>
+
+          <div style={divStyle}>
+            <span>{_("Total XP:")}</span>
+            <span>+{xp}</span>
+          </div>
         </div>
       </div>
     </ConfirmModal>

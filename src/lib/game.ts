@@ -26,6 +26,12 @@ import {
   setGoldenTouchSkillLevel,
   getLifeStealSkillLevel,
   setLifeStealSkillLevel,
+  getCriticalHitSkillLevel,
+  setCriticalHitSkillLevel,
+  getFastLearnerSkillLevel,
+  setFastLearnerSkillLevel,
+  getOnFireSkillLevel,
+  setOnFireSkillLevel,
   getLastPlayed,
   setLastPlayed,
   getStudiedToday,
@@ -53,6 +59,14 @@ export const GOLDEN_TOUCH_SKILL_MAX_LEVEL = 50;
 export const LIFE_STEAL_SKILL_MAX_LEVEL = 50;
 export const LIFE_STEAL_BASE_CHANCE = 10;
 export const LIFE_STEAL_CHANCE_PER_LEVEL = 0.5;
+export const CRITICAL_HIT_SKILL_MAX_LEVEL = 50;
+export const CRITICAL_HIT_BASE_CHANCE = 10;
+export const CRITICAL_HIT_CHANCE_PER_LEVEL = 0.5;
+export const CRITICAL_HIT_XP_MULTIPLIER = 1.5;
+export const FAST_LEARNER_SKILL_MAX_LEVEL = 50;
+export const ON_FIRE_SKILL_MAX_LEVEL = 50;
+export const ON_FIRE_BASE_XP_PER_UPGRADE = 100;
+export const ON_FIRE_STREAK_THRESHOLD = 7;
 
 const MONSTER_UPDATE_CMD = "mon-up",
   INIT_CMD = "init",
@@ -73,6 +87,26 @@ const pendingMonsterUpdates: Array<{
   xp: number;
   energyGained: number;
 }> = [];
+// Keep in sync with `.skill-effect-counter` animation duration in `src/App.css`.
+const SKILL_EFFECT_ANIMATION_MS = 1000;
+let pendingSessionStateUpdateTimeout: ReturnType<typeof setTimeout> | null =
+  null;
+
+function updateSessionState(session: Session | null, delay = 0) {
+  // Only the newest session update should win; cancel stale delayed updates.
+  if (pendingSessionStateUpdateTimeout) {
+    clearTimeout(pendingSessionStateUpdateTimeout);
+    pendingSessionStateUpdateTimeout = null;
+  }
+  if (delay > 0) {
+    pendingSessionStateUpdateTimeout = setTimeout(() => {
+      setSessionState(session);
+      pendingSessionStateUpdateTimeout = null;
+    }, delay);
+    return;
+  }
+  setSessionState(session);
+}
 
 // Initialize SENTENCES based on learning language
 initializeSentences(getLearningLanguage());
@@ -159,6 +193,9 @@ export async function getPlayer(): Promise<Player> {
       berserker: getBerserkerSkillLevel(),
       goldenTouch: getGoldenTouchSkillLevel(),
       lifeSteal: getLifeStealSkillLevel(),
+      criticalHit: getCriticalHitSkillLevel(),
+      fastLearner: getFastLearnerSkillLevel(),
+      onFire: getOnFireSkillLevel(),
     },
     streak,
     studiedToday,
@@ -226,6 +263,9 @@ export async function upgradeSkill(
   const berserkerSkill = getBerserkerSkillLevel();
   const goldenTouchSkill = getGoldenTouchSkillLevel();
   const lifeStealSkill = getLifeStealSkillLevel();
+  const criticalHitSkill = getCriticalHitSkillLevel();
+  const fastLearnerSkill = getFastLearnerSkillLevel();
+  const onFireSkill = getOnFireSkillLevel();
 
   const uid = window.webxdc.selfAddr;
   window.webxdc.sendUpdate(
@@ -241,6 +281,11 @@ export async function upgradeSkill(
         goldenTouch:
           skill === "goldenTouch" ? goldenTouchSkill + 1 : goldenTouchSkill,
         lifeSteal: skill === "lifeSteal" ? lifeStealSkill + 1 : lifeStealSkill,
+        criticalHit:
+          skill === "criticalHit" ? criticalHitSkill + 1 : criticalHitSkill,
+        fastLearner:
+          skill === "fastLearner" ? fastLearnerSkill + 1 : fastLearnerSkill,
+        onFire: skill === "onFire" ? onFireSkill + 1 : onFireSkill,
       },
     },
     "",
@@ -258,8 +303,8 @@ function getResultsModal(
   return {
     type: "results",
     time: endTime - session.start,
-    xp: session.xp,
-    energyGained: session.energyGained,
+    xp: session.xp + session.onFireXp,
+    onFireXp: session.onFireXp,
     accuracy: Math.round((correct / total) * 100),
     next,
   };
@@ -268,18 +313,33 @@ function getResultsModal(
 export function sendMonsterUpdate(
   monster: Monster,
   correct: number,
-): ModalPayload | null {
+): MonsterUpdateResult {
   monster = { ...monster };
   let modal = null;
+  const skillEffects: SkillEffectGain[] = [];
   const now = new Date();
   const level = getLevel();
   monster.seen = now.getTime();
   let xp = 0;
-  if (correct) {
+  if (correct > 0) {
     monster.streak = Math.min(monster.streak + correct, MAX_MONSTER_STREAK);
     if (level !== MAX_LEVEL) {
       const bonus = Math.min(Math.floor(level / 5), 40);
-      xp = Math.min(bonus + monster.streak, 50);
+      xp = Math.min(bonus + monster.streak, 50) + getFastLearnerSkillLevel();
+      if (rollCriticalHit()) {
+        xp = Math.round(xp * CRITICAL_HIT_XP_MULTIPLIER);
+        skillEffects.push({
+          source: "criticalHit",
+          stat: "xp",
+          amount: xp,
+        });
+      } else {
+        skillEffects.push({
+          source: "normalAnswer",
+          stat: "xp",
+          amount: xp,
+        });
+      }
     }
 
     const addHours = (hours: number): number =>
@@ -330,11 +390,20 @@ export function sendMonsterUpdate(
   updateMonster(monster, session);
   session.xp += xp;
   const currentEnergyGained = correct > 0 ? rollLifeSteal() : 0;
+  if (currentEnergyGained > 0) {
+    skillEffects.push({
+      source: "lifeSteal",
+      stat: "energy",
+      amount: currentEnergyGained,
+    });
+  }
   session.energyGained += currentEnergyGained;
   if (!session.pending.length && !session.failed.length) {
     // session finished, clear pending updates queue,
     // session contains updated state
     pendingMonsterUpdates.length = 0;
+
+    session.onFireXp = getOnFireBonusXp(session);
 
     const update = {
       payload: {
@@ -343,7 +412,7 @@ export function sendMonsterUpdate(
         session,
       },
     } as SendingStatusUpdate<Payload>;
-    const { level: newLevel } = increaseXp(session.xp);
+    const { level: newLevel } = increaseXp(session.xp + session.onFireXp);
     if (level < newLevel) {
       const rewards = getLevelUpRewards(level, newLevel);
       modal = getResultsModal(session, monster.seen, {
@@ -364,9 +433,15 @@ export function sendMonsterUpdate(
       xp,
       energyGained: currentEnergyGained,
     });
-    setSessionState(session);
+    updateSessionState(
+      session,
+      skillEffects.length ? SKILL_EFFECT_ANIMATION_MS : 0,
+    );
   }
-  return modal;
+  return {
+    modal,
+    skillEffects,
+  };
 }
 
 export function initGame(
@@ -410,7 +485,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         setPlayerState = payload.playerHook;
         setWelcomeCompleteState = payload.welcomeHook;
         setWelcomeCompleteState(!!getLearningLanguage());
-        setSessionState(getSession());
+        updateSessionState(getSession());
         // player must be set last because it used to detect initialization
         setPlayerState(await getPlayer());
 
@@ -442,7 +517,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         }
         if (needsUpdate) {
           setSession(session!);
-          setSessionState(session!);
+          updateSessionState(session!);
         }
         break;
       }
@@ -458,7 +533,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         }
 
         const currentLevel = getLevel();
-        const { xp, level } = increaseXp(session.xp);
+        const { xp, level } = increaseXp(session.xp + session.onFireXp);
         if (currentLevel < level) {
           const rewards = getLevelUpRewards(currentLevel, level);
           if (rewards.restoredEnergy) setEnergy(rewards.nextEnergy, Date.now());
@@ -481,14 +556,14 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         }
         if (setPlayerState) setPlayerState(await getPlayer());
         setSession(session);
-        setSessionState(session);
+        updateSessionState(session);
         break;
       }
       case NEW_CMD: {
         setEnergy(payload.energy, payload.time);
         const session = await createNewSession(payload.time, payload.mode);
         setSession(session);
-        setSessionState(session);
+        updateSessionState(session);
         break;
       }
       case SKILL_UP_CMD: {
@@ -498,6 +573,9 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         setBerserkerSkillLevel(payload.berserker);
         setGoldenTouchSkillLevel(payload.goldenTouch);
         setLifeStealSkillLevel(payload.lifeSteal);
+        setCriticalHitSkillLevel(payload.criticalHit);
+        setFastLearnerSkillLevel(payload.fastLearner);
+        setOnFireSkillLevel(payload.onFire);
         if (setPlayerState) setPlayerState(await getPlayer());
         break;
       }
@@ -512,7 +590,7 @@ async function processUpdate(update: ReceivedStatusUpdate<Payload>) {
         initializeSentences(getLearningLanguage());
         setWelcomeCompleteState(true);
         if (setPlayerState) setPlayerState(await getPlayer());
-        setSessionState(getSession());
+        updateSessionState(getSession());
         break;
       }
     }
@@ -558,6 +636,7 @@ async function createNewSession(
     start,
     mode,
     xp: 0,
+    onFireXp: 0,
     energyGained: 0,
     failedIds: [],
     correct: [],
@@ -681,4 +760,34 @@ function rollLifeSteal(): number {
   if (!lifeStealLevel) return 0;
   const chance = getLifeStealChance(lifeStealLevel);
   return Math.random() * 100 < chance ? 5 : 0;
+}
+
+export function getCriticalHitChance(level: number): number {
+  return level
+    ? CRITICAL_HIT_BASE_CHANCE + level * CRITICAL_HIT_CHANCE_PER_LEVEL
+    : 0;
+}
+
+function rollCriticalHit(): boolean {
+  const criticalHitLevel = getCriticalHitSkillLevel();
+  if (!criticalHitLevel) return false;
+  const chance = getCriticalHitChance(criticalHitLevel);
+  return Math.random() * 100 < chance;
+}
+
+function getOnFireBonusXp(session: Session): number {
+  const onFireLevel = getOnFireSkillLevel();
+  if (!onFireLevel || !session.correct.length) return 0;
+
+  const seen = session.correct[session.correct.length - 1].seen;
+  const newPlayed = new Date(seen).setHours(0, 0, 0, 0);
+  const lastPlayed = getLastPlayed();
+  if (lastPlayed >= newPlayed) return 0;
+
+  const oneDayBefore = new Date(newPlayed);
+  oneDayBefore.setDate(oneDayBefore.getDate() - 1);
+  const nextStreak = lastPlayed < oneDayBefore.getTime() ? 1 : getStreak() + 1;
+  if (nextStreak < ON_FIRE_STREAK_THRESHOLD) return 0;
+
+  return onFireLevel * ON_FIRE_BASE_XP_PER_UPGRADE;
 }

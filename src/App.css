@@ -44,6 +44,14 @@ body {
   font-size: 16px;
   overflow-wrap: break-word;
   word-break: break-word;
+
+  /* Pixelate instead of blurring*/
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
 }
 
 button,
@@ -66,4 +74,46 @@ a {
   -webkit-touch-callout: default;
   cursor: auto;
   -webkit-tap-highlight-color: initial;
+}
+
+.skill-effect-counter {
+  position: absolute;
+  left: calc(50% + 60px);
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+  animation: skill-effect-float 1s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes skill-effect-float {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0.2;
+    transform: translate(-50%, -2em);
+  }
+}
+
+@keyframes skills-button-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.skills-btn-attention {
+  animation: skills-button-blink 1.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-btn-attention {
+    animation: none;
+  }
 }
