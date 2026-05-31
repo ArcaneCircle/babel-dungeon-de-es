@@ -13,6 +13,7 @@ import { tts } from "~/lib/tts";
 import {
   MAIN_COLOR,
   RED,
+  BRIGHT_RED,
   BLUE,
   GOLDEN,
   BG_PRIMARY,
@@ -67,7 +68,7 @@ export default function GameSession({
     session.correct[session.correct.length - 1];
   return (
     <Quiz
-      key={monster.id}
+      key={`${monster.id}-${monster.lastFailed ?? 0}`}
       session={session}
       player={player}
       monster={monster}
@@ -102,15 +103,6 @@ function Quiz({
     }
   }, [monster, showingResults]);
 
-  const pendingCount = session.failed.length + session.pending.length;
-
-  const onFailed = useCallback(() => {
-    setProcessing(true);
-    setShow(false);
-    const ttsWillSpeak = ttsEnabled && defaultMode;
-    if (sfxEnabled && !ttsWillSpeak) errorSfx.play();
-    sendMonsterUpdate(monster, 0);
-  }, [monster, ttsEnabled, sfxEnabled, defaultMode]);
   const onSkillEffectDone = useCallback(
     (id: number) =>
       setSkillEffects((value) => value.filter((effect) => effect.id !== id)),
@@ -126,32 +118,26 @@ function Quiz({
       })),
     ]);
   }, []);
+  const onFailed = useCallback(() => {
+    setProcessing(true);
+    setShow(false);
+    if (sfxEnabled) errorSfx.play();
+    const { skillEffects } = sendMonsterUpdate(monster, 0);
+    pushSkillEffects(skillEffects);
+  }, [monster, sfxEnabled, pushSkillEffects]);
   const onCorrect = useCallback(() => {
     setProcessing(true);
-    const ttsWillSpeak = ttsEnabled && defaultMode;
-    if (sfxEnabled && (!ttsWillSpeak || pendingCount === 1)) {
-      successSfx.play();
-    }
+    if (sfxEnabled) successSfx.play();
     const { modal: mod, skillEffects } = sendMonsterUpdate(monster, 1);
     pushSkillEffects(skillEffects);
     setShowingResults(!!mod);
     setModal(mod);
-  }, [
-    monster,
-    ttsEnabled,
-    sfxEnabled,
-    defaultMode,
-    pendingCount,
-    pushSkillEffects,
-  ]);
+  }, [monster, sfxEnabled, pushSkillEffects]);
 
   const goldenTouch = player ? player.skills.goldenTouch : 0;
   const onMastered = useCallback(() => {
     setProcessing(true);
-    const ttsWillSpeak = ttsEnabled && defaultMode;
-    if (sfxEnabled && (!ttsWillSpeak || pendingCount === 1)) {
-      successSfx.play();
-    }
+    if (sfxEnabled) successSfx.play();
     const { modal: mod, skillEffects } = sendMonsterUpdate(
       monster,
       5 + player.skills.goldenTouch,
@@ -159,15 +145,7 @@ function Quiz({
     pushSkillEffects(skillEffects);
     setShowingResults(!!mod);
     setModal(mod);
-  }, [
-    monster,
-    ttsEnabled,
-    sfxEnabled,
-    defaultMode,
-    pendingCount,
-    goldenTouch,
-    pushSkillEffects,
-  ]);
+  }, [monster, sfxEnabled, goldenTouch, pushSkillEffects]);
 
   const onShow = useCallback(() => {
     if (ttsEnabled && !defaultMode) {
@@ -216,6 +194,8 @@ function Quiz({
     [modal],
   );
 
+  const pendingCount = session.failed.length + session.pending.length;
+
   return (
     <>
       <ModalContext.Provider value={{ isOpen: !!modal, setOpen }}>
@@ -247,30 +227,44 @@ function Quiz({
               }}
             >
               {monsterM}
-              {skillEffects.map((effect, index) => (
-                <div
-                  key={effect.id}
-                  className="skill-effect-counter"
-                  style={{
-                    fontSize: `${effect.source === "criticalHit" ? 1.2 : 1.1}em`,
-                    top: `${index * 1.1}em`,
-                    color:
-                      effect.source === "criticalHit"
-                        ? BLUE
-                        : effect.stat === "energy"
-                          ? GOLDEN
-                          : undefined,
-                  }}
-                  onAnimationEnd={() => onSkillEffectDone(effect.id)}
-                >
-                  +{effect.amount}
-                  {effect.stat === "xp" ? (
-                    <PixelSparklesSolid />
-                  ) : (
-                    <PixelBoltSolid />
-                  )}
-                </div>
-              ))}
+              {skillEffects.map((effect, index) => {
+                const emphasize =
+                  effect.source === "criticalHit" ||
+                  effect.source === "incorrectAnswer";
+                return (
+                  <div
+                    key={effect.id}
+                    className="skill-effect-counter"
+                    style={{
+                      top: `${index * (emphasize ? 1.4 : 1.1)}em`,
+                      fontSize: `${emphasize ? 1.2 : 1.1}em`,
+                      fontWeight: emphasize ? "bold" : undefined,
+                      color:
+                        effect.source === "incorrectAnswer"
+                          ? BRIGHT_RED
+                          : effect.source === "criticalHit"
+                            ? BLUE
+                            : effect.stat === "energy"
+                              ? GOLDEN
+                              : undefined,
+                    }}
+                    onAnimationEnd={() => onSkillEffectDone(effect.id)}
+                  >
+                    {effect.source === "incorrectAnswer" ? (
+                      "MISS"
+                    ) : (
+                      <>
+                        +{effect.amount}
+                        {effect.stat === "xp" ? (
+                          <PixelSparklesSolid />
+                        ) : (
+                          <PixelBoltSolid />
+                        )}
+                      </>
+                    )}
+                  </div>
+                );
+              })}
               {show && (
                 <>
                   <div style={{ paddingTop: "0.5em", paddingBottom: "0.5em" }}>
