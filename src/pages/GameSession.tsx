@@ -156,6 +156,10 @@ function Quiz({
     setShow(true);
   }, [monster.id, ttsEnabled, sfxEnabled, defaultMode]);
 
+  const onMonsterClicked = useCallback(() => {
+    if (defaultMode || show) tts(sentence);
+  }, [defaultMode, show, sentence]);
+
   const meaningsComp = useMemo(
     () => <Meanings key={monster.id} meanings={meanings} />,
     [monster.id],
@@ -173,9 +177,17 @@ function Quiz({
         monster={monster}
         sentence={sentence}
         meanings={defaultMode ? undefined : meaningsComp}
+        onMonsterClicked={onMonsterClicked}
       />
     ),
-    [monster.id, monster.seen],
+    [
+      monster.id,
+      monster.seen,
+      sentence,
+      defaultMode,
+      meaningsComp,
+      onMonsterClicked,
+    ],
   );
 
   const setOpen = useCallback(
@@ -239,14 +251,11 @@ function Quiz({
                       top: `${index * (emphasize ? 1.4 : 1.1)}em`,
                       fontSize: `${emphasize ? 1.2 : 1.1}em`,
                       fontWeight: emphasize ? "bold" : undefined,
-                      color:
-                        effect.source === "incorrectAnswer"
-                          ? BRIGHT_RED
-                          : effect.source === "criticalHit"
-                            ? BLUE
-                            : effect.stat === "energy"
-                              ? GOLDEN
-                              : undefined,
+                      color: emphasize
+                        ? BRIGHT_RED
+                        : effect.stat === "energy"
+                          ? MAIN_COLOR
+                          : BLUE,
                     }}
                     onAnimationEnd={() => onSkillEffectDone(effect.id)}
                   >
