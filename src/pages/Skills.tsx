@@ -34,13 +34,13 @@ import {
   BLUE,
 } from "~/lib/theme";
 
+import NoDragImg from "~/components/NoDragImg";
 import MenuButton from "~/components/MenuButton";
 
 const card = {
   display: "flex",
   flexDirection: "column" as "column",
-  border: `1px solid ${BORDER_COLOR}`,
-  borderRadius: "10px",
+  border: `2px solid ${BORDER_COLOR}`,
   padding: "1em",
   marginBottom: "1em",
 };
@@ -279,7 +279,7 @@ function SkillCard({
   const canUpgrade = availablePoints > 0 && skillLevel < skillMaxLevel;
 
   return (
-    <div style={card}>
+    <div className="pixel-corners" style={card}>
       <div
         style={{
           display: "flex",
@@ -289,17 +289,19 @@ function SkillCard({
         }}
       >
         <div style={{ display: "flex", gap: "0.75em", alignItems: "center" }}>
-          <img
-            src={skillIcon}
-            aria-hidden
-            style={{
-              width: "3.2em",
-              height: "3.2em",
-              borderRadius: "8px",
-              background: skillIconColor,
-              padding: "0.2em",
-            }}
-          />
+          <div
+            className="pixel-corners"
+            style={{ background: skillIconColor, padding: "0.2em" }}
+          >
+            <NoDragImg
+              src={skillIcon}
+              aria-hidden
+              style={{
+                width: "3.2em",
+                height: "3.2em",
+              }}
+            />
+          </div>
           <div
             style={{
               display: "flex",
@@ -335,7 +337,7 @@ function SkillCard({
               alignItems: "center",
             }}
           >
-            <img
+            <NoDragImg
               src={"/upgrade.png"}
               alt=""
               aria-hidden
@@ -347,6 +349,13 @@ function SkillCard({
       <div style={{ marginTop: "0.75em" }}>
         {skillLevel > 0 && skillSummary}
       </div>
+      {showDetails && (
+        <div
+          style={{ marginTop: "1em", lineHeight: 1.6, color: TEXT_TERTIARY }}
+        >
+          {skillDescription}
+        </div>
+      )}
       <div style={{ display: "flex", gap: "0.6em", marginTop: "1em" }}>
         <MenuButton
           onClick={() => setShowDetails((v) => !v)}
@@ -359,13 +368,6 @@ function SkillCard({
           {showDetails ? _("Hide Info") : _("More Info")}
         </MenuButton>
       </div>
-      {showDetails && (
-        <div
-          style={{ marginTop: "1em", lineHeight: 1.6, color: TEXT_TERTIARY }}
-        >
-          {skillDescription}
-        </div>
-      )}
     </div>
   );
 }
