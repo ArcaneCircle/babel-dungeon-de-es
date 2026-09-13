@@ -24,7 +24,6 @@
 338774	Er lachte	336835	Él se rio
 338774	Er lachte	745277	Él se reía
 339044	Komm schnell!	339038	¡Ven rápido!
-339044	Komm schnell!	1068599	¡Vení rápido!
 340916	Gute Reise!	339237	¡Buen viaje!
 340916	Gute Reise!	872347	¡Ten un buen viaje!
 341095	Deinetwegen	12457015	Por ti
@@ -2414,7 +2413,7 @@
 357124	Wer ist der Verantwortliche?	1112568	¿Quién es el responsable?
 357125	Wer hat das Telefon erfunden?	330637	¿Quién inventó el teléfono?
 357131	Wer zögert, ist verloren	1198351	El que titubea pierde
-357134	Wem gehört diese Tasche?	1276070	¿De quién es esta mochila?
+357134	Wem gehört diese Tasche?	9999016	¿De quién es este bolso?
 357136	Wer hat dieses Gerät erfunden?	496907	¿Quién inventó esta máquina?
 357137	Mit wem spricht er?	459246	¿Con quién habla?
 357138	Wem gehört dieses Fahrrad?	524259	¿De quién es esta bicicleta?
@@ -2694,7 +2693,7 @@
 360573	Er kann Französisch sprechen	1879297	Él sabe hablar francés
 360573	Er kann Französisch sprechen	5052158	Él puede hablar en francés
 360575	Nichts ist besser als Gesundheit	855708	No hay nada mejor que la salud
-360579	Du kannst mich jederzeit anrufen	445746	Llámame en cualquier momento
+360579	Du kannst mich jederzeit anrufen	445746	Puedes llamarme cuando quieras
 360580	Bitte schalte den Fernseher aus	1866233	Apaga el televisor, por favor
 360589	Oh ja, ich erinnere mich	717092	Ah sí, recuerdo
 360594	Was für eine wundervolle Nacht!	1795637	¡Qué noche maravillosa!
@@ -11794,7 +11793,7 @@
 835502	Der Mond hat keine Atmosphäre	1578098	La Luna no tiene atmósfera
 835502	Der Mond hat keine Atmosphäre	1578099	La Luna carece de atmósfera
 835713	Es sind schlechte Zeiten	1364658	Son tiempos difíciles
-835756	Mädchen, komm hervor!	5023363	Nena, ¡vení para acá!
+835756	Mädchen, komm hervor!	5023363	Nena, ¡ven para acá!
 835924	Ich muss das Fenster öffnen	835926	Tengo que abrir la ventana
 836087	Er entging knapp dem Tode	1485073	Huyó por poco de la muerte
 836137	Er ist Maler	5045094	Él es pintor
@@ -14707,7 +14706,6 @@
 1039071	Ihre Mutter wird weiterhin arbeiten	1443963	Su madre seguirá trabajando
 1039198	Wir brauchen einen Plan	1281214	Necesitamos un plan
 1039674	Komm mit mir schwimmen	564502	Ven a nadar conmigo
-1039674	Komm mit mir schwimmen	12443312	Vení a nadar conmigo
 1040000	Brauchst du viel Geld?	343297	¿Necesitas mucho dinero?
 1040000	Brauchst du viel Geld?	1288865	¿Te hace falta mucho dinero?
 1040003	Meine Eltern sprechen kein Niederländisch	1479286	Mis padres no hablan holandés
@@ -23034,7 +23032,7 @@
 1806895	Ich mag Ihren Computer	2227977	Me gusta su ordenador
 1806899	Ich mag deinen Computer	2412326	Me gusta tu computador
 1806953	Dein Plan gefällt mir	2314308	Me gusta tu plan
-1806960	Komm bitte mit mir	5046938	Vení conmigo por favor
+1806960	Komm bitte mit mir	5046938	Ven conmigo por favor
 1806971	Mir hat es auch gefallen	2177070	A mí también me ha gustado
 1806983	Ich mag Ihre Romane	743150	Me gusta su novela
 1806984	Ich mag deine Romane	5041135	Me gusta tu novela
@@ -30933,7 +30931,7 @@
 3259520	Maria spricht beide Sprachen fließend	3259517	Maria habla ambos idiomas con fluidez
 3259520	Maria spricht beide Sprachen fließend	5041830	Maria habla ambos idiomas con soltura
 3260604	Das ist nicht meine Unterschrift	3260655	Esa no es mi firma
-3260768	Kommst du aus der Zukunft?	5137739	¿Venís del futuro?
+3260768	Kommst du aus der Zukunft?	5137739	¿Vienes del futuro?
 3261072	Was verkauft Manuel?	4599267	¿Qué vende Manuel?
 3261079	Wo ist die französische Botschaft?	5030903	¿Dónde está la embajada francesa?
 3261146	Wir brauchen keine Leiter	3261139	No necesitamos una escalera
@@ -31260,7 +31258,6 @@
 3383556	Wisst ihr, warum das passiert?	12025244	¿Saben por qué pasa?
 3383557	Wissen Sie, warum das passiert?	12025245	¿Sabe por qué pasa?
 3383568	Welche Farbe hat dein Auto?	9855928	¿De qué color es tu auto?
-3383785	Woher kommt ihr?	931205	¿De dónde venís?
 3383785	Woher kommt ihr?	931207	¿De dónde vienen?
 3383996	Manuel hat Angst	2230073	Manuel tiene miedo
 3384018	Ich werde einen Krankenwagen rufen	2828814	Llamaré a una ambulancia
@@ -33664,7 +33661,6 @@
 4942963	Ich bin gestürzt	5707880	Me he tropezado
 4942965	Kommen Sie frühzeitig	5048428	Venga temprano
 4942966	Komm frühzeitig	5048424	Ven temprano
-4942966	Komm frühzeitig	5048423	Vení temprano
 4942971	Es brannte	5048434	Se quemó
 4942976	Ich weigere mich	5669425	Me niego
 4942976	Ich weigere mich	545574	De ninguna manera
